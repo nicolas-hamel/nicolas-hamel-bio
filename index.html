@@ -1,250 +1,158 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SCADA in South Africa: 2025 Guide | Nicolas Hamel</title>
-  <meta name="description" content="A practical 2025 guide to SCADA in South Africa: energy, water, transport, buildings and data centres. Architectures, Edge‑to‑Service, redundancy, historians/EMS, OT cybersecurity, and a buyer’s checklist." />
-
-  <!-- Canonical (update if your .africa domain is not yet live) -->
-  <link rel="canonical" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="SCADA in South Africa: 2025 Guide | Nicolas Hamel" />
-  <meta property="og:description" content="Energy, water, transport, buildings and data centres in SA: architectures, redundancy, EMS/historian, OT cybersecurity, buyer’s checklist, FAQs." />
-  <meta property="og:url" content="https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/" />
-  <meta property="og:image" content="https://nicolas-hamel.github.io/nicolas-hamel-bio/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Portrait of Nicolas Hamel – SCADA & EMS at Codra, Africa" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SCADA in South Africa: 2025 Guide | Nicolas Hamel" />
-  <meta name="twitter:description" content="Practical guide to SCADA in South Africa: architectures, EMS/historian, OT security, partners, and a buyer’s checklist." />
-  <meta name="twitter:image" content="https://nicolas-hamel.github.io/nicolas-hamel-bio/og-image.png" />
-  <meta name="twitter:image:alt" content="Portrait of Nicolas Hamel – SCADA & EMS at Codra, Africa" />
-
-  <!-- Fonts / Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicolas Hamel — Business Development Manager Africa (Codra) | Panorama Suite</title>
+  <meta name="description" content="Public bio and contact details for Nicolas Hamel — Business Development Manager Africa at Codra. Panorama Suite (SCADA, Historian, Cybersecurity). Johannesburg, South Africa.">
+  <link rel="canonical" href="">
+  <meta property="og:title" content="Nicolas Hamel — Business Development Manager Africa (Codra)">
+  <meta property="og:description" content="Business Development Manager Africa @ Codra — Panorama Suite (SCADA • Historian • Cybersecurity). Based in Johannesburg, South Africa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
   <style>
-    :root { --bg:#0b132b; --ink:#e0e6f6; --muted:#a8b1cf; --accent:#4cc9f0; --chip:#1c2541; }
-    html, body { height: 100%; }
-    body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: radial-gradient(1200px 800px at 8% -10%, #1c2541 0%, #0b132b 60%); }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { max-width: 1024px; margin: 0 auto; padding: 40px 20px 80px; }
-    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 0 10px; }
-    .brand h1 { font-size: 1.2rem; margin: 0; color: var(--muted); font-weight: 600; }
-    nav { display:flex; gap: 12px; flex-wrap: wrap; }
-    .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius: 999px; background: var(--chip); color: var(--ink); border:1px solid rgba(255,255,255,0.08); font-weight:600; }
-
-    .hero { margin: 30px 0 16px; }
-    .hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 8px; }
-    .hero p { margin: 0; color: var(--muted); font-size: 1.05rem; }
-
-    .toc { margin: 28px 0 10px; background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
-    .toc h2 { font-size: 1.05rem; margin: 0 0 6px; }
-    .toc ul { margin: 0; padding-left: 18px; }
-
-    section { margin: 28px 0; }
-    h2 { font-size: 1.25rem; margin: 0 0 10px; }
-    p { line-height: 1.6; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 16px; }
-    .card { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
-    .checklist li { margin: 6px 0; }
-    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; }
-
-    footer { margin-top: 44px; padding-top: 14px; border-top:1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.92rem; }
+    :root{
+      --bg:#0b0e14;
+      --panel:#101522;
+      --text:#e8eefc;
+      --muted:#a9b7d0;
+      --link:#5aa9ff;
+      --border:#1b2436;
+      --accent:#7dd3fc;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.65;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(90,169,255,.08), transparent) , var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px 72px}
+    header.hero{
+      display:grid;gap:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)), var(--panel);
+      border:1px solid var(--border);
+      border-radius:18px;padding:28px;
+      box-shadow:0 12px 30px rgba(0,0,0,.25);
+      margin-bottom:18px;
+    }
+    h1{font-size:2.0rem;margin:0 0 6px}
+    .subtitle{color:var(--muted);margin:0}
+    nav.top{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+    nav.top a{color:var(--link);text-decoration:none;border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:.95rem}
+    nav.top a:hover{text-decoration:underline}
+    section.card{
+      background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:22px;margin-top:16px
+    }
+    h2{font-size:1.25rem;margin:0 0 10px}
+    a{color:var(--link)}
+    .kv{display:grid;gap:6px;margin-top:6px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+    ul{padding-left:20px;margin:8px 0 0}
+    .footer{color:var(--muted);font-size:.93rem;margin-top:30px}
+    .badgebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .badge{border:1px solid var(--border);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:.92rem}
   </style>
 
-  <!-- Structured Data: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://nicolas-hamel.github.io/nicolas-hamel-bio/"},
-      {"@type":"ListItem","position":2,"name":"SCADA in South Africa"}
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: Article -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Article",
-    "headline":"SCADA in South Africa: 2025 Guide",
-    "description":"A practical 2025 guide to SCADA in South Africa across energy, water, transport, buildings and data centres—with architectures, redundancy, EMS/historian, OT cybersecurity, and a buyer’s checklist.",
-    "author":{
-      "@type":"Person",
-      "@id":"https://nicolas-hamel.github.io/nicolas-hamel-bio/#identity",
-      "name":"Nicolas Hamel"
-    },
-    "datePublished":"2025-11-08",
-    "dateModified":"2025-11-08",
-    "mainEntityOfPage":"https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/",
-    "image":"https://nicolas-hamel.github.io/nicolas-hamel-bio/og-image.png",
-    "keywords":["SCADA South Africa","EMS","Historian","OT cybersecurity","Edge-to-Service","Panorama Suite"],
-    "publisher":{
-      "@type":"Person",
-      "name":"Nicolas Hamel",
-      "url":"https://nicolas-hamel.africa/"
-    }
-  }
-  </script>
-
-  <!-- Structured Data: FAQPage -->
+  <!-- Schema.org Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type": "Question", "name": "What is the typical SCADA architecture for municipal water in South Africa?", "acceptedAnswer": {"@type": "Answer", "text": "Common patterns include local PLC/RTU control with telemetry (licensed/unlicensed radio, cellular, or fibre) into a central control centre using redundant servers, a historian/EMS, and role-based HMI access for operators and engineering. Edge‑to‑Service approaches add secure remote access and selective cloud services for analytics and reporting."}},
-      {"@type": "Question", "name": "Do I need cloud for SCADA?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Many deployments are fully on‑prem for control and safety, while cloud is used for non‑critical services like reporting, dashboards, and AI‑assisted analytics. A hybrid model is typical: local control remains independent; cloud augments, not replaces, operations."}},
-      {"@type": "Question", "name": "Which protocols are commonly used?", "acceptedAnswer": {"@type": "Answer", "text": "You will routinely encounter Modbus TCP/RTU, DNP3, IEC 60870‑5‑104, and IEC 61850 in power and substation contexts, plus vendor protocols via gateways."}},
-      {"@type": "Question", "name": "How should I approach OT cybersecurity?", "acceptedAnswer": {"@type": "Answer", "text": "Start with network segmentation and least‑privilege access, MFA for remote access, allowable‑list communications between zones, secure-by-design PLC/HMI configuration, and continuous monitoring. Align with corporate ISMS policies and relevant industry standards where applicable."}},
-      {"@type": "Question", "name": "How do I pick a system integrator?", "acceptedAnswer": {"@type": "Answer", "text": "Look for proven references in your vertical, formal QA processes, 24/7 support, certified training, and transparent documentation handover. Prefer integrators who can demonstrate OT security practices and measurement & verification for energy/water savings."}},
-      {"@type": "Question", "name": "What does a pilot look like?", "acceptedAnswer": {"@type": "Answer", "text": "A focused 6–12 week scope: 3–10 assets, telemetry to a small Panorama Suite or equivalent instance, basic dashboards/alarms, historian, and a documented security baseline. Use it to validate value, integration effort, and training needs before scaling."}}
-    ]
+    "@type": "Person",
+    "name": "Nicolas Hamel",
+    "jobTitle": "Business Development Manager Africa",
+    "worksFor": { "@type": "Organization", "name": "Codra" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Johannesburg", "addressCountry": "ZA" },
+    "email": "mailto:n.hamel@codra.fr",
+    "telephone": "+27 64 551 3251",
+    "url": "",
+    "sameAs": [
+      "https://www.linkedin.com/in/nicolas-hamel/",
+      "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/"
+    ],
+    "knowsAbout": ["SCADA","Industrial Cybersecurity","Data Historians","Energy & Water Efficiency","OT/IT Integration"]
   }
   </script>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="brand"><h1><a href="https://nicolas-hamel.github.io/nicolas-hamel-bio/">Nicolas Hamel</a></h1></div>
-      <nav>
-        <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite</a>
-        <a class="btn" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/">Home</a>
-        <a class="btn" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/" aria-label="SCADA in South Africa guide">SCADA in South Africa</a>
+    <header class="hero">
+      <div>
+        <h1>Nicolas Hamel</h1>
+        <p class="subtitle"><strong>Business Development Manager Africa @ Codra</strong> — Panorama Suite (SCADA • Historian • Cybersecurity)</p>
+        <div class="badgebar">
+          <span class="badge">Johannesburg, South Africa</span>
+          <span class="badge">Sub‑Saharan Africa</span>
+          <span class="badge">Energy &amp; Water</span>
+          <span class="badge">Industrial Cybersecurity</span>
+          <span class="badge">Data Centres</span>
+        </div>
+      </div>
+      <nav class="top" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#what">What I help deliver</a>
+        <a href="#events">Events &amp; speaking</a>
+        <a href="#links">Useful links</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>SCADA in South Africa: 2025 Guide</h1>
-      <p>Energy, water, transport, <strong>buildings</strong> and data centres — architectures, Edge‑to‑Service, redundancy, EMS/historian, OT cybersecurity, partners, and a buyer’s checklist.</p>
-    </section>
-
-    <aside class="toc" aria-label="Table of contents">
-      <h2>Contents</h2>
-      <ul>
-        <li><a href="#tl-dr">TL;DR Checklist</a></li>
-        <li><a href="#landscape">Market Landscape & Common Use‑Cases</a></li>
-        <li><a href="#architecture">Reference Architectures</a></li>
-        <li><a href="#security">OT Cybersecurity Basics</a></li>
-        <li><a href="#partners">Integrators & Delivery</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-        <li><a href="#cta">Get help / contact</a></li>
-      </ul>
-    </aside>
-
-    <section id="tl-dr">
-      <h2>TL;DR Buyer’s Checklist</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Architecture</h3>
-          <ul class="checklist">
-            <li>Define control boundaries: what must keep running without WAN?</li>
-            <li>Redundancy where it matters: servers, comms, power.</li>
-            <li>Historian/EMS sizing: tag counts, retention, reporting cadence.</li>
-            <li>Protocols/gateways: Modbus, DNP3, IEC 60870‑5‑104, IEC 61850, others.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Security</h3>
-          <ul class="checklist">
-            <li>Zone/Conduit design, allow‑list communications, MFA for remote access.</li>
-            <li>Harden PLC/HMI/servers; patching strategy without disrupting ops.</li>
-            <li>Monitoring & logging: historian + SIEM/SOC hooks.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>People & Process</h3>
-          <ul class="checklist">
-            <li>Operator training & SOPs; change management and backups.</li>
-            <li>Measurement & Verification for energy/water savings (if EMS scope).</li>
-            <li>Support SLAs: hours, response, spares, escalation.</li>
-          </ul>
-        </div>
+    <section id="contact" class="card" aria-labelledby="contact-h2">
+      <h2 id="contact-h2">Contact</h2>
+      <div class="kv">
+        <div><strong>Email:</strong> <a class="mono" href="mailto:n.hamel@codra.fr">n.hamel@codra.fr</a></div>
+        <div><strong>Phone/WhatsApp:</strong> <span class="mono">+27 64 551 3251</span></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nicolas-hamel/">linkedin.com/in/nicolas-hamel</a></div>
       </div>
     </section>
 
-    <section id="landscape">
-      <h2>Market Landscape & Common Use‑Cases</h2>
-      <p>South African SCADA deployments span municipal <strong>water & sanitation</strong>, <strong>energy</strong> (generation, distribution, metering/EMS), <strong>transport</strong> (rail, BMS at stations), and <strong>buildings & data centres</strong> (HVAC/BMS, power, alarms). Typical goals: operational visibility, alarm management, compliance reporting, energy/water efficiency, and resilient operations during network outages.</p>
-    </section>
-
-    <section id="architecture">
-      <h2>Reference Architectures</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Central Control with Local Autonomy</h3>
-          <p>Local PLC/RTU/HMI keep assets running; a central SCADA provides a unified view, alarms, historian/EMS, and engineering tools. Use redundant servers and communications for critical processes.</p>
-        </div>
-        <div class="card">
-          <h3>Edge‑to‑Service</h3>
-          <p>Securely bridge local sites to value‑added services (dashboards, reporting, analytics, mobile) without putting control in the cloud. Selectively publish data upstream; keep control local.</p>
-        </div>
-        <div class="card">
-          <h3>Protocols & Interoperability</h3>
-          <p>Plan for <span class="code">Modbus</span>, <span class="code">DNP3</span>, <span class="code">IEC 60870‑5‑104</span>, <span class="code">IEC 61850</span>, and vendor protocols. Use tested gateways where needed and document addressing, scaling, and time‑sync.</p>
-        </div>
-        <div class="card">
-          <h3>Historian & EMS</h3>
-          <p>Right‑size tag counts, archiving windows, and report schedules. For EMS, densify metering where decisions are made and retain enough history for M&amp;V.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="security">
-      <h2>OT Cybersecurity Basics</h2>
+    <section id="about" class="card" aria-labelledby="about-h2">
+      <h2 id="about-h2">About</h2>
+      <p>I’m a business development leader at <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/">Codra</a>, helping utilities, industry and data‑centre operators modernise operations with Panorama Suite across Sub‑Saharan Africa. Based in Johannesburg, I build distributor ecosystems, train partners, and support delivery to lift energy/water efficiency, cybersecurity and uptime.</p>
       <ul>
-        <li>Segment networks; define trust boundaries between IT and OT.</li>
-        <li>Harden assets (PLC/HMI/servers), enforce MFA for remote access, and use allow‑listed communications between zones.</li>
-        <li>Collect logs and telemetry; monitor for anomalies; back up configurations and test restores.</li>
-        <li>Adopt a clear change‑management process with approvals and rollback plans.</li>
+        <li><strong>Focus:</strong> energy &amp; water efficiency, cybersecurity, operational excellence</li>
+        <li><strong>Where:</strong> West, Central, East &amp; Southern Africa</li>
+        <li><strong>Background:</strong> 15+ years at Codra (engineering → R&amp;D/projects → BD)</li>
       </ul>
     </section>
 
-    <section id="partners">
-      <h2>Integrators & Delivery</h2>
-      <p>Choose partners with relevant references, formal QA, certified training, and 24/7 support. Ensure transparent documentation handover and that cybersecurity practices are embedded from design through maintenance. For energy/water, include measurement & verification (M&amp;V) in scope to quantify savings.</p>
+    <section id="what" class="card" aria-labelledby="what-h2">
+      <h2 id="what-h2">What I help deliver</h2>
+      <ul>
+        <li>Secure, unified operations with Panorama Suite (SCADA, Historian, EMS)</li>
+        <li>Distributor &amp; system integrator enablement (training, first‑line support)</li>
+        <li>Energy &amp; water monitoring and efficiency programmes</li>
+        <li>Control‑room and multi‑site deployments for utilities, industry &amp; data centres</li>
+      </ul>
     </section>
 
-    <section id="faqs">
-      <h2>FAQs</h2>
-      <p>See also the quick answers embedded in Google results when this page is shared.</p>
-      <details>
-        <summary>What does SCADA cost?</summary>
-        <p>Total cost depends on scale (assets, tags), redundancy, telemetry, and integration. Plan for licenses, integration, hardware, comms, and support. A pilot clarifies sizing before a full rollout.</p>
-      </details>
-      <details>
-        <summary>On‑prem vs cloud?</summary>
-        <p>Control remains on‑prem; cloud augments with reporting/analytics. Hybrid is common: 
-        local HMI/servers for operations, selective upstream publication for dashboards, mobile, and AI analytics.</p>
-      </details>
-      <details>
-        <summary>How long is a pilot?</summary>
-        <p>Typically 6–12 weeks for 3–10 assets, with alarms, dashboards, historian, baseline security, and a scale‑up plan.</p>
-      </details>
+    <section id="events" class="card" aria-labelledby="events-h2">
+      <h2 id="events-h2">Events &amp; speaking</h2>
+      <ul>
+        <li>Enlit Africa (Cape Town) — exhibitor/speaker</li>
+        <li>Pan‑African Data Centres (Johannesburg) — keynote/speaker</li>
+        <li>Ambition Africa, Inspire &amp; Connect East Africa — contributor</li>
+      </ul>
     </section>
 
-    <section id="cta">
-      <h2>Need help?</h2>
-      <p>I help organisations in South Africa and across Africa deploy <strong>Panorama Suite</strong> for SCADA and EMS—covering edge, redundancy, web/mobile, and OT cybersecurity. 
-      <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a> or see <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite</a>.</p>
+    <section id="links" class="card" aria-labelledby="links-h2">
+      <h2 id="links-h2">Useful links</h2>
+      <ul>
+        <li><a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/">Codra Panorama Suite</a></li>
+        <li><a href="https://codra.net/en/">Codra (official)</a></li>
+        <li><a href="https://www.linkedin.com/in/nicolas-hamel/">LinkedIn profile</a></li>
+      </ul>
     </section>
 
-    <footer>
-      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 08 Nov 2025 • This page is intentionally lightweight and SEO‑friendly (canonical, structured data, Open Graph).</p>
-    </footer>
+    <p class="footer">© <span id="year"></span> Nicolas Hamel • Lightweight, privacy‑friendly static page</p>
   </div>
+
   <script>
-    (function(){ var y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear(); })();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

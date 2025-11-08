@@ -6,7 +6,7 @@
   <title>SCADA in South Africa: 2025 Guide | Nicolas Hamel</title>
   <meta name="description" content="A practical 2025 guide to SCADA in South Africa: energy, water, transport, buildings and data centres. Architectures, Edge‑to‑Service, redundancy, historians/EMS, OT cybersecurity, and a buyer’s checklist." />
 
-  <!-- Canonical (update if your .africa domain is not yet live) -->
+  <!-- Canonical (GitHub Pages domain for now) -->
   <link rel="canonical" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/" />
 
   <!-- Open Graph / Twitter -->
@@ -56,6 +56,10 @@
     .checklist li { margin: 6px 0; }
     .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; }
 
+    .embed { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); }
+    .embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .muted { color: var(--muted); }
+
     footer { margin-top: 44px; padding-top: 14px; border-top:1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.92rem; }
   </style>
 
@@ -71,7 +75,7 @@
   }
   </script>
 
-  <!-- Structured Data: Article -->
+  <!-- Structured Data: Article + VideoObject -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -91,7 +95,18 @@
     "publisher":{
       "@type":"Person",
       "name":"Nicolas Hamel",
-      "url":"https://nicolas-hamel.africa/"
+      "url":"https://nicolas-hamel.github.io/nicolas-hamel-bio/"
+    },
+    "video": {
+      "@type": "VideoObject",
+      "name": "SCADA in South Africa — Buyer’s Guide (2025)",
+      "description": "Overview of SCADA architectures, redundancy, historian/EMS, and OT cybersecurity considerations in the South African context.",
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/SVPh73mXG70/hqdefault.jpg"
+      ],
+      "uploadDate": "2025-01-01",
+      "contentUrl": "https://www.youtube.com/watch?v=SVPh73mXG70",
+      "embedUrl": "https://www.youtube.com/embed/SVPh73mXG70"
     }
   }
   </script>
@@ -104,7 +119,7 @@
     "mainEntity": [
       {"@type": "Question", "name": "What is the typical SCADA architecture for municipal water in South Africa?", "acceptedAnswer": {"@type": "Answer", "text": "Common patterns include local PLC/RTU control with telemetry (licensed/unlicensed radio, cellular, or fibre) into a central control centre using redundant servers, a historian/EMS, and role-based HMI access for operators and engineering. Edge‑to‑Service approaches add secure remote access and selective cloud services for analytics and reporting."}},
       {"@type": "Question", "name": "Do I need cloud for SCADA?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Many deployments are fully on‑prem for control and safety, while cloud is used for non‑critical services like reporting, dashboards, and AI‑assisted analytics. A hybrid model is typical: local control remains independent; cloud augments, not replaces, operations."}},
-      {"@type": "Question", "name": "Which protocols are commonly used?", "acceptedAnswer": {"@type": "Answer", "text": "You will routinely encounter Modbus TCP/RTU, S7comm, BACnet/IP or SC, SNMP, MQTT, and IEC 61850 in power and substation contexts, plus vendor protocols via gateways."}},
+      {"@type": "Question", "name": "Which protocols are commonly used?", "acceptedAnswer": {"@type": "Answer", "text": "You will routinely encounter Modbus, S7comm, BACnet/IP or SC, SNMP, MQTT, and IEC 61850 in power and substation contexts, plus vendor protocols via gateways."}},
       {"@type": "Question", "name": "How should I approach OT cybersecurity?", "acceptedAnswer": {"@type": "Answer", "text": "Start with network segmentation and least‑privilege access, MFA for remote access, allowable‑list communications between zones, secure-by-design PLC/HMI configuration, and continuous monitoring. Align with corporate ISMS policies and relevant industry standards where applicable."}},
       {"@type": "Question", "name": "How do I pick a system integrator?", "acceptedAnswer": {"@type": "Answer", "text": "Look for proven references in your vertical, formal QA processes, 24/7 support, certified training, and transparent documentation handover. Prefer integrators who can demonstrate OT security practices and measurement & verification for energy/water savings."}},
       {"@type": "Question", "name": "What does a pilot look like?", "acceptedAnswer": {"@type": "Answer", "text": "A focused 6–12 week scope: 3–10 assets, telemetry to a small Panorama Suite or equivalent instance, basic dashboards/alarms, historian, and a documented security baseline. Use it to validate value, integration effort, and training needs before scaling."}}
@@ -120,9 +135,6 @@
         <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite</a>
         <a class="btn" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/">Home</a>
-        
-        
-        <a class="btn" href="https://nicolas-hamel.github.io/nicolas-hamel-bio/scada-south-africa/" aria-label="SCADA in South Africa guide">SCADA in South Africa</a>
       </nav>
     </header>
 
@@ -135,6 +147,7 @@
       <h2>Contents</h2>
       <ul>
         <li><a href="#tl-dr">TL;DR Checklist</a></li>
+        <li><a href="#video">Video: Buyer’s Guide</a></li>
         <li><a href="#landscape">Market Landscape & Common Use‑Cases</a></li>
         <li><a href="#architecture">Reference Architectures</a></li>
         <li><a href="#security">OT Cybersecurity Basics</a></li>
@@ -153,7 +166,7 @@
             <li>Define control boundaries: what must keep running without WAN?</li>
             <li>Redundancy where it matters: servers, comms, power.</li>
             <li>Historian/EMS sizing: tag counts, retention, reporting cadence.</li>
-            <li>Protocols/gateways: Modbus, S7comm, BACnet/IP or SC, SNMP, MQTT, IEC 61850, others.</li>
+            <li>Protocols/gateways: <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span>, others.</li>
           </ul>
         </div>
         <div class="card">
@@ -175,6 +188,23 @@
       </div>
     </section>
 
+    <section id="video">
+      <h2>Video: SCADA in South Africa — Buyer’s Guide (2025)</h2>
+      <div class="embed">
+        <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="SCADA in South Africa — Buyer’s Guide (2025)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="muted">Prefer reading? See the <a href="#tl-dr">TL;DR</a> and <a href="#faqs">FAQs</a> below. We can add a full transcript here for SEO/AI once needed.</p>
+      <details>
+        <summary><strong>Key takeaways (summary)</strong></summary>
+        <ul>
+          <li>Keep control local; use Edge‑to‑Service for reporting/analytics.</li>
+          <li>Design redundancy where it matters (servers, comms, power).</li>
+          <li>Right‑size historian/EMS and densify metering for decisions and M&amp;V.</li>
+          <li>Segment OT/IT, enforce MFA for remote access, and allow‑list communications.</li>
+        </ul>
+      </details>
+    </section>
+
     <section id="landscape">
       <h2>Market Landscape & Common Use‑Cases</h2>
       <p>South African SCADA deployments span municipal <strong>water & sanitation</strong>, <strong>energy</strong> (generation, distribution, metering/EMS), <strong>transport</strong> (rail, BMS at stations), and <strong>buildings & data centres</strong> (HVAC/BMS, power, alarms). Typical goals: operational visibility, alarm management, compliance reporting, energy/water efficiency, and resilient operations during network outages.</p>
@@ -193,7 +223,7 @@
         </div>
         <div class="card">
           <h3>Protocols & Interoperability</h3>
-          <p>Plan for <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span>, and vendor protocols. Use tested gateways where needed and document addressing, scaling, and time‑sync.</p>
+          <p>Plan for <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, and <span class="code">IEC 61850</span>. Use tested gateways where needed and document addressing, scaling, and time‑sync.</p>
         </div>
         <div class="card">
           <h3>Historian & EMS</h3>

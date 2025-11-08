@@ -104,7 +104,7 @@
     "mainEntity": [
       {"@type": "Question", "name": "What is the typical SCADA architecture for municipal water in South Africa?", "acceptedAnswer": {"@type": "Answer", "text": "Common patterns include local PLC/RTU control with telemetry (licensed/unlicensed radio, cellular, or fibre) into a central control centre using redundant servers, a historian/EMS, and role-based HMI access for operators and engineering. Edge‑to‑Service approaches add secure remote access and selective cloud services for analytics and reporting."}},
       {"@type": "Question", "name": "Do I need cloud for SCADA?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Many deployments are fully on‑prem for control and safety, while cloud is used for non‑critical services like reporting, dashboards, and AI‑assisted analytics. A hybrid model is typical: local control remains independent; cloud augments, not replaces, operations."}},
-      {"@type": "Question", "name": "Which protocols are commonly used?", "acceptedAnswer": {"@type": "Answer", "text": "You will routinely encounter Modbus TCP/RTU, DNP3, IEC 60870‑5‑104, and IEC 61850 in power and substation contexts, plus vendor protocols via gateways."}},
+      {"@type": "Question", "name": "Which protocols are commonly used?", "acceptedAnswer": {"@type": "Answer", "text": "You will routinely encounter Modbus TCP/RTU, S7comm, BACnet/IP or SC, SNMP, MQTT, and IEC 61850 in power and substation contexts, plus vendor protocols via gateways."}},
       {"@type": "Question", "name": "How should I approach OT cybersecurity?", "acceptedAnswer": {"@type": "Answer", "text": "Start with network segmentation and least‑privilege access, MFA for remote access, allowable‑list communications between zones, secure-by-design PLC/HMI configuration, and continuous monitoring. Align with corporate ISMS policies and relevant industry standards where applicable."}},
       {"@type": "Question", "name": "How do I pick a system integrator?", "acceptedAnswer": {"@type": "Answer", "text": "Look for proven references in your vertical, formal QA processes, 24/7 support, certified training, and transparent documentation handover. Prefer integrators who can demonstrate OT security practices and measurement & verification for energy/water savings."}},
       {"@type": "Question", "name": "What does a pilot look like?", "acceptedAnswer": {"@type": "Answer", "text": "A focused 6–12 week scope: 3–10 assets, telemetry to a small Panorama Suite or equivalent instance, basic dashboards/alarms, historian, and a documented security baseline. Use it to validate value, integration effort, and training needs before scaling."}}
@@ -152,7 +152,7 @@
             <li>Define control boundaries: what must keep running without WAN?</li>
             <li>Redundancy where it matters: servers, comms, power.</li>
             <li>Historian/EMS sizing: tag counts, retention, reporting cadence.</li>
-            <li>Protocols/gateways: Modbus, DNP3, IEC 60870‑5‑104, IEC 61850, others.</li>
+            <li>Protocols/gateways: Modbus, S7comm, BACnet/IP or SC, SNMP, MQTT, IEC 61850, others.</li>
           </ul>
         </div>
         <div class="card">

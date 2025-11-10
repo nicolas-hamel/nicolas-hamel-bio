@@ -136,8 +136,133 @@
       <p>This <strong>SCADA South Africa</strong> guide covers architectures, Edge-to-Service, redundancy, EMS/historian, OT cybersecurity, partners, and a buyer’s checklist for projects in energy, water, transport, buildings and data centres.</p>
     </section>
 
-    <!-- (rest of body unchanged from your version) -->
-    <!-- ... keep the sections TL;DR, video, landscape, architecture, security, partners, FAQs, CTA, footer ... -->
+<aside class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ul>
+    <li><a href="#tl-dr">TL;DR Checklist</a></li>
+    <li><a href="#video">Video: Buyer’s Guide</a></li>
+    <li><a href="#landscape">Market Landscape & Common Use‑Cases</a></li>
+    <li><a href="#architecture">Reference Architectures</a></li>
+    <li><a href="#security">OT Cybersecurity Basics</a></li>
+    <li><a href="#partners">Integrators & Delivery</a></li>
+    <li><a href="#faqs">FAQs</a></li>
+    <li><a href="#cta">Get help / contact</a></li>
+  </ul>
+</aside>
+
+<section id="tl-dr">
+  <h2>TL;DR Buyer’s Checklist</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Architecture</h3>
+      <ul class="checklist">
+        <li>Define control boundaries: what must keep running without WAN?</li>
+        <li>Redundancy where it matters: servers, comms, power.</li>
+        <li>Historian/EMS sizing: tag counts, retention, reporting cadence.</li>
+        <li>Protocols/gateways: <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span>, others.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Security</h3>
+      <ul class="checklist">
+        <li>Zone/Conduit design, allow‑list communications, MFA for remote access.</li>
+        <li>Harden PLC/HMI/servers; patching strategy without disrupting ops.</li>
+        <li>Monitoring & logging: historian + SIEM/SOC hooks.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>People & Process</h3>
+      <ul class="checklist">
+        <li>Operator training & SOPs; change management and backups.</li>
+        <li>Measurement & Verification for energy/water savings (if EMS scope).</li>
+        <li>Support SLAs: hours, response, spares, escalation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <h2>Video: SCADA in South Africa — Buyer’s Guide (2025)</h2>
+  <div class="embed">
+    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="SCADA in South Africa — Buyer’s Guide (2025)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <p class="muted">Prefer reading? See the <a href="#tl-dr">TL;DR</a> and <a href="#faqs">FAQs</a> below.</p>
+  <details>
+    <summary><strong>Key takeaways (summary)</strong></summary>
+    <ul>
+      <li>Keep control local; use Edge‑to‑Service for reporting/analytics.</li>
+      <li>Design redundancy where it matters (servers, comms, power).</li>
+      <li>Right‑size historian/EMS and densify metering for decisions and M&amp;V.</li>
+      <li>Segment OT/IT, enforce MFA for remote access, and allow‑list communications.</li>
+    </ul>
+  </details>
+</section>
+
+<section id="landscape">
+  <h2>Market Landscape & Common Use‑Cases</h2>
+  <p>South African SCADA deployments span municipal <strong>water & sanitation</strong>, <strong>energy</strong> (generation, distribution, metering/EMS), <strong>transport</strong> (rail, BMS at stations), and <strong>buildings & data centres</strong> (HVAC/BMS, power, alarms). Typical goals: operational visibility, alarm management, compliance reporting, energy/water efficiency, and resilient operations during network outages.</p>
+</section>
+
+<section id="architecture">
+  <h2>Reference Architectures</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Central Control with Local Autonomy</h3>
+      <p>Local PLC/RTU/HMI keep assets running; a central SCADA provides a unified view, alarms, historian/EMS, and engineering tools. Use redundant servers and communications for critical processes.</p>
+    </div>
+    <div class="card">
+      <h3>Edge‑to‑Service</h3>
+      <p>Securely bridge local sites to value‑added services (dashboards, reporting, analytics, mobile) without putting control in the cloud. Selectively publish data upstream; keep control local.</p>
+    </div>
+    <div class="card">
+      <h3>Protocols & Interoperability</h3>
+      <p>Plan for <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, and <span class="code">IEC 61850</span>. Use tested gateways where needed and document addressing, scaling, and time‑sync.</p>
+    </div>
+    <div class="card">
+      <h3>Historian & EMS</h3>
+      <p>Right‑size tag counts, archiving windows, and report schedules. For EMS, densify metering where decisions are made and retain enough history for M&amp;V.</p>
+    </div>
+  </div>
+</section>
+
+<section id="security">
+  <h2>OT Cybersecurity Basics</h2>
+  <ul>
+    <li>Segment networks; define trust boundaries between IT and OT.</li>
+    <li>Harden assets (PLC/HMI/servers), enforce MFA for remote access, and use allow‑listed communications between zones.</li>
+    <li>Collect logs and telemetry; monitor for anomalies; back up configurations and test restores.</li>
+    <li>Adopt a clear change‑management process with approvals and rollback plans.</li>
+  </ul>
+</section>
+
+<section id="partners">
+  <h2>Integrators & Delivery</h2>
+  <p>Choose partners with relevant references, formal QA, certified training, and 24/7 support. Ensure transparent documentation handover and that cybersecurity practices are embedded from design through maintenance. For energy/water, include measurement & verification (M&amp;V) in scope to quantify savings.</p>
+</section>
+
+<section id="faqs">
+  <h2>FAQs</h2>
+  <p>See also the quick answers embedded in Google results when this page is shared.</p>
+  <details>
+    <summary>What does SCADA cost?</summary>
+    <p>Total cost depends on scale (assets, tags), redundancy, telemetry, and integration. Plan for licenses, integration, hardware, comms, and support. A pilot clarifies sizing before a full rollout.</p>
+  </details>
+  <details>
+    <summary>On‑prem vs cloud?</summary>
+    <p>Control remains on‑prem; cloud augments with reporting/analytics. Hybrid is common: 
+    local HMI/servers for operations, selective upstream publication for dashboards, mobile, and AI analytics.</p>
+  </details>
+  <details>
+    <summary>How long is a pilot?</summary>
+    <p>Typically 6–12 weeks for 3–10 assets, with alarms, dashboards, historian, baseline security, and a scale‑up plan.</p>
+  </details>
+</section>
+
+<section id="cta">
+  <h2>Need help?</h2>
+  <p>I help organisations in South Africa and across Africa deploy <strong>Panorama Suite</strong> for SCADA and EMS—covering edge, redundancy, web/mobile, and OT cybersecurity. 
+  <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a> or see <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite</a>.</p>
+</section>
 
     <footer>
       <p>© <span id="y"></span> Nicolas Hamel • Last updated: 08 Nov 2025</p>

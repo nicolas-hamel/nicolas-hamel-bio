@@ -1,1 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance | Nicolas Hamel</title>
+  <meta name="description" content="Practical guide to nuclear SCADA cybersecurity in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance." />
 
+  <!-- Canonical (your .africa domain) -->
+  <link rel="canonical" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
+  <meta property="og:description" content="A cybersecurity-first playbook for nuclear SCADA in South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
+  <meta property="og:url" content="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
+  <meta property="og:image" content="https://nicolas-hamel.africa/assets/og/nuclear-scada-cyber.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
+  <meta name="twitter:description" content="A cybersecurity-first playbook for nuclear SCADA in South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/assets/og/nuclear-scada-cyber.jpg" />
+
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SCADA for Nuclear in South Africa & Africa — Cybersecurity with ANSSI Guidance",
+    "description": "Practical guide to nuclear SCADA cybersecurity in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance.",
+    "author": {
+      "@type": "Person",
+      "name": "Nicolas Hamel"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
+    },
+    "inLanguage": "en",
+    "dateModified": "2025-11-11"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1020;          /* deep navy */
+      --fg:#e9eef7;          /* near-white text */
+      --muted:#a9b4c7;       /* secondary text */
+      --brand:#3aa6ff;       /* accent */
+      --brand-2:#5cf2c7;     /* accent 2 */
+      --card:#121933;
+      --border:rgba(255,255,255,.08);
+      --good:#39d353;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky;top:0;backdrop-filter:saturate(160%) blur(8px);
+      background:linear-gradient(180deg, rgba(11,16,32,.9), rgba(11,16,32,.5));
+      border-bottom:1px solid var(--border);
+      z-index:10
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .nav a.logo{font-weight:700;letter-spacing:.3px;color:#fff}
+    .nav .cta{display:flex;gap:10px}
+    .btn{display:inline-block;border:1px solid var(--border);padding:10px 14px;border-radius:999px;background:transparent;color:var(--fg)}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001027;border-color:transparent;font-weight:600}
+
+    .hero{position:relative;overflow:hidden}
+    .hero .wrap{padding:56px 20px 28px}
+    .title{font-size: clamp(28px, 5vw, 46px); line-height:1.15; font-weight:800; letter-spacing:.2px}
+    .subtitle{color:var(--muted);font-size: clamp(16px, 2.5vw, 19px)}
+    .grid{display:grid;gap:22px}
+    @media(min-width:960px){.grid.two{grid-template-columns:1.2fr .8fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:16px;padding:20px}
+    h2{font-size: clamp(22px, 3.5vw, 30px);line-height:1.25;margin:24px 0 8px}
+    h3{font-size: clamp(19px, 2.8vw, 22px);margin:18px 0 6px}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 20px}
+    li+li{margin-top:6px}
+
+    .toc ol{margin:0;padding-left:20px}
+    .toc li{margin:6px 0}
+
+    .footer{border-top:1px solid var(--border);margin-top:40px}
+    .footer .wrap{padding:28px 20px;color:var(--muted);font-size:14px}
+
+    /* Section anchors */
+    section{scroll-margin-top:80px}
+
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);font-size:12px;color:var(--muted)}
+    .check{color:var(--good);margin-right:6px}
+    .callout{border-left:3px solid var(--brand);padding-left:14px;color:var(--muted)}
+
+    /* Code-like term */
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="/">Nicolas Hamel</a>
+      <nav class="cta">
+        <a class="btn" href="#toc">Contents</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/nicolas-hamel/" target="_blank" rel="noopener">Speak to an expert</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap grid two">
+        <div>
+          <h1 id="page-title" class="title">SCADA for Nuclear in South Africa &amp; Africa — A Cybersecurity‑First Playbook <span class="badge">with ANSSI guidance</span></h1>
+          <p class="subtitle">A practical guide to secure, resilient nuclear SCADA: governance, <span class="mono">IEC 62443</span> zones &amp; conduits, NNR &amp; IAEA expectations, and ANSSI’s ICS best practices.</p>
+        </div>
+        <aside class="card">
+          <h3>Highlights</h3>
+          <ul>
+            <li><strong>Defense‑in‑depth</strong> without breaking determinism</li>
+            <li><strong>Zones &amp; conduits</strong> aligned to <span class="mono">IEC 62443</span></li>
+            <li><strong>Program &amp; evidence</strong> for NNR/IAEA oversight</li>
+            <li><strong>ANSSI ICS guide</strong> for pragmatic deployment</li>
+          </ul>
+          <p class="callout">Last updated: 11 Nov 2025 • Author: Nicolas Hamel</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="toc" class="wrap card toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">Contents</h2>
+      <ol>
+        <li><a href="#why">Why this matters now</a></li>
+        <li><a href="#landscape">Regulatory &amp; standards landscape</a></li>
+        <li><a href="#nuclear-specific">What makes nuclear SCADA different</a></li>
+        <li><a href="#threats">OT threat picture</a></li>
+        <li><a href="#architecture">Reference architecture</a></li>
+        <li><a href="#controls">12 controls that work</a></li>
+        <li><a href="#governance">Program &amp; governance</a></li>
+        <li><a href="#anssi">Where ANSSI fits</a></li>
+        <li><a href="#roadmap">90‑day implementation roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">How we can help</a></li>
+      </ol>
+    </section>
+
+    <section id="why" class="wrap">
+      <h2>Why this matters now</h2>
+      <p>Nuclear facilities depend on deterministic, high‑availability control systems. A cyber incident that degrades availability, integrity, or operator trust can escalate into safety risk, production loss, and regulatory non‑compliance. Across Africa, utilities and EPCs are modernizing OT, extending plant lifetimes, and planning for future capacity—making robust OT cybersecurity essential.</p>
+    </section>
+
+    <section id="landscape" class="wrap">
+      <h2>The regulatory &amp; standards landscape (Africa / South Africa)</h2>
+      <ul>
+        <li><strong>National Nuclear Regulator (NNR, South Africa)</strong> — Expects a structured <em>Computer Security</em> program, defense‑in‑depth, and protection of critical digital assets across the facility lifecycle.</li>
+        <li><strong>IAEA Nuclear Security</strong> — Guidance for computer and information security frames governance, graded approach, and continuous improvement across safety‑significant digital assets.</li>
+        <li><strong>IEC 62443</strong> — A practical, widely adopted OT cybersecurity standard. <em>Zones &amp; conduits</em> enable segmentation and security levels tailored to the risk.</li>
+        <li><strong>ANSSI (France)</strong> — The national cybersecurity agency’s <em>Cybersecurity for Industrial Control Systems</em> guide provides a pragmatic deployment method, management commitment, and OT‑specific practices valuable to African operators and French‑linked ecosystems.</li>
+      </ul>
+      <p class="callout">References: <a href="https://www.nnr.co.za/" target="_blank" rel="noopener">NNR</a> · <a href="https://www.iaea.org/" target="_blank" rel="noopener">IAEA</a> · <a href="https://www.iec.ch/" target="_blank" rel="noopener">IEC</a> · <a href="https://www.ssi.gouv.fr/en/" target="_blank" rel="noopener">ANSSI</a></p>
+    </section>
+
+    <section id="nuclear-specific" class="wrap">
+      <h2>What makes nuclear SCADA different</h2>
+      <ol>
+        <li><strong>Safety is paramount:</strong> security controls must not compromise deterministic operation, trip setpoints, or human‑machine interface reliability.</li>
+        <li><strong>Long lifecycles &amp; heterogeneity:</strong> mixed generations of PLC/DCS/SIS, patching constraints, and legacy protocols—so compensating controls matter.</li>
+        <li><strong>Tight regulation:</strong> regulators expect a programmatic approach, defense‑in‑depth, and protection of <em>critical digital assets (CDAs)</em>.</li>
+      </ol>
+    </section>
+
+    <section id="threats" class="wrap">
+      <h2>OT threats we actually see</h2>
+      <ul>
+        <li><strong>Ransomware spillover</strong> from IT to OT via shared services or unmanaged remote access.</li>
+        <li><strong>Supply‑chain &amp; maintenance laptop risks</strong> (engineering stations and media as initial access).</li>
+        <li><strong>Protocol misuse</strong> (legacy field protocols without native authentication).</li>
+        <li><strong>Insider &amp; third‑party exposure</strong> (contractor accounts, weak onboarding/offboarding).</li>
+      </ul>
+    </section>
+
+    <section id="architecture" class="wrap">
+      <h2>Reference architecture aligned to IEC 62443</h2>
+      <div class="grid two">
+        <div>
+          <h3>1) Segmentation with zones &amp; conduits</h3>
+          <ul>
+            <li>Separate <em>Enterprise IT</em>, <em>Site DMZ</em>, <em>Plant DMZ</em>, <em>Operations (SCADA/DCS)</em>, and <em>SIS</em> into distinct zones.</li>
+            <li>Use monitored conduits (firewalls, data diodes, brokered services) with strict allow‑lists and protocol break‑points.</li>
+          </ul>
+
+          <h3>2) Plant &amp; Operations DMZs</h3>
+          <ul>
+            <li>Terminate remote access, patch/content staging, anti‑malware updates, and historian replication in DMZ layers—not directly in control zones.</li>
+          </ul>
+
+          <h3>3) SIS isolation</h3>
+          <ul>
+            <li>Physically/logically isolate Safety Instrumented Systems; prefer one‑way telemetry; avoid shared admin paths with BPCS/SCADA.</li>
+          </ul>
+
+          <h3>4) Deterministic communications</h3>
+          <ul>
+            <li>Strict allow‑listing at L3/L4 and deep inspection for industrial protocols where feasible; time‑bounded remote sessions.</li>
+          </ul>
+
+          <h3>5) Trusted time &amp; logging</h3>
+          <ul>
+            <li>Signed, centralized logs and secure time sources for forensics and compliance evidence.</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Quick wins</h3>
+          <ul>
+            <li><span class="check">✔</span>Lock down USB/media; scan in a staging zone</li>
+            <li><span class="check">✔</span>Enforce MFA and just‑in‑time remote access</li>
+            <li><span class="check">✔</span>Harden engineering workstations &amp; HMIs</li>
+            <li><span class="check">✔</span>Establish offline, tested backups</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="controls" class="wrap">
+      <h2>12 cybersecurity controls that work in nuclear SCADA</h2>
+      <ol>
+        <li><strong>Asset inventory &amp; CDA identification</strong></li>
+        <li><strong>Hardening baselines</strong> for servers/HMIs/PLCs/engineering stations</li>
+        <li><strong>Strict RBAC &amp; least privilege</strong>; MFA for elevated and remote tasks</li>
+        <li><strong>Application allow‑listing</strong> and controlled removable media</li>
+        <li><strong>Patch &amp; vulnerability management</strong> with maintenance windows and compensating controls</li>
+        <li><strong>Network segmentation</strong> with IEC 62443 zones/conduits and DPI firewalls</li>
+        <li><strong>Secure remote access</strong> via jump hosts and session recording</li>
+        <li><strong>Change &amp; configuration management</strong> for logic, graphics, and setpoints</li>
+        <li><strong>Backups &amp; golden images</strong>—offline, tested, tamper‑evident</li>
+        <li><strong>OT anomaly detection</strong> integrated with a SOC</li>
+        <li><strong>Incident response runbooks</strong> coordinated with safety procedures (graded)</li>
+        <li><strong>Competency &amp; drills</strong> for operators, maintainers, and third parties</li>
+      </ol>
+    </section>
+
+    <section id="governance" class="wrap">
+      <h2>Program &amp; governance model (what regulators expect)</h2>
+      <ul>
+        <li><strong>Computer Security Program</strong> owned by plant leadership; scope includes all CDAs, interfaces, and contractors.</li>
+        <li><strong>Risk‑based, graded approach</strong> mapped to plant safety significance.</li>
+        <li><strong>Periodic reviews &amp; evidence</strong> (audits, tests, exercises) integrated with plant safety management.</li>
+      </ul>
+    </section>
+
+    <section id="anssi" class="wrap">
+      <h2>Where ANSSI fits (and why it helps Africa)</h2>
+      <p>France’s <strong>ANSSI</strong> guide for Industrial Control Systems is a practical handbook used by utilities and OEMs. It stresses executive sponsorship, a structured deployment method, and OT‑specific compensating controls—highly applicable to African operators modernizing legacy fleets or planning new build.</p>
+      <p class="callout">Read more: <a href="https://www.ssi.gouv.fr/en/guide/cybersecurity-for-industrial-control-systems/" target="_blank" rel="noopener">ANSSI — Cybersecurity for Industrial Control Systems</a></p>
+    </section>
+
+    <section id="roadmap" class="wrap">
+      <h2>Implementation roadmap (first 90 days)</h2>
+      <div class="grid two">
+        <div>
+          <h3>Weeks 0–4 — Baseline &amp; gaps</h3>
+          <ul>
+            <li>Asset inventory, CDA mapping, network walk‑downs</li>
+            <li>Quick wins: USB lockdown, remote access hardening</li>
+          </ul>
+
+          <h3>Weeks 5–8 — Reference architecture</h3>
+          <ul>
+            <li>Zone/conduit design, DMZs, logging/time, backup scheme</li>
+            <li>Define SOC integration and monitoring scope</li>
+          </ul>
+
+          <h3>Weeks 9–12 — Hardening &amp; evidence</h3>
+          <ul>
+            <li>Apply baselines &amp; allow‑listing</li>
+            <li>Test disaster‑recovery and run a tabletop incident drill</li>
+            <li>Compile a compliance pack mapped to regulatory expectations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="wrap">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do we need IEC 62443 certification to comply?</summary>
+        <p>Not necessarily. Regulators expect a risk‑based program and defense‑in‑depth. IEC 62443 provides practical methods (zones, conduits, security levels) that help meet those expectations.</p>
+      </details>
+      <details>
+        <summary>Can security controls disrupt deterministic operations?</summary>
+        <p>Controls must be engineered for OT: staged updates, protocol break‑points, and allow‑listing reduce risk while protecting availability and integrity.</p>
+      </details>
+      <details>
+        <summary>Where should remote access terminate?</summary>
+        <p>At DMZ jump hosts with strong authentication, least privilege, and session recording—never directly inside control zones.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="wrap card">
+      <h2>How we can help</h2>
+      <ul>
+        <li>Architecture &amp; gap assessments mapped to NNR/IAEA and IEC 62443</li>
+        <li>Design &amp; hardening for SCADA/Historian/EMS (zones &amp; conduits, DMZs, SIS isolation)</li>
+        <li>Evidence packs for audits (procedures, baselines, logging, drills)</li>
+        <li>Operator training rooted in ANSSI and IAEA principles</li>
+      </ul>
+      <p><strong>Speak to an expert:</strong> <a href="https://www.linkedin.com/in/nicolas-hamel/" target="_blank" rel="noopener">linkedin.com/in/nicolas-hamel</a> <!-- TODO: replace with your contact email or contact page URL --></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Nicolas Hamel. Johannesburg, South Africa.</p>
+      <p class="muted">This page is informational and non‑regulatory. Always consult your site’s regulator and security authorities.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Keep the year fresh
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

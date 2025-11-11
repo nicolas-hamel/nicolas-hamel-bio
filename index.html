@@ -110,6 +110,14 @@
     "url": "https://nicolas-hamel.africa/"
   }
   </script>
+  <script>
+  (function () {
+    if (location.hostname === "nicolas-hamel.github.io") {
+      var to = "https://nicolas-hamel.africa" + location.pathname + location.search + location.hash;
+      location.replace(to);
+    }
+  })();
+</script>
 </head>
 <body>
   <div class="wrap">

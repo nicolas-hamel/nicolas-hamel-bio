@@ -81,6 +81,8 @@
 
     .footer{border-top:1px solid var(--border);margin-top:40px}
     .footer .wrap{padding:28px 20px;color:var(--muted);font-size:14px}
+    .skip-link{position:absolute;left:-999px;top:12px;background:var(--card);color:var(--fg);padding:8px 12px;border-radius:999px;border:1px solid var(--border);z-index:10}
+    .skip-link:focus{left:12px}
 
     /* Section anchors */
     section{scroll-margin-top:80px}
@@ -94,6 +96,7 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="wrap">
       <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
@@ -104,7 +107,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div class="wrap grid two">
         <div>

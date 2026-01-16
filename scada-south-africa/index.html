@@ -56,6 +56,8 @@
     .embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     .muted { color: var(--muted); }
     footer { margin-top: 44px; padding-top: 14px; border-top:1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.92rem; }
+    .skip-link { position:absolute; left:-999px; top:12px; background:var(--chip); color:var(--ink); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.08); z-index:10; }
+    .skip-link:focus { left:12px; }
   </style>
 
   <!-- Structured Data: BreadcrumbList -->
@@ -130,7 +132,9 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="wrap">
+    <main id="main">
     <header>
       <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
       <nav>
@@ -277,6 +281,7 @@
     <footer>
       <p>© <span id="y"></span> Nicolas Hamel • Last updated: 16 Jan 2026.</p>
     </footer>
+    </main>
   </div>
   <script>
     (function(){ var y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear(); })();

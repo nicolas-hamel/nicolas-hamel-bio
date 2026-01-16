@@ -67,6 +67,8 @@
     .card p { margin: 0; color: var(--muted); font-size:0.98rem; }
 
     footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.9rem; }
+    .skip-link { position:absolute; left:-999px; top:12px; background:var(--chip); color:var(--ink); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.08); z-index:10; }
+    .skip-link:focus { left:12px; }
   </style>
 
   <!-- Structured Data: Person -->
@@ -124,7 +126,9 @@
 </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="wrap">
+    <main id="main">
     <header>
       <div class="brand" aria-label="Site identity">
         <div class="avatar" aria-hidden="true">NH</div>
@@ -169,6 +173,7 @@
     <footer>
       <p>© <span id="y"></span> Nicolas Hamel • Last updated: 16 Jan 2026.</p>
     </footer>
+    </main>
   </div>
 
   <script>

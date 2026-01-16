@@ -18,7 +18,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
   <meta name="twitter:description" content="A cybersecurity-first playbook for nuclear SCADA in South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
-  <meta name="twitter:image" content="https://nicolas-hamel.africa/assets/og/nuclear-scada-cyber.jpg" />
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
 
   <!-- Schema.org Article -->
   <script type="application/ld+json">
@@ -36,7 +36,7 @@
       "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
     },
     "inLanguage": "en",
-    "dateModified": "2025-11-11"
+    "dateModified": "2026-01-16"
   }
   </script>
 
@@ -55,18 +55,12 @@
     html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height:1.6}
     a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
-    header{
-      position:sticky;top:0;backdrop-filter:saturate(160%) blur(8px);
-      background:linear-gradient(180deg, rgba(11,16,32,.9), rgba(11,16,32,.5));
-      border-bottom:1px solid var(--border);
-      z-index:10
-    }
+    header{border-bottom:1px solid var(--border)}
     .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .nav a.logo{font-weight:700;letter-spacing:.3px;color:#fff}
-    .nav .cta{display:flex;gap:10px}
-    .btn{display:inline-block;border:1px solid var(--border);padding:10px 14px;border-radius:999px;background:transparent;color:var(--fg)}
-    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001027;border-color:transparent;font-weight:600}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px 10px}
+    .brand h1{font-size:1.2rem;margin:0;color:var(--muted);font-weight:600}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--card);color:var(--fg);border:1px solid var(--border);font-weight:600}
 
     .hero{position:relative;overflow:hidden}
     .hero .wrap{padding:56px 20px 28px}
@@ -101,11 +95,11 @@
 </head>
 <body>
   <header>
-    <div class="wrap nav">
-      <a class="logo" href="/">Nicolas Hamel</a>
-      <nav class="cta">
+    <div class="wrap">
+      <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
+      <nav>
         <a class="btn" href="#toc">Contents</a>
-        <a class="btn" href="/">Home</a>
+        <a class="btn" href="https://nicolas-hamel.africa/">Home</a>
       </nav>
     </div>
   </header>
@@ -125,7 +119,7 @@
             <li><strong>Program &amp; evidence</strong> for NNR/IAEA oversight</li>
             <li><strong>ANSSI ICS guide</strong> for pragmatic deployment</li>
           </ul>
-          <p class="callout">Last updated: 11 Nov 2025 • Author: Nicolas Hamel</p>
+          <p class="callout">Last updated: 16 Jan 2026 • Author: Nicolas Hamel</p>
         </aside>
       </div>
     </section>
@@ -302,7 +296,7 @@
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="year"></span> Nicolas Hamel. Johannesburg, South Africa.</p>
+      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, South Africa • Last updated: 16 Jan 2026.</p>
       <p class="muted">This page is informational and non‑regulatory. Always consult your site’s regulator and security authorities.</p>
     </div>
   </footer>

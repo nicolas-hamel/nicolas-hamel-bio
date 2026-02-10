@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SCADA in South Africa: 2025 Guide | Nicolas Hamel</title>
-  <meta name="description" content="A practical 2025 guide to SCADA in South Africa: energy, water, transport, buildings and data centres. Architectures, Edge-to-Service, redundancy, historians/EMS, OT cybersecurity, and a buyer’s checklist." />
+  <title>SCADA in South Africa: 2026 Guide | Nicolas Hamel</title>
+  <meta name="description" content="A practical 2026 guide to SCADA in South Africa: energy, water, transport, buildings and data centres. Architectures, Edge-to-Service, redundancy, historians/EMS, OT cybersecurity, and a buyer’s checklist." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
   <!-- Canonical (custom domain) -->
   <link rel="canonical" href="https://nicolas-hamel.africa/scada-south-africa/" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="SCADA in South Africa: 2025 Guide | Nicolas Hamel" />
+  <meta property="og:title" content="SCADA in South Africa: 2026 Guide | Nicolas Hamel" />
   <meta property="og:description" content="Energy, water, transport, buildings and data centres in SA: architectures, redundancy, EMS/historian, OT cybersecurity, buyer’s checklist, FAQs." />
   <meta property="og:url" content="https://nicolas-hamel.africa/scada-south-africa/" />
   <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
@@ -19,7 +20,7 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Portrait of Nicolas Hamel – SCADA & EMS at Codra, Africa" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SCADA in South Africa: 2025 Guide | Nicolas Hamel" />
+  <meta name="twitter:title" content="SCADA in South Africa: 2026 Guide | Nicolas Hamel" />
   <meta name="twitter:description" content="Practical guide to SCADA in South Africa: architectures, EMS/historian, OT security, partners, and a buyer’s checklist." />
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta name="twitter:image:alt" content="Portrait of Nicolas Hamel – SCADA & EMS at Codra, Africa" />
@@ -56,6 +57,8 @@
     .embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     .muted { color: var(--muted); }
     footer { margin-top: 44px; padding-top: 14px; border-top:1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.92rem; }
+    .skip-link { position:absolute; left:-999px; top:12px; background:var(--chip); color:var(--ink); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.08); z-index:10; }
+    .skip-link:focus { left:12px; }
   </style>
 
   <!-- Structured Data: BreadcrumbList -->
@@ -75,15 +78,15 @@
   {
     "@context":"https://schema.org",
     "@type":"Article",
-    "headline":"SCADA in South Africa: 2025 Guide",
-    "description":"A practical 2025 guide to SCADA in South Africa across energy, water, transport, buildings and data centres—with architectures, redundancy, EMS/historian, OT cybersecurity, and a buyer’s checklist.",
+    "headline":"SCADA in South Africa: 2026 Guide",
+    "description":"A practical 2026 guide to SCADA in South Africa across energy, water, transport, buildings and data centres—with architectures, redundancy, EMS/historian, OT cybersecurity, and a buyer’s checklist.",
     "author":{
       "@type":"Person",
       "@id":"https://nicolas-hamel.africa/#identity",
       "name":"Nicolas Hamel"
     },
     "datePublished":"2025-11-08",
-    "dateModified":"2025-11-08",
+    "dateModified":"2026-01-16",
     "mainEntityOfPage":"https://nicolas-hamel.africa/scada-south-africa/",
     "image":"https://nicolas-hamel.africa/og-image.png",
     "keywords":["SCADA South Africa","EMS","Historian","OT cybersecurity","Edge-to-Service","Panorama Suite"],
@@ -94,7 +97,7 @@
     },
     "video": {
       "@type": "VideoObject",
-      "name": "SCADA in South Africa — Buyer’s Guide (2025)",
+      "name": "SCADA in South Africa — Buyer’s Guide (2026)",
       "description": "Overview of SCADA architectures, redundancy, historian/EMS, and OT cybersecurity considerations in the South African context.",
       "thumbnailUrl": ["https://i.ytimg.com/vi/SVPh73mXG70/hqdefault.jpg"],
       "uploadDate": "2025-11-08T15:00:00+02:00",
@@ -130,10 +133,13 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="wrap">
+    <main id="main">
     <header>
       <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
-      <nav>
+      <nav aria-label="Primary">
+        <a class="btn" href="#toc">Contents</a>
         <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite</a>
         <a class="btn" href="https://nicolas-hamel.africa/">Home</a>
@@ -141,11 +147,11 @@
     </header>
 
     <section class="hero">
-      <h1>SCADA in South Africa: 2025 Guide</h1>
+      <h1>SCADA in South Africa: 2026 Guide</h1>
       <p>This <strong>SCADA South Africa</strong> guide covers architectures, Edge-to-Service, redundancy, EMS/historian, OT cybersecurity, partners, and a buyer’s checklist for projects in energy, water, transport, buildings and data centres.</p>
     </section>
 
-<aside class="toc" aria-label="Table of contents">
+<aside id="toc" class="toc" aria-label="Table of contents">
   <h2>Contents</h2>
   <ul>
     <li><a href="#tl-dr">TL;DR Checklist</a></li>
@@ -191,9 +197,9 @@
 </section>
 
 <section id="video">
-  <h2>Video: SCADA in South Africa — Buyer’s Guide (2025)</h2>
+  <h2>Video: SCADA in South Africa — Buyer’s Guide (2026)</h2>
   <div class="embed">
-    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="SCADA in South Africa — Buyer’s Guide (2025)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="SCADA in South Africa — Buyer’s Guide (2026)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
   </div>
   <p class="muted">Prefer reading? See the <a href="#tl-dr">TL;DR</a> and <a href="#faqs">FAQs</a> below.</p>
   <details>
@@ -236,6 +242,7 @@
 
 <section id="security">
   <h2>OT Cybersecurity Basics</h2>
+  <p>For regulated and high-consequence contexts, see the companion guide on <a href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/">SCADA for Nuclear in South Africa &amp; Africa</a> for a cybersecurity-first framework aligned to IEC 62443 and ANSSI guidance.</p>
   <ul>
     <li>Segment networks; define trust boundaries between IT and OT.</li>
     <li>Harden assets (PLC/HMI/servers), enforce MFA for remote access, and use allow‑listed communications between zones.</li>
@@ -274,8 +281,9 @@
 </section>
 
     <footer>
-      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 10 Nov 2025</p>
+      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 16 Jan 2026.</p>
     </footer>
+    </main>
   </div>
   <script>
     (function(){ var y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear(); })();

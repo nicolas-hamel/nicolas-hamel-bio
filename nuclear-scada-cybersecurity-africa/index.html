@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance | Nicolas Hamel</title>
   <meta name="description" content="Practical guide to nuclear SCADA cybersecurity in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
   <!-- Canonical (your .africa domain) -->
   <link rel="canonical" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
@@ -15,10 +16,12 @@
   <meta property="og:description" content="A cybersecurity-first playbook for nuclear SCADA in South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
   <meta property="og:url" content="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
   <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta property="og:image:alt" content="Nuclear SCADA cybersecurity playbook for South Africa and Africa" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
   <meta name="twitter:description" content="A cybersecurity-first playbook for nuclear SCADA in South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta name="twitter:image:alt" content="Nuclear SCADA cybersecurity playbook for South Africa and Africa" />
 
   <!-- Schema.org Article -->
   <script type="application/ld+json">
@@ -29,14 +32,55 @@
     "description": "Practical guide to nuclear SCADA cybersecurity in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance.",
     "author": {
       "@type": "Person",
+      "@id": "https://nicolas-hamel.africa/#identity",
       "name": "Nicolas Hamel"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Nicolas Hamel",
+      "url": "https://nicolas-hamel.africa/"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
     },
+    "image": "https://nicolas-hamel.africa/og-image.png",
+    "datePublished": "2025-11-10",
     "inLanguage": "en",
     "dateModified": "2026-01-16"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do we need IEC 62443 certification to comply?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. Regulators expect a risk-based program and defense-in-depth. IEC 62443 provides practical methods (zones, conduits, security levels) that help meet those expectations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can security controls disrupt deterministic operations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Controls must be engineered for OT: staged updates, protocol break-points, and allow-listing reduce risk while protecting availability and integrity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where should remote access terminate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At DMZ jump hosts with strong authentication, least privilege, and session recording—never directly inside control zones."
+        }
+      }
+    ]
   }
   </script>
 
@@ -100,7 +144,7 @@
   <header>
     <div class="wrap">
       <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
-      <nav>
+      <nav aria-label="Primary">
         <a class="btn" href="#toc">Contents</a>
         <a class="btn" href="https://nicolas-hamel.africa/">Home</a>
       </nav>
@@ -254,6 +298,7 @@
 
     <section id="roadmap" class="wrap">
       <h2>Implementation roadmap (first 90 days)</h2>
+      <p>Need a broader operating model for utilities and industry teams? Pair this playbook with the <a href="https://nicolas-hamel.africa/scada-south-africa/">SCADA in South Africa guide</a> for architecture, delivery, and partner-readiness context.</p>
       <div class="grid two">
         <div>
           <h3>Weeks 0–4 — Baseline &amp; gaps</h3>

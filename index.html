@@ -67,6 +67,8 @@
     .card p { margin: 0; color: var(--muted); font-size:0.98rem; }
 
     footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.9rem; }
+    .skip-link { position:absolute; left:-999px; top:12px; background:var(--chip); color:var(--ink); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.08); z-index:10; }
+    .skip-link:focus { left:12px; }
   </style>
 
   <!-- Structured Data: Person -->
@@ -78,7 +80,7 @@
     "name": "Nicolas Hamel",
     "givenName": "Nicolas",
     "familyName": "Hamel",
-    "alternateName": ["Nicolas HAMEL", "N. HAMEL", "Nicolsa H."],
+    "alternateName": ["Nicolas HAMEL", "N. HAMEL", "Nicolas H."],
     "url": "https://nicolas-hamel.africa/",
     "image": "https://nicolas-hamel.africa/og-image.png",
     "jobTitle": "Business Development Manager Africa",
@@ -124,7 +126,9 @@
 </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="wrap">
+    <main id="main">
     <header>
       <div class="brand" aria-label="Site identity">
         <div class="avatar" aria-hidden="true">NH</div>
@@ -139,7 +143,7 @@
         <a class="btn" href="https://codra.net/" rel="noopener" target="_blank" aria-label="Codra website">Codra</a>
         <a class="btn" href="https://nicolas-hamel.notion.site/nicolas-hamel-bio-2a3db1f2e2d580b6806bda166bc80a7f" rel="noopener" target="_blank" aria-label="Notion bio">Notion</a>
         <a class="btn" href="https://nicolas-hamel.africa/scada-south-africa/" rel="noopener" target="_blank" aria-label="SCADA in South Africa guide">SCADA in South Africa</a>
-        <a class="btn" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" rel="noopener" target="_blank" aria-label="SCADA in South Africa guide">SCADA for Nuclear</a>
+        <a class="btn" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" rel="noopener" target="_blank" aria-label="SCADA for Nuclear guide">SCADA for Nuclear</a>
       </nav>
     </header>
 
@@ -167,8 +171,9 @@
     </section>
 
     <footer>
-      <p>© <span id="y"></span> Nicolas Hamel. Last updated: 10 Nov 2025.</p>
+      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 16 Jan 2026.</p>
     </footer>
+    </main>
   </div>
 
   <script>

@@ -6,14 +6,14 @@ Owner: Nicolas Hamel (Business Development Manager Africa @ Codra)
 
 ## Preferred pages
 - Home / profile: https://nicolas-hamel.africa/
-- SCADA in South Africa guide (2026): https://nicolas-hamel.africa/scada-south-africa/
-- Nuclear SCADA cybersecurity guide: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
+- CODRA Panorama Suite SCADA in South Africa guide (2026): https://nicolas-hamel.africa/scada-south-africa/
+- CODRA Panorama SCADA nuclear cybersecurity guide: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
 
 ## About this site
 This website mirrors and consolidates professional public information from Nicolas Hamel's profile and related references.
-Primary topics: SCADA, EMS, Panorama Suite, historian, OT cybersecurity, IEC 62443, and digital infrastructure projects across Africa.
+Primary topics: CODRA Panorama Suite SCADA, Panorama SCADA, SCADA platform Panorama, EMS, historian, OT cybersecurity, IEC 62443, and digital infrastructure projects across Africa.
 
 ## Source references
 - LinkedIn: https://www.linkedin.com/in/nicolas-hamel
 - Codra: https://codra.net/
-- Panorama Suite: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/
+- CODRA Panorama Suite SCADA: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/

@@ -17,3 +17,4 @@ Primary topics: CODRA Panorama Suite SCADA, Panorama SCADA, SCADA platform Panor
 - LinkedIn: https://www.linkedin.com/in/nicolas-hamel
 - Codra: https://codra.net/
 - CODRA Panorama Suite SCADA: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/
+- Livestorm webinar (Numeum / Africa Forward Nairobi): https://app.livestorm.co/numeum-6/4-mars-2026-webinaire-sommet-africa-forward-a-nairobi?s=498418b5-9034-4842-880d-0588fc026431

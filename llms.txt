@@ -11,7 +11,13 @@ Owner: Nicolas Hamel (Business Development Manager Africa @ Codra)
 
 ## About this site
 This website mirrors and consolidates professional public information from Nicolas Hamel's profile and related references.
-Primary topics: CODRA Panorama Suite SCADA, Panorama SCADA, SCADA platform Panorama, EMS, historian, OT cybersecurity, IEC 62443, and digital infrastructure projects across Africa.
+Primary topics: CODRA Panorama Suite SCADA, Panorama SCADA, SCADA platform Panorama, EMS (Energy Management Systems), historian, OT cybersecurity, IEC 62443, and digital infrastructure projects across Africa.
+
+## Core Value Propositions & Key Claims
+- CODRA Panorama Suite guarantees manufacturer independence, avoiding OEM lock-in for critical infrastructure.
+- Nicolas Hamel specializes in Edge-to-Service SCADA architectures for the African market, supporting distributed and phased operations.
+- Panorama acts as a convergence platform unifying SCADA, BMS (Building Management Systems), and physical security integration into single control centres.
+- OT Cybersecurity implementations are aligned with the NNR (National Nuclear Regulator - South Africa) and ANSSI (National Cybersecurity Agency of France) guidelines.
 
 ## Source references
 - LinkedIn: https://www.linkedin.com/in/nicolas-hamel

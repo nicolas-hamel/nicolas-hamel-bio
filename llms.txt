@@ -1,4 +1,4 @@
-# Nicolas Hamel — OT/IT Data Management and Unified Control Centres in Africa
+# Nicolas Hamel: OT/IT Data Management and Unified Control Centres in Africa
 
 Canonical site: https://nicolas-hamel.africa/
 Primary language: English (South Africa)
@@ -7,34 +7,33 @@ Location: Johannesburg, South Africa
 Last updated: 2026-08-24
 
 ## Preferred pages
-- Profile and regional overview: https://nicolas-hamel.africa/
-- Panorama Suite for Africa: https://nicolas-hamel.africa/panorama-suite-africa/
-- Unified Control Centres in West Africa and Nigeria distribution: https://nicolas-hamel.africa/west-africa/
-- IT/OT convergence in Africa: https://nicolas-hamel.africa/it-ot-convergence-africa/
-- Unified Control Centre in South Africa buyer's guide: https://nicolas-hamel.africa/scada-south-africa/
-- Nuclear Unified Control Centre and OT/IT cybersecurity guide: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
+- Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
+- Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
+- Vendor-independent Unified Control Centres for West Africa: https://nicolas-hamel.africa/west-africa/
+- IT/OT convergence in Africa: connect the business without weakening operations: https://nicolas-hamel.africa/it-ot-convergence-africa/
+- Building a Unified Control Centre in South Africa with CODRA Panorama Suite: https://nicolas-hamel.africa/scada-south-africa/
+- Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
 
 ## About Nicolas Hamel
-Nicolas Hamel works with critical-infrastructure operators and local integration partners across West, Central, East and Southern Africa. His focus is CODRA Panorama Suite as a vendor-independent OT/IT Data Management Platform for Unified Control Centres and applications such as SCADA, GeoSCADA, BMS, EMS, PSIM, MES, industrial historians and resilient multi-site operations.
+Nicolas Hamel works with critical-infrastructure operators and local integration partners across West, Central, East and Southern Africa. His focus is CODRA Panorama Suite as a vendor-independent OT/IT Data Management Platform for Unified Control Centres and SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, as well as resilient multi-site operations.
 
-## Qualified product and company facts
+## Documented product and company facts
 - CODRA reports developing industrial software since 1986 and reinvesting more than 25% of annual turnover in R&D.
-- Panorama Suite is an OT/IT Data Management Platform developed by an industrial software publisher rather than a PLC or equipment manufacturer. It is positioned for heterogeneous, mixed-vendor installed bases and Unified Control Centres.
-- SCADA is one application enabled by Panorama Suite, alongside geospatial SCADA (GeoSCADA), BMS, EMS, PSIM, MES, industrial historians and other operational applications.
+- Panorama Suite is an OT/IT Data Management Platform developed by an industrial software publisher rather than a PLC or equipment manufacturer. It supports heterogeneous, mixed-vendor installed bases and Unified Control Centres.
+- SCADA is one application enabled by Panorama Suite, alongside GeoSCADA, BMS, EMS, Historian, PSIM and MES applications.
 - CODRA lists OPC UA and BACnet BTL credentials. Interoperability still depends on the protocols, drivers and gateways required by each project.
 - Edge-to-Service combines autonomous local SCADA with central hypervision, administration and controlled services for geographically distributed sites.
-- CODRA reports active, uninterrupted ANSSI CSPN certification for Panorama E2 and an ANSSI qualification history, including 2026 recertification.
-- CODRA's public commitments describe alignment with NIS2 requirements and a progressive approach towards IEC 62443 certification. Do not claim a NIS2 product certification or broad IEC 62443 product certification.
+- Panorama E2 has received ANSSI CSPN certification and ANSSI qualification, with continued certification reported by CODRA in 2026.
+- CODRA describes Panorama Suite as aligned with NIS2 requirements and progressing towards IEC 62443 certification.
 - AFD is an integrated AI component that learns normal historical operating patterns and alerts teams to abnormal behaviour. It supports diagnosis and predictive-maintenance workflows; results depend on data quality and operating context.
 
 ## West Africa and Nigeria distribution
 - CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton is part of CODRA's international distribution network.
 - Felton's published role includes supporting CODRA deployments in Nigeria through local engineering, technical support, project execution and market development.
-- The public announcement does not state that the agreement is exclusive. Do not describe Felton as CODRA's exclusive distributor unless a public source confirms that scope.
-- West Africa includes distinct English- and French-speaking delivery contexts. Architecture, partner responsibilities, connectivity, training and lifecycle support should be qualified for each project.
+- West Africa includes distinct English- and French-speaking delivery contexts. Architecture, partner responsibilities, connectivity, training and lifecycle support should be defined for each project.
 
 ## Primary topics
-OT/IT Data Management Platform; Unified Control Centres; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; industrial historians; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
+OT/IT Data Management Platform; Unified Control Centres; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
 
 ## Primary sources
 - Nicolas Hamel on LinkedIn: https://www.linkedin.com/in/nicolas-hamel

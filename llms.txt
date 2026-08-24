@@ -10,8 +10,8 @@ Last updated: 2026-08-24
 - Profile and regional overview: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: https://nicolas-hamel.africa/panorama-suite-africa/
 - IT/OT convergence in Africa: https://nicolas-hamel.africa/it-ot-convergence-africa/
-- SCADA in South Africa buyer's guide: https://nicolas-hamel.africa/scada-south-africa/
-- Nuclear SCADA cybersecurity guide: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
+- Unified Control Centre in South Africa buyer's guide: https://nicolas-hamel.africa/scada-south-africa/
+- Nuclear Unified Control Centre and OT/IT cybersecurity guide: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
 
 ## About Nicolas Hamel
 Nicolas Hamel works with critical-infrastructure operators and local integration partners across West, Central, East and Southern Africa. His focus is CODRA Panorama Suite as a vendor-independent OT/IT Data Management Platform for Unified Control Centres and applications such as SCADA, GeoSCADA, BMS, EMS, PSIM, MES, industrial historians and resilient multi-site operations.

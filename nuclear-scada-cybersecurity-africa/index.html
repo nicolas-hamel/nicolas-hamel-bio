@@ -3,56 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CODRA Panorama SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance | Nicolas Hamel</title>
-  <meta name="description" content="Practical guide to CODRA Panorama SCADA cybersecurity for nuclear in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance." />
+  <title>Nuclear SCADA Cybersecurity Africa | CODRA Panorama Guide</title>
+  <meta name="description" content="Practical CODRA Panorama nuclear SCADA cybersecurity guide for Africa: governance, IEC 62443 zones and conduits, NNR, IAEA and ANSSI guidance." />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
   <link rel="canonical" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="CODRA Panorama SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
-  <meta property="og:description" content="A cybersecurity-first playbook for CODRA Panorama SCADA in nuclear environments across South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
+  <meta property="og:title" content="Nuclear SCADA Cybersecurity Africa | CODRA Panorama Guide" />
+  <meta property="og:description" content="A cybersecurity-first playbook using NNR, IAEA, IEC 62443 and ANSSI source material." />
   <meta property="og:url" content="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
   <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta property="og:image:alt" content="Nuclear SCADA cybersecurity playbook for South Africa and Africa" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="CODRA Panorama SCADA for Nuclear in South Africa &amp; Africa — Cybersecurity with ANSSI Guidance" />
-  <meta name="twitter:description" content="A cybersecurity-first playbook for CODRA Panorama SCADA in nuclear environments across South Africa & Africa, aligned to NNR/IAEA expectations and ANSSI guidance." />
+  <meta name="twitter:title" content="Nuclear SCADA Cybersecurity Africa | CODRA Panorama Guide" />
+  <meta name="twitter:description" content="A cybersecurity-first playbook using NNR, IAEA, IEC 62443 and ANSSI source material." />
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta name="twitter:image:alt" content="Nuclear SCADA cybersecurity playbook for South Africa and Africa" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "CODRA Panorama SCADA for Nuclear in South Africa & Africa — Cybersecurity with ANSSI Guidance",
-    "description": "Practical guide to CODRA Panorama SCADA cybersecurity for nuclear in South Africa & Africa: governance, IEC 62443 zones & conduits, NNR & IAEA expectations, and ANSSI’s ICS guidance.",
+    "headline": "Nuclear SCADA Cybersecurity in Africa: a CODRA Panorama Guide",
+    "description": "Practical CODRA Panorama nuclear SCADA cybersecurity guide for Africa using NNR, IAEA, IEC 62443 and ANSSI source material.",
     "author": {
       "@type": "Person",
       "@id": "https://nicolas-hamel.africa/#identity",
       "name": "Nicolas Hamel"
     },
-    "publisher": {
-      "@type": "Person",
-      "name": "Nicolas Hamel",
-      "url": "https://nicolas-hamel.africa/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nicolas-hamel.africa/og-image.png"
-      }
-    },
+    "publisher": {"@type": "Person", "@id": "https://nicolas-hamel.africa/#identity", "name": "Nicolas Hamel"},
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
     },
     "image": "https://nicolas-hamel.africa/og-image.png",
     "datePublished": "2025-11-10",
-    "inLanguage": "en",
-    "dateModified": "2026-03-09"
+    "inLanguage": "en-ZA",
+    "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
+    "dateModified": "2026-08-24"
   }
   </script>
 
@@ -66,7 +55,7 @@
         "name": "Do we need IEC 62443 certification to comply?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not necessarily. Regulators expect a risk-based program and defense-in-depth. IEC 62443 provides practical methods (zones, conduits, security levels) that help meet those expectations."
+          "text": "Not necessarily. Applicable requirements come from the relevant regulator and licence conditions. IEC 62443 provides practical methods, including zones, conduits and security levels, that can support a risk-based cybersecurity programme."
         }
       },
       {
@@ -107,7 +96,7 @@
     header{border-bottom:1px solid var(--border)}
     .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
     header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px 10px}
-    .brand h1{font-size:1.2rem;margin:0;color:var(--muted);font-weight:600}
+    .brand .site-name{font-size:1.2rem;margin:0;color:var(--muted);font-weight:600}
     nav{display:flex;gap:12px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--card);color:var(--fg);border:1px solid var(--border);font-weight:600}
 
@@ -135,6 +124,11 @@
 
     section{scroll-margin-top:80px}
     #cta { margin: 40px auto; }
+    @media(max-width:760px){
+      header .wrap{align-items:flex-start;flex-direction:column}
+      nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+      .btn{white-space:nowrap}
+    }
 
     .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);font-size:12px;color:var(--muted)}
     .check{color:var(--good);margin-right:6px}
@@ -147,11 +141,11 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <div class="wrap">
-      <div class="brand"><h1><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></h1></div>
+      <div class="brand"><p class="site-name"><a href="https://nicolas-hamel.africa/">Nicolas Hamel</a></p></div>
       <nav aria-label="Primary">
         <a class="btn" href="#toc">Contents</a>
         <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">CODRA Panorama Suite SCADA</a>
+        <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Panorama Suite platform</a>
         <a class="btn" href="https://nicolas-hamel.africa/">Home</a>
       </nav>
     </div>
@@ -161,8 +155,8 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="wrap grid two">
         <div>
-          <h1 id="page-title" class="title">CODRA Panorama SCADA for Nuclear in South Africa &amp; Africa — A Cybersecurity‑First Playbook <span class="badge">with ANSSI guidance</span></h1>
-          <p class="subtitle">A practical guide to secure, resilient CODRA Panorama SCADA for nuclear environments: governance, <span class="mono">IEC 62443</span> zones &amp; conduits, NNR &amp; IAEA expectations, ANSSI’s ICS best practices, and resilient Edge-to-Service patterns for distributed African operations.</p>
+          <h1 id="page-title" class="title">Nuclear SCADA cybersecurity in South Africa and Africa <span class="badge">CODRA Panorama guide</span></h1>
+          <p class="subtitle">A practical guide to resilient nuclear SCADA applications built on the CODRA Panorama Suite OT/IT Data Management Platform: governance, <span class="mono">IEC 62443</span> zones and conduits, NNR and IAEA source material, ANSSI ICS practices, and Edge-to-Service patterns for distributed African operations.</p>
         </div>
         <aside class="card">
           <h3>Highlights</h3>
@@ -172,7 +166,7 @@
             <li><strong>Program &amp; evidence</strong> for NNR/IAEA oversight</li>
             <li><strong>ANSSI ICS guide</strong> for pragmatic deployment</li>
           </ul>
-          <p class="callout">Last updated: 9 Mar 2026 • Author: Nicolas Hamel</p>
+          <p class="callout">Last updated: 24 Aug 2026 • Author: Nicolas Hamel</p>
         </aside>
       </div>
     </section>
@@ -201,12 +195,12 @@
     <section id="landscape" class="wrap">
       <h2>The regulatory &amp; standards landscape (Africa / South Africa)</h2>
       <ul>
-        <li><strong>National Nuclear Regulator (NNR, South Africa)</strong> — Expects a structured <em>Computer Security</em> program, defense‑in‑depth, and protection of critical digital assets across the facility lifecycle.</li>
-        <li><strong>IAEA Nuclear Security</strong> — Guidance for computer and information security frames governance, graded approach, and continuous improvement across safety‑significant digital assets.</li>
-        <li><strong>IEC 62443</strong> — A practical, widely adopted OT cybersecurity standard. <em>Zones &amp; conduits</em> enable segmentation and security levels tailored to the risk.</li>
-        <li><strong>ANSSI (France)</strong> — The national cybersecurity agency’s <em>Cybersecurity for Industrial Control Systems</em> guide provides a pragmatic deployment method, management commitment, and OT‑specific practices valuable to African operators and French‑linked ecosystems.</li>
+        <li><strong>National Nuclear Regulator (NNR, South Africa)</strong> — The NNR regulatory framework lists RG-0014, <em>Guidance on implementation of Cyber or Computer Security for Nuclear Facilities</em>.</li>
+        <li><strong>IAEA Nuclear Security</strong> — <em>Computer Security Techniques for Nuclear Facilities</em> describes risk-informed policies, programmes, management-system integration and protection of sensitive digital assets.</li>
+        <li><strong>IEC 62443</strong> — A series of standards for cybersecurity of industrial automation and control systems. Concepts such as zones, conduits and security levels provide a useful engineering structure.</li>
+        <li><strong>ANSSI (France)</strong> — Its industrial control systems guidance provides a practical deployment method, management commitment and OT-specific security practices.</li>
       </ul>
-      <p class="callout">References: <a href="https://www.nnr.co.za/" target="_blank" rel="noopener">NNR</a> · <a href="https://www.iaea.org/" target="_blank" rel="noopener">IAEA</a> · <a href="https://www.iec.ch/" target="_blank" rel="noopener">IEC</a> · <a href="https://www.ssi.gouv.fr/en/" target="_blank" rel="noopener">ANSSI</a></p>
+      <p class="callout">Primary references: <a href="https://nnr.co.za/about/acts-and-regulations/" target="_blank" rel="noopener">NNR regulatory framework and RG-0014 listing</a> · <a href="https://www.iaea.org/publications/14729/computer-security-techniques-for-nuclear-facilities" target="_blank" rel="noopener">IAEA computer security techniques</a> · <a href="https://www.iec.ch/cyber-security" target="_blank" rel="noopener">IEC cybersecurity and IEC 62443</a> · <a href="https://www.ssi.gouv.fr/en/guide/cybersecurity-for-industrial-control-systems/" target="_blank" rel="noopener">ANSSI ICS guide</a></p>
       <p class="callout">Related resources: <a href="https://youtu.be/RGK9SAYSXaQ?si=wu1iqihMKxeobqZo" target="_blank" rel="noopener">Watch on YouTube</a> · <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a></p>
     </section>
 
@@ -215,12 +209,12 @@
       <ol>
         <li><strong>Safety is paramount:</strong> security controls must not compromise deterministic operation, trip setpoints, or human‑machine interface reliability.</li>
         <li><strong>Long lifecycles &amp; heterogeneity:</strong> mixed generations of PLC/DCS/SIS, patching constraints, and legacy protocols—so compensating controls matter.</li>
-        <li><strong>Tight regulation:</strong> regulators expect a programmatic approach, defense‑in‑depth, and protection of <em>critical digital assets (CDAs)</em>.</li>
+        <li><strong>Regulatory assurance:</strong> operators need a documented, risk-based programme and evidence appropriate to the regulator, licence conditions and safety significance of the digital assets.</li>
       </ol>
     </section>
 
     <section id="threats" class="wrap">
-      <h2>OT threats we actually see</h2>
+      <h2>Common OT threat patterns</h2>
       <ul>
         <li><strong>Ransomware spillover</strong> from IT to OT via shared services or unmanaged remote access.</li>
         <li><strong>Supply‑chain &amp; maintenance laptop risks</strong> (engineering stations and media as initial access).</li>
@@ -290,7 +284,7 @@
     </section>
 
     <section id="governance" class="wrap">
-      <h2>Program &amp; governance model (what regulators expect)</h2>
+      <h2>Programme, governance and assurance evidence</h2>
       <ul>
         <li><strong>Computer Security Program</strong> owned by plant leadership; scope includes all CDAs, interfaces, and contractors.</li>
         <li><strong>Risk‑based, graded approach</strong> mapped to plant safety significance.</li>
@@ -335,7 +329,7 @@
       <h2>FAQ</h2>
       <details>
         <summary>Do we need IEC 62443 certification to comply?</summary>
-        <p>Not necessarily. Regulators expect a risk‑based program and defense‑in‑depth. IEC 62443 provides practical methods (zones, conduits, security levels) that help meet those expectations.</p>
+        <p>Not necessarily. Applicable requirements come from the relevant regulator and licence conditions. IEC 62443 provides practical methods, including zones, conduits and security levels, that can support a risk-based cybersecurity programme.</p>
       </details>
       <details>
         <summary>Can security controls disrupt deterministic operations?</summary>
@@ -349,15 +343,15 @@
 
     <section id="cta" class="wrap card">
       <h2>Need help?</h2>
-      <p>I help organisations in South Africa and across Africa deploy <strong>CODRA Panorama Suite SCADA</strong> for highly regulated infrastructure.
-      <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a>, read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a>, or see <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">CODRA Panorama Suite SCADA</a>.</p>
+      <p>I help organisations in South Africa and across Africa deploy <strong>CODRA Panorama Suite as an OT/IT Data Management Platform</strong> for nuclear SCADA applications and other highly regulated operational systems. For the wider platform and convergence context, read <a href="https://nicolas-hamel.africa/panorama-suite-africa/">Panorama Suite for Africa</a> and the <a href="https://nicolas-hamel.africa/it-ot-convergence-africa/">IT/OT convergence guide</a>.
+      <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a>, read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a>, or see the <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">CODRA Panorama Suite platform</a>.</p>
     </section>
     
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, South Africa • Last updated: 9 Mar 2026.</p>
+      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, South Africa • Last updated: 24 Aug 2026.</p>
       <p class="muted">This page is informational and non‑regulatory. Always consult your site’s regulator and security authorities.</p>
     </div>
   </footer>

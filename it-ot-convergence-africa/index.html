@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT/OT Convergence Africa | Practical Architecture Guide</title>
+  <meta name="description" content="A practical IT/OT convergence guide for African critical infrastructure: local control, secure data flows, multi-site operations and accountable governance.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <meta name="theme-color" content="#071225">
+  <link rel="canonical" href="https://nicolas-hamel.africa/it-ot-convergence-africa/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="IT/OT Convergence in Africa | Practical Architecture Guide">
+  <meta property="og:description" content="Connect operational systems and enterprise services without weakening local control, resilience or accountability.">
+  <meta property="og:url" content="https://nicolas-hamel.africa/it-ot-convergence-africa/">
+  <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png">
+  <meta property="og:image:alt" content="IT and OT convergence architecture for African critical infrastructure">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT/OT Convergence in Africa | Practical Architecture Guide">
+  <meta name="twitter:description" content="Local control, secure data flows, multi-site operations and accountable governance.">
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nicolas-hamel.africa/"},
+          {"@type": "ListItem", "position": 2, "name": "IT/OT Convergence Africa", "item": "https://nicolas-hamel.africa/it-ot-convergence-africa/"}
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://nicolas-hamel.africa/it-ot-convergence-africa/#article",
+        "headline": "IT/OT convergence in Africa: a practical architecture guide",
+        "description": "How to connect operational systems and enterprise services while preserving local control, resilience and cybersecurity.",
+        "url": "https://nicolas-hamel.africa/it-ot-convergence-africa/",
+        "mainEntityOfPage": "https://nicolas-hamel.africa/it-ot-convergence-africa/",
+        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
+        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
+        "datePublished": "2026-08-24",
+        "dateModified": "2026-08-24",
+        "inLanguage": "en-ZA",
+        "image": "https://nicolas-hamel.africa/og-image.png",
+        "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
+        "about": [
+          {"@type": "Thing", "name": "IT/OT convergence"},
+          {"@type": "Thing", "name": "OT/IT Data Management architecture"},
+          {"@type": "Thing", "name": "Unified Control Centres"},
+          {"@type": "Thing", "name": "Operational technology cybersecurity"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does IT/OT convergence mean in practice?",
+            "acceptedAnswer": {"@type": "Answer", "text": "It means creating governed interfaces between operational systems and enterprise services so that approved data and workflows can cross domains. It does not mean flattening IT and OT into one network or giving enterprise applications direct control access."}
+          },
+          {
+            "@type": "Question",
+            "name": "Should operational control move to the cloud?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Not by default. Essential control and operator supervision should remain at the level required for safe, deterministic and autonomous operation. Cloud or central services can add reporting, fleet analytics and selected workflows where the risk assessment supports them."}
+          },
+          {
+            "@type": "Question",
+            "name": "Who should own an IT/OT convergence programme?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Operations, engineering, cybersecurity and IT need defined joint governance. Operations should retain authority over process risk and availability; IT and security teams should own enterprise services and cross-domain controls within an agreed responsibility model."}
+          },
+          {
+            "@type": "Question",
+            "name": "Where should an organisation start?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a bounded site or asset group before scaling."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="site-name" href="/">Nicolas Hamel</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="/panorama-suite-africa/">Panorama Suite Africa</a>
+        <a href="/scada-south-africa/">South Africa guide</a>
+        <a href="https://www.linkedin.com/in/nicolas-hamel" rel="me noopener" target="_blank">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="shell breadcrumbs"><a href="/">Home</a> / IT/OT convergence Africa</div>
+    <header class="shell article-hero">
+      <p class="eyebrow">Architecture guide · Critical infrastructure</p>
+      <h1>IT/OT convergence in Africa: connect the business without weakening operations</h1>
+      <p class="lead">The objective is controlled information flow, shared operational context and better decisions. The objective is not one flat network, cloud-dependent control or blurred accountability.</p>
+      <p class="article-meta">By Nicolas Hamel · Published and updated 24 August 2026</p>
+    </header>
+
+    <article class="article">
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ul>
+          <li><a href="#meaning">What convergence means</a></li>
+          <li><a href="#principles">Five design principles</a></li>
+          <li><a href="#architecture">Reference architecture</a></li>
+          <li><a href="#governance">Governance</a></li>
+          <li><a href="#multisite">Multi-site operations</a></li>
+          <li><a href="#regions">Regional context</a></li>
+          <li><a href="#roadmap">Delivery roadmap</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <section id="meaning">
+        <h2>What IT/OT convergence means</h2>
+        <p>Operational technology controls and observes physical processes. Information technology supports enterprise data, identity, collaboration, business applications and analytics. Convergence creates deliberate interfaces between those domains so that the right people and services can use operational information without removing the controls that protect availability, determinism and safety.</p>
+        <p>Examples include sending approved historian data to energy or maintenance applications, presenting BMS and SCADA alarms in a unified control centre, managing software versions across remote sites, or returning a reviewed work instruction to an operator. Each flow needs an owner, a purpose, a security boundary and a fallback when communications are unavailable.</p>
+        <div class="callout">
+          <p><strong>A useful test:</strong> if a central service disappears, does the site continue to operate safely and predictably for the required period? If the answer is unclear, the architecture is not ready.</p>
+        </div>
+      </section>
+
+      <section id="principles">
+        <h2>Five design principles for African operations</h2>
+        <ol>
+          <li><strong>Keep essential control local.</strong> WAN, cloud and enterprise-service failure must not automatically become process failure.</li>
+          <li><strong>Move only justified data and commands.</strong> Every cross-domain flow should have a business purpose, owner and minimum required privileges.</li>
+          <li><strong>Use zones and controlled conduits.</strong> Segment sites and services according to operational consequence, not organisational convenience.</li>
+          <li><strong>Design for disconnection.</strong> Buffer data, define stale-data behaviour and plan reconciliation after connectivity returns.</li>
+          <li><strong>Make lifecycle ownership explicit.</strong> Configuration, graphics, certificates, accounts, backups, patches and documentation need named owners.</li>
+        </ol>
+        <p>The IEC describes the <a href="https://www.iec.ch/cyber-security" target="_blank" rel="noopener">IEC 62443 series</a> as cybersecurity standards for industrial automation and control systems. Its concepts provide a useful structure for programmes, systems, components and secure development, but implementation still needs a risk-based design for the specific operation.</p>
+      </section>
+
+      <section id="architecture">
+        <h2>A practical reference architecture</h2>
+        <div class="wide grid two">
+          <div class="card"><p class="kicker">Level 1 · Process</p><h3>Controllers and field assets</h3><p>PLCs, RTUs, meters, protection systems and equipment interfaces. Local control logic remains authoritative for the process.</p></div>
+          <div class="card"><p class="kicker">Level 2 · Operations</p><h3>SCADA, HMI and local history</h3><p>Operator supervision, alarms, engineering and the minimum local data services needed for autonomous operation.</p></div>
+          <div class="card"><p class="kicker">Level 3 · Site services</p><h3>Operational DMZ and brokers</h3><p>Jump hosts, replication, patch staging, secure gateways, interfaces and monitoring that mediate cross-domain traffic.</p></div>
+          <div class="card"><p class="kicker">Level 4 · Enterprise and group</p><h3>Business and fleet services</h3><p>Reporting, maintenance, energy, analytics, central administration and approved decision workflows.</p></div>
+        </div>
+        <p>Commands from central services deserve more scrutiny than outbound data. Define authorisation, validation, expiry, acknowledgement, local interlocks and behaviour after delayed delivery. “Technically possible” is not the same as operationally acceptable.</p>
+      </section>
+
+      <section id="governance">
+        <h2>Governance: shared work, distinct accountabilities</h2>
+        <p>Convergence programmes fail when IT owns the network but not the process consequence, or operations owns the process but not the cross-domain exposure. A workable model gives each group explicit decision rights:</p>
+        <ul>
+          <li><strong>Operations:</strong> process availability, operating modes, alarm response and acceptable fallback behaviour.</li>
+          <li><strong>Engineering:</strong> control-system design, interfaces, configuration standards and lifecycle integrity.</li>
+          <li><strong>Cybersecurity:</strong> risk assessment, zones, identities, monitoring, incident coordination and assurance evidence.</li>
+          <li><strong>IT:</strong> enterprise platforms, identity services, infrastructure, data services and support processes outside the control boundary.</li>
+          <li><strong>Management:</strong> priorities, risk acceptance, funding, partner model and performance measures.</li>
+        </ul>
+        <p>A shared architecture review and change process should cover both technical changes and shifts in operating responsibility.</p>
+      </section>
+
+      <section id="multisite">
+        <h2>Multi-site convergence: local autonomy, central services</h2>
+        <p>Distributed water, transport, building, energy and industrial estates need more than a central dashboard. They need predictable local operation, efficient engineering, store-and-forward data, secure remote support and a controlled way to distribute applications and updates.</p>
+        <p>CODRA's <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/" target="_blank" rel="noopener">Edge-to-Service architecture</a> describes autonomous local SCADA, central hypervision, central administration, an Edge Gateway in a DMZ and remote deployment of applications, versions and patches. It is a useful pattern when the business wants group-level services without turning the WAN into a control dependency.</p>
+      </section>
+
+      <section id="regions">
+        <h2>The regional context changes the delivery plan</h2>
+        <p><strong>Southern Africa</strong> often combines mature industrial estates, legacy systems and demanding lifecycle requirements. <strong>East Africa</strong> includes rapidly expanding, distributed infrastructure where phased deployment is common. <strong>West Africa</strong> requires English- and French-speaking partner capacity across large territories. <strong>Central Africa</strong> can place greater emphasis on remote maintainability, knowledge transfer and communications resilience.</p>
+        <p>These are broad planning contexts, not substitutes for country and site discovery. The final design must reflect local regulation, skills, support routes, connectivity, installed assets and operational consequence.</p>
+      </section>
+
+      <section id="platform">
+        <h2>Where Panorama Suite fits</h2>
+        <p>Panorama Suite can provide the vendor-independent OT/IT Data Management Platform behind a Unified Control Centre. Applications built on that foundation can include SCADA, geospatial SCADA (GeoSCADA), BMS, EMS, PSIM, MES, industrial historians, controlled interfaces, central supervision and selected Edge-to-Service capabilities. It is most valuable when the operator needs one consistent data and engineering model across mixed equipment, applications and sites.</p>
+        <p>The platform should be evaluated alongside the full system: controllers, networks, gateways, identity, backup, monitoring, integrator capability and support model. Read the <a href="/panorama-suite-africa/">Panorama Suite Africa platform guide</a> for the product evidence, cybersecurity status and evaluation checklist.</p>
+      </section>
+
+      <section id="roadmap">
+        <h2>A bounded delivery roadmap</h2>
+        <ol>
+          <li><strong>Choose one outcome.</strong> Examples: reduce alarm-response delay, unify energy reporting or centralise fleet status.</li>
+          <li><strong>Map the current path.</strong> Assets, protocols, data ownership, trust boundaries, dependencies and failure modes.</li>
+          <li><strong>Define the target interface.</strong> Data, commands, identities, latency, availability, retention and audit requirements.</li>
+          <li><strong>Build the security and fallback model.</strong> Segmentation, access, monitoring, backup, incident response and disconnection behaviour.</li>
+          <li><strong>Pilot on a bounded scope.</strong> Prove operations, interoperability, support and handover, not only the dashboard.</li>
+          <li><strong>Scale by repeatable pattern.</strong> Standardise what worked while retaining justified site-specific differences.</li>
+        </ol>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+        <details>
+          <summary>What does IT/OT convergence mean in practice?</summary>
+          <p>It means creating governed interfaces between operational systems and enterprise services so that approved data and workflows can cross domains. It does not mean flattening IT and OT into one network or giving enterprise applications direct control access.</p>
+        </details>
+        <details>
+          <summary>Should operational control move to the cloud?</summary>
+          <p>Not by default. Essential control and operator supervision should remain at the level required for safe, deterministic and autonomous operation. Cloud or central services can add reporting, fleet analytics and selected workflows where the risk assessment supports them.</p>
+        </details>
+        <details>
+          <summary>Who should own an IT/OT convergence programme?</summary>
+          <p>Operations, engineering, cybersecurity and IT need defined joint governance. Operations should retain authority over process risk and availability; IT and security teams should own enterprise services and cross-domain controls within an agreed responsibility model.</p>
+        </details>
+        <details>
+          <summary>Where should an organisation start?</summary>
+          <p>Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a bounded site or asset group before scaling.</p>
+        </details>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow">Discuss the first scope</p>
+        <h2>Turn convergence into an operational design</h2>
+        <p>I work with African operators and integration partners to qualify the architecture, installed-base constraints, cybersecurity boundaries and delivery model before technology choices are locked in.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://www.linkedin.com/in/nicolas-hamel" rel="me noopener" target="_blank">Connect on LinkedIn</a>
+          <a class="button secondary" href="/scada-south-africa/">Read the South Africa guide</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
+      <p><a href="/">Home</a> · Updated 24 August 2026</p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

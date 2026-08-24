@@ -92,7 +92,7 @@
     "publisher":{"@type":"Person","@id":"https://nicolas-hamel.africa/#identity","name":"Nicolas Hamel"},
     "video": {
       "@type": "VideoObject",
-      "name": "SCADA in South Africa — Buyer’s Guide (2026)",
+      "name": "SCADA in South Africa: Buyer’s Guide (2026)",
       "description": "Overview of SCADA architectures, redundancy, historian/EMS, and OT cybersecurity considerations in the South African context.",
       "thumbnailUrl": ["https://i.ytimg.com/vi/SVPh73mXG70/hqdefault.jpg"],
       "uploadDate": "2025-11-08T15:00:00+02:00",
@@ -107,7 +107,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "What does SCADA cost?", "acceptedAnswer": {"@type": "Answer", "text": "Total cost depends on scale, tag count, redundancy, telemetry, interfaces and support. Budget for software licences, integration, infrastructure, communications, training and lifecycle support. A bounded pilot helps validate sizing before full rollout."}},
+      {"@type": "Question", "name": "What does SCADA cost?", "acceptedAnswer": {"@type": "Answer", "text": "Total cost depends on scale, tag count, redundancy, telemetry, interfaces and support. Budget for software licences, integration, infrastructure, communications, training and lifecycle support. A focused pilot helps validate sizing before full rollout."}},
       {"@type": "Question", "name": "Should SCADA be on-premises or in the cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Essential control and operator supervision should remain at the level required for autonomous operation. Central or cloud services can add reporting and analytics when the risk assessment supports them. A hybrid architecture is common."}},
       {"@type": "Question", "name": "How long does a SCADA pilot take?", "acceptedAnswer": {"@type": "Answer", "text": "A focused pilot often runs for 6 to 12 weeks across a small asset group. It should validate interoperability, alarms, dashboards, history, cybersecurity controls, training and the scale-up plan."}}
     ]
@@ -139,49 +139,49 @@
 
     <section class="hero">
       <h1>Building a Unified Control Centre in South Africa with CODRA Panorama Suite</h1>
-      <p>This South Africa guide covers Unified Control Centre architecture and the SCADA applications within it: Edge-to-Service, redundancy, EMS/historian, OT cybersecurity, delivery partners and buyer criteria for energy, water, transport, buildings and data centres. For the broader product view, see <a href="https://nicolas-hamel.africa/panorama-suite-africa/">Panorama Suite for Africa</a>.</p>
+      <p>This South Africa guide covers Unified Control Centre architecture and the SCADA applications within it: Edge-to-Service, redundancy, EMS and Historian functions, OT cybersecurity, delivery partners and buyer criteria for energy, water, transport, buildings and data centres. For the broader product view, see <a href="https://nicolas-hamel.africa/panorama-suite-africa/">Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres</a>.</p>
     </section>
 
 <aside id="toc" class="toc" aria-label="Table of contents">
   <h2>Contents</h2>
   <ul>
-    <li><a href="#tl-dr">TL;DR Checklist</a></li>
-    <li><a href="#video">Video: Buyer’s Guide</a></li>
+    <li><a href="#tl-dr">Unified Control Centre buyer’s checklist</a></li>
+    <li><a href="#video">Video: Building a SCADA application with CODRA Panorama Suite</a></li>
     <li><a href="#narrative">Why the platform approach matters in Africa</a></li>
-    <li><a href="#landscape">Market Landscape & Common Use‑Cases</a></li>
-    <li><a href="#architecture">Reference Architectures</a></li>
-    <li><a href="#security">OT Cybersecurity Basics</a></li>
-    <li><a href="#partners">Integrators & Delivery</a></li>
-    <li><a href="#faqs">FAQs</a></li>
-    <li><a href="#cta">Get help / contact</a></li>
+    <li><a href="#landscape">Market landscape and common use cases</a></li>
+    <li><a href="#architecture">Reference architectures</a></li>
+    <li><a href="#security">OT cybersecurity basics</a></li>
+    <li><a href="#partners">Integrators and delivery</a></li>
+    <li><a href="#faqs">Frequently asked questions</a></li>
+    <li><a href="#cta">Need help?</a></li>
   </ul>
 </aside>
 
 <section id="tl-dr">
-  <h2>TL;DR Buyer’s Checklist</h2>
+  <h2>Unified Control Centre buyer’s checklist</h2>
   <div class="grid">
     <div class="card">
       <h3>Architecture</h3>
       <ul class="checklist">
         <li>Define control boundaries: what must keep running without WAN?</li>
-        <li>Redundancy where it matters: servers, comms, power.</li>
-        <li>Historian/EMS sizing: tag counts, retention, reporting cadence.</li>
-        <li>Protocols/gateways: <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span>, others.</li>
+        <li>Redundancy where it matters: servers, communications and power.</li>
+        <li>Historian and EMS sizing: tag counts, retention and reporting cadence.</li>
+        <li>Protocols and gateways: <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span> and others.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Security</h3>
       <ul class="checklist">
-        <li>Zone/Conduit design, allow‑list communications, MFA for remote access.</li>
+        <li>Zone and conduit design, allow‑list communications and MFA for remote access.</li>
         <li>Harden PLC/HMI/servers; patching strategy without disrupting ops.</li>
-        <li>Monitoring & logging: historian + SIEM/SOC hooks.</li>
+        <li>Monitoring and logging: Historian and SIEM/SOC integration.</li>
       </ul>
     </div>
     <div class="card">
-      <h3>People & Process</h3>
+      <h3>People and process</h3>
       <ul class="checklist">
-        <li>Operator training & SOPs; change management and backups.</li>
-        <li>Measurement & Verification for energy/water savings (if EMS scope).</li>
+        <li>Operator training and SOPs; change management and backups.</li>
+        <li>Measurement and verification for energy and water savings, when included in the EMS scope.</li>
         <li>Support SLAs: hours, response, spares, escalation.</li>
       </ul>
     </div>
@@ -191,12 +191,12 @@
 <section id="video">
   <h2>Video: Building a SCADA application with CODRA Panorama Suite</h2>
   <div class="embed">
-    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="Building a SCADA application with CODRA Panorama Suite — Buyer’s Guide" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="Building a SCADA application with CODRA Panorama Suite: Buyer’s Guide" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
   </div>
   <noscript><p><a href="https://www.youtube.com/watch?v=SVPh73mXG70">Watch the SCADA buyer's guide on YouTube</a>.</p></noscript>
-  <p class="muted">Prefer reading? See the <a href="#tl-dr">TL;DR</a> and <a href="#faqs">FAQs</a> below. Also watch <a href="https://youtu.be/RGK9SAYSXaQ?si=wu1iqihMKxeobqZo" target="_blank" rel="noopener">this related video</a> for additional profile and market context. Read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a> for business context in South Africa.</p>
+  <p class="muted">Prefer reading? See the <a href="#tl-dr">Unified Control Centre buyer’s checklist</a> and <a href="#faqs">Frequently asked questions</a> below. Also watch <a href="https://youtu.be/RGK9SAYSXaQ?si=wu1iqihMKxeobqZo" target="_blank" rel="noopener">Sommet Africa Forward à Nairobi</a> for additional profile and market context. Read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a> for business context in South Africa.</p>
   <details>
-    <summary><strong>Key takeaways (summary)</strong></summary>
+    <summary><strong>Key takeaways</strong></summary>
     <ul>
       <li>Keep control local; use Edge‑to‑Service for reporting/analytics.</li>
       <li>Design redundancy where it matters (servers, comms, power).</li>
@@ -211,7 +211,7 @@
   <div class="grid">
     <div class="card">
       <h3>1) One OT/IT data platform supports multiple operational priorities</h3>
-      <p>Panorama Suite can support SCADA, GeoSCADA, BMS, EMS, PSIM, MES, historians, Unified Control Centres, Edge-to-Service and BIM for operations. In Africa, this matters because projects often expand from one application to another as priorities evolve.</p>
+      <p>Panorama Suite can support SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, as well as Unified Control Centres, Edge-to-Service and BIM for operations. In Africa, this matters because projects often expand from one application to another as priorities evolve.</p>
     </div>
     <div class="card">
       <h3>2) Vendor independence protects long-term choice</h3>
@@ -227,21 +227,21 @@
     </div>
     <div class="card">
       <h3>5) Local partnerships strengthen delivery and support</h3>
-      <p>Visibility, referrals and inbound opportunities are growing through credible local integrators and partner ecosystems across the continent.</p>
+      <p>Local integration partners strengthen regional engineering, first-line support, knowledge transfer and escalation throughout the project lifecycle.</p>
     </div>
   </div>
 </section>
 
 <section id="landscape">
-  <h2>Market Landscape & Common Use‑Cases</h2>
-  <p>South African SCADA deployments span municipal <strong>water & sanitation</strong>, <strong>energy</strong> (generation, distribution, metering/EMS), <strong>transport</strong> (rail, BMS at stations), and <strong>buildings & data centres</strong> (HVAC/BMS, power, alarms). Typical goals: operational visibility, alarm management, compliance reporting, energy/water efficiency, and resilient operations during network outages.</p>
+  <h2>Market landscape and common use cases</h2>
+  <p>South African SCADA deployments span municipal <strong>water and sanitation</strong>, <strong>energy</strong> (generation, distribution, metering and EMS), <strong>transport</strong> (rail and BMS at stations), and <strong>buildings and data centres</strong> (HVAC, BMS, power and alarms). Typical goals include operational visibility, alarm management, compliance reporting, energy and water efficiency, and resilient operations during network outages.</p>
 </section>
 
 <section id="architecture">
-  <h2>Reference Architectures</h2>
+  <h2>Reference architectures</h2>
   <div class="grid">
     <div class="card">
-      <h3>Central Control with Local Autonomy</h3>
+      <h3>Central control with local autonomy</h3>
       <p>Local PLC/RTU/HMI keep assets running; a central SCADA provides a unified view, alarms, historian/EMS, and engineering tools. Use redundant servers and communications for critical processes.</p>
     </div>
     <div class="card">
@@ -249,19 +249,19 @@
       <p>Securely bridge local sites to value‑added services (dashboards, reporting, analytics, mobile) without putting control in the cloud. Selectively publish data upstream; keep control local.</p>
     </div>
     <div class="card">
-      <h3>Protocols & Interoperability</h3>
+      <h3>Protocols and interoperability</h3>
       <p>Plan for <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP or SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, and <span class="code">IEC 61850</span>. Use tested gateways where needed and document addressing, scaling, and time‑sync.</p>
     </div>
     <div class="card">
-      <h3>Historian & EMS</h3>
+      <h3>Historian and EMS</h3>
       <p>Right‑size tag counts, archiving windows, and report schedules. For EMS, densify metering where decisions are made and retain enough history for M&amp;V.</p>
     </div>
   </div>
 </section>
 
 <section id="security">
-  <h2>OT Cybersecurity Basics</h2>
-  <p>For regulated and high-consequence contexts, see the companion guide on <a href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/">SCADA for Nuclear in South Africa &amp; Africa</a> for a cybersecurity-first framework aligned to IEC 62443 and ANSSI guidance.</p>
+  <h2>OT cybersecurity basics</h2>
+  <p>For regulated and high-consequence contexts, see <a href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/">Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa</a> for a cybersecurity-first framework aligned to IEC 62443 and ANSSI guidance.</p>
   <ul>
     <li>Segment networks; define trust boundaries between IT and OT.</li>
     <li>Harden assets (PLC/HMI/servers), enforce MFA for remote access, and use allow‑listed communications between zones.</li>
@@ -271,15 +271,15 @@
 </section>
 
 <section id="partners">
-  <h2>Integrators & Delivery</h2>
-  <p>Choose partners with relevant references, formal QA, certified training, and 24/7 support. Ensure transparent documentation handover and that cybersecurity practices are embedded from design through maintenance. For energy/water, include measurement & verification (M&amp;V) in scope to quantify savings.</p>
+  <h2>Integrators and delivery</h2>
+  <p>Choose partners with relevant references, formal quality assurance, certified training and 24/7 support. Ensure transparent documentation handover and that cybersecurity practices are embedded from design through maintenance. For energy and water, include measurement and verification (M&amp;V) in scope to quantify savings.</p>
 </section>
 
 <section id="faqs">
-  <h2>FAQs</h2>
+  <h2>Frequently asked questions</h2>
   <details>
     <summary>What does SCADA cost?</summary>
-    <p>Total cost depends on scale, tag count, redundancy, telemetry, interfaces and support. Budget for software licences, integration, infrastructure, communications, training and lifecycle support. A bounded pilot helps validate sizing before full rollout.</p>
+    <p>Total cost depends on scale, tag count, redundancy, telemetry, interfaces and support. Budget for software licences, integration, infrastructure, communications, training and lifecycle support. A focused pilot helps validate sizing before full rollout.</p>
   </details>
   <details>
     <summary>Should SCADA be on-premises or in the cloud?</summary>
@@ -293,12 +293,12 @@
 
 <section id="cta">
   <h2>Need help?</h2>
-  <p>I help organisations in South Africa and across Africa use <strong>CODRA Panorama Suite as an OT/IT Data Management Platform</strong> for SCADA, GeoSCADA, BMS, EMS, PSIM, MES, historians and Unified Control Centres. You can also read the <a href="https://nicolas-hamel.africa/it-ot-convergence-africa/">IT/OT convergence guide</a>.
+  <p>I help organisations in South Africa and across Africa use <strong>CODRA Panorama Suite as an OT/IT Data Management Platform</strong> for SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, as well as Unified Control Centres. You can also read <a href="https://nicolas-hamel.africa/it-ot-convergence-africa/">IT/OT convergence in Africa: connect the business without weakening operations</a>.
   <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a>, read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a>, or see the <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">CODRA Panorama Suite platform</a>.</p>
 </section>
 
     <footer>
-      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 24 Aug 2026.</p>
+      <p>© <span id="y"></span> Nicolas Hamel • Last updated: 24 August 2026.</p>
     </footer>
     </main>
   </div>

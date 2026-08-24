@@ -35,7 +35,7 @@
       {
         "@type": "TechArticle",
         "@id": "https://nicolas-hamel.africa/it-ot-convergence-africa/#article",
-        "headline": "IT/OT convergence in Africa: a practical architecture guide",
+        "headline": "IT/OT convergence in Africa: connect the business without weakening operations",
         "description": "How to connect operational systems and enterprise services while preserving local control, resilience and cybersecurity.",
         "url": "https://nicolas-hamel.africa/it-ot-convergence-africa/",
         "mainEntityOfPage": "https://nicolas-hamel.africa/it-ot-convergence-africa/",
@@ -74,7 +74,7 @@
           {
             "@type": "Question",
             "name": "Where should an organisation start?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a bounded site or asset group before scaling."}
+            "acceptedAnswer": {"@type": "Answer", "text": "Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a focused site or asset group before scaling."}
           }
         ]
       }
@@ -108,21 +108,21 @@
       <nav class="toc" aria-label="Contents">
         <strong>Contents</strong>
         <ul>
-          <li><a href="#meaning">What convergence means</a></li>
-          <li><a href="#principles">Five design principles</a></li>
-          <li><a href="#architecture">Reference architecture</a></li>
-          <li><a href="#governance">Governance</a></li>
-          <li><a href="#multisite">Multi-site operations</a></li>
-          <li><a href="#regions">Regional context</a></li>
-          <li><a href="#roadmap">Delivery roadmap</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#meaning">What IT/OT convergence means</a></li>
+          <li><a href="#principles">Five design principles for African operations</a></li>
+          <li><a href="#architecture">A practical reference architecture</a></li>
+          <li><a href="#governance">Governance: shared work, distinct accountabilities</a></li>
+          <li><a href="#multisite">Multi-site convergence: local autonomy, central services</a></li>
+          <li><a href="#regions">The regional context changes the delivery plan</a></li>
+          <li><a href="#roadmap">A practical phased delivery roadmap</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
         </ul>
       </nav>
 
       <section id="meaning">
         <h2>What IT/OT convergence means</h2>
         <p>Operational technology controls and observes physical processes. Information technology supports enterprise data, identity, collaboration, business applications and analytics. Convergence creates deliberate interfaces between those domains so that the right people and services can use operational information without removing the controls that protect availability, determinism and safety.</p>
-        <p>Examples include sending approved historian data to energy or maintenance applications, presenting BMS and SCADA alarms in a unified control centre, managing software versions across remote sites, or returning a reviewed work instruction to an operator. Each flow needs an owner, a purpose, a security boundary and a fallback when communications are unavailable.</p>
+        <p>Examples include sending approved Historian data to energy or maintenance applications, presenting BMS and SCADA alarms in a Unified Control Centre, managing software versions across remote sites, or returning a reviewed work instruction to an operator. Each flow needs an owner, a purpose, a security boundary and a fallback when communications are unavailable.</p>
         <div class="callout">
           <p><strong>A useful test:</strong> if a central service disappears, does the site continue to operate safely and predictably for the required period? If the answer is unclear, the architecture is not ready.</p>
         </div>
@@ -172,14 +172,14 @@
 
       <section id="regions">
         <h2>The regional context changes the delivery plan</h2>
-        <p><strong>Southern Africa</strong> often combines mature industrial estates, legacy systems and demanding lifecycle requirements. <strong>East Africa</strong> includes rapidly expanding, distributed infrastructure where phased deployment is common. <strong>West Africa</strong> requires English- and French-speaking partner capacity across large territories. <strong>Central Africa</strong> can place greater emphasis on remote maintainability, knowledge transfer and communications resilience.</p>
+        <p><strong>West Africa</strong> requires English- and French-speaking partner capacity across large territories. <strong>Central Africa</strong> can place greater emphasis on remote maintainability, knowledge transfer and communications resilience. <strong>East Africa</strong> includes rapidly expanding, distributed infrastructure where phased deployment is common. <strong>Southern Africa</strong> often combines mature industrial estates, legacy systems and demanding lifecycle requirements.</p>
         <p>These are broad planning contexts, not substitutes for country and site discovery. The final design must reflect local regulation, skills, support routes, connectivity, installed assets and operational consequence.</p>
       </section>
 
       <section id="platform">
         <h2>Where Panorama Suite fits</h2>
-        <p>Panorama Suite can provide the vendor-independent OT/IT Data Management Platform behind a Unified Control Centre. Applications built on that foundation can include SCADA, geospatial SCADA (GeoSCADA), BMS, EMS, PSIM, MES, industrial historians, controlled interfaces, central supervision and selected Edge-to-Service capabilities. It is most valuable when the operator needs one consistent data and engineering model across mixed equipment, applications and sites.</p>
-        <p>The platform should be evaluated alongside the full system: controllers, networks, gateways, identity, backup, monitoring, integrator capability and support model. Read the <a href="/panorama-suite-africa/">Panorama Suite Africa platform guide</a> for the product evidence, cybersecurity status and evaluation checklist.</p>
+        <p>Panorama Suite can provide the vendor-independent OT/IT Data Management Platform behind a Unified Control Centre. The foundation can support SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, alongside controlled interfaces, central supervision and selected Edge-to-Service capabilities. It is most valuable when the operator needs one consistent data and engineering model across mixed equipment, applications and sites.</p>
+        <p>The platform should be evaluated alongside the full system: controllers, networks, gateways, identity, backup, monitoring, integrator capability and support model. Read <a href="/panorama-suite-africa/">Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres</a> for the product evidence, cybersecurity status and evaluation checklist.</p>
       </section>
 
       <section id="roadmap">
@@ -189,7 +189,7 @@
           <li><strong>Map the current path.</strong> Assets, protocols, data ownership, trust boundaries, dependencies and failure modes.</li>
           <li><strong>Define the target interface.</strong> Data, commands, identities, latency, availability, retention and audit requirements.</li>
           <li><strong>Build the security and fallback model.</strong> Segmentation, access, monitoring, backup, incident response and disconnection behaviour.</li>
-          <li><strong>Pilot on a bounded scope.</strong> Prove operations, interoperability, support and handover, not only the dashboard.</li>
+          <li><strong>Pilot on a focused scope.</strong> Prove operations, interoperability, support and handover, not only the dashboard.</li>
           <li><strong>Scale by repeatable pattern.</strong> Standardise what worked while retaining justified site-specific differences.</li>
         </ol>
       </section>
@@ -210,17 +210,17 @@
         </details>
         <details>
           <summary>Where should an organisation start?</summary>
-          <p>Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a bounded site or asset group before scaling.</p>
+          <p>Start with one operational decision or workflow, map the assets and data path, define the trust boundaries and owners, then prove the design on a focused site or asset group before scaling.</p>
         </details>
       </section>
 
       <section class="cta">
-        <p class="eyebrow">Discuss the first scope</p>
+        <p class="eyebrow">Discuss the initial scope</p>
         <h2>Turn convergence into an operational design</h2>
-        <p>I work with African operators and integration partners to qualify the architecture, installed-base constraints, cybersecurity boundaries and delivery model before technology choices are locked in.</p>
+        <p>I work with African operators and integration partners to define the architecture, installed-base constraints, cybersecurity boundaries and delivery model before technology choices are locked in.</p>
         <div class="hero-actions">
           <a class="button" href="https://www.linkedin.com/in/nicolas-hamel" rel="me noopener" target="_blank">Connect on LinkedIn</a>
-          <a class="button secondary" href="/scada-south-africa/">Read the South Africa guide</a>
+          <a class="button secondary" href="/scada-south-africa/" aria-label="Building a Unified Control Centre in South Africa with CODRA Panorama Suite">Read the South Africa guide</a>
         </div>
       </section>
     </article>

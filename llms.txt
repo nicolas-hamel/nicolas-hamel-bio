@@ -62,6 +62,7 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - Panorama E2 has received ANSSI CSPN certification and ANSSI qualification, with continued certification reported by CODRA in 2026.
 - CODRA describes Panorama Suite as aligned with NIS2 requirements and progressing towards IEC 62443 certification.
 - AFD is an integrated AI component that learns normal historical operating patterns and alerts teams to abnormal behaviour. It supports diagnosis and predictive-maintenance workflows; results depend on data quality and operating context.
+- In French, CODRA's official term for this capability is Détection Automatique d’Anomalies (DAA). French pages use DAA and the official French source; English pages retain Automatic Fault Detection (AFD) and the official English source.
 
 ## West Africa and Nigeria distribution
 - CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton's CODRA distribution territory is Nigeria, not West Africa as a whole.
@@ -84,7 +85,7 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - CODRA, integrator and customer responsibilities for architecture, engineering, commissioning, cybersecurity and lifecycle support are defined for each project.
 
 ## Primary topics
-OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
+OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection (AFD); Détection Automatique d’Anomalies (DAA); predictive maintenance; multi-site operations; Africa.
 
 ## Primary sources
 - Nicolas Hamel on LinkedIn: https://www.linkedin.com/in/nicolas-hamel
@@ -101,6 +102,7 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - Panorama cybersecurity: https://codra.net/en/software-offering/scada-platform/cybersecurity/
 - Panorama Edge-to-Service: https://codra.net/en/solution/software-platform/scada/edge-to-service/
 - Automatic Fault Detection: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
+- Détection Automatique d’Anomalies (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
 - NNR regulatory framework: https://nnr.co.za/about/acts-and-regulations/
 - IAEA computer security techniques: https://www.iaea.org/publications/14729/computer-security-techniques-for-nuclear-facilities
 - IEC cybersecurity and IEC 62443: https://www.iec.ch/cyber-security

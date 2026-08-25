@@ -20,6 +20,16 @@ const pagePairs = [
 
 const failures = [];
 const expectedUrls = new Set(pagePairs.flat());
+const frenchDaaPages = new Set([
+  '/fr/',
+  '/fr/panorama-suite-afrique/',
+  '/fr/afrique-de-l-ouest/',
+  '/fr/afrique-centrale/',
+  '/fr/afrique-de-l-est/',
+  '/fr/afrique-australe/'
+]);
+const frenchDaaSource = 'https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/';
+const englishAfdSource = 'https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/';
 
 function fail(page, message) {
   failures.push(`${page}: ${message}`);
@@ -183,7 +193,30 @@ for (const [englishPath, frenchPath] of pagePairs) {
       if (!structuredTypes.has('DefinedTermSet')) fail(pagePath, 'homepage DefinedTermSet structured data is missing');
     }
 
+    if (language === 'fr') {
+      if (/\bAFD\b|détection automatique des défaillances|codra\.net\/en\/news\/2026\/08\/afd-/i.test(html)) {
+        fail(pagePath, 'French content contains deprecated English AFD terminology or source');
+      }
+      if (frenchDaaPages.has(pagePath) && !html.includes('Détection Automatique d’Anomalies (DAA)')) {
+        fail(pagePath, 'official French DAA terminology is missing');
+      }
+      if ((pagePath === '/fr/' || pagePath === '/fr/panorama-suite-afrique/') && !html.includes(frenchDaaSource)) {
+        fail(pagePath, 'official French DAA source is missing');
+      }
+    }
+
+    if (pagePath === '/' || pagePath === '/panorama-suite-africa/') {
+      if (!html.includes('Automatic Fault Detection') || !html.includes('AFD') || !html.includes(englishAfdSource)) {
+        fail(pagePath, 'English AFD terminology or official source is missing');
+      }
+      if (html.includes(frenchDaaSource)) fail(pagePath, 'English content links to the French DAA source');
+    }
+
     const hrefs = [...html.matchAll(/\shref=(["'])(.*?)\1/gi)].map((match) => match[2]);
+    for (const href of hrefs.filter((value) => value.startsWith('#'))) {
+      const fragment = decodeURIComponent(href.slice(1));
+      if (fragment && !ids.includes(fragment)) fail(pagePath, `local anchor does not resolve: ${href}`);
+    }
     await Promise.all(hrefs.map((href) => validateInternalLink(pagePath, href)));
   }
 }

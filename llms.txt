@@ -10,7 +10,9 @@ Last updated: 2026-08-25
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
 - Vendor-independent Unified Control Centres for West Africa: https://nicolas-hamel.africa/west-africa/
+- Vendor-independent Unified Control Centres for Central Africa: https://nicolas-hamel.africa/central-africa/
 - Vendor-independent Unified Control Centres for East Africa: https://nicolas-hamel.africa/east-africa/
+- Vendor-independent Unified Control Centres for Southern Africa: https://nicolas-hamel.africa/southern-africa/
 - IT/OT convergence in Africa: connect the business without weakening operations: https://nicolas-hamel.africa/it-ot-convergence-africa/
 - Building a Unified Control Centre in South Africa with CODRA Panorama Suite: https://nicolas-hamel.africa/scada-south-africa/
 - Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
@@ -29,14 +31,24 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - AFD is an integrated AI component that learns normal historical operating patterns and alerts teams to abnormal behaviour. It supports diagnosis and predictive-maintenance workflows; results depend on data quality and operating context.
 
 ## West Africa and Nigeria distribution
-- CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton is part of CODRA's international distribution network.
+- CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton's CODRA distribution territory is Nigeria, not West Africa as a whole.
 - Felton's published role includes supporting CODRA deployments in Nigeria through local engineering, technical support, project execution and market development.
-- West Africa includes distinct English- and French-speaking delivery contexts. Architecture, partner responsibilities, connectivity, training and lifecycle support should be defined for each project.
+- In other West African countries, customers can engage CODRA directly through its Johannesburg office or through a suitable certified System Integrator Partner in the country or a neighbouring market.
+
+## Central Africa delivery
+- Central African customers can engage CODRA directly through its Africa business and technical office in Johannesburg.
+- CODRA can help identify and coordinate with a suitable certified System Integrator Partner in the customer country or, where appropriate, a neighbouring country.
+- Architecture, partner responsibilities, connectivity, training and lifecycle support are defined for each project.
 
 ## East Africa and Tanzania distribution
-- CODRA lists ZEK Group International among its international Panorama distributors in Tanzania.
+- CODRA lists ZEK Group International among its international Panorama distributors in Tanzania. ZEK's CODRA distribution territory is Tanzania, not East Africa as a whole.
 - ZEK Group International is headquartered in Dar es Salaam and reports more than 500 employees across Tanzania, Kenya, Uganda, Zambia and South Africa.
-- The Tanzania partnership provides a local commercial route to Panorama Suite, with distribution, integration, commissioning and lifecycle responsibilities organised across ZEK, CODRA and the appropriate project partners.
+- In other East African countries, customers can engage CODRA directly through its Johannesburg office or through a suitable certified System Integrator Partner in the country or a neighbouring market.
+
+## Southern Africa delivery
+- CODRA's Johannesburg office is its Africa business and technical office and provides a direct commercial and technical route for Southern African customers.
+- Projects can be delivered with suitable certified System Integrator Partners in South Africa, the customer country or a neighbouring market.
+- CODRA, integrator and customer responsibilities for architecture, engineering, commissioning, cybersecurity and lifecycle support are defined for each project.
 
 ## Primary topics
 OT/IT Data Management Platform; Unified Control Centres; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
@@ -47,6 +59,9 @@ OT/IT Data Management Platform; Unified Control Centres; SCADA applications; Geo
 - Felton Energy Services: https://feltonenergy.net/
 - CODRA distributor network, including ZEK Group International in Tanzania: https://codra.net/en/partner/join-panorama-distributor-network/
 - ZEK Group International: https://zekgroup.com/
+- CODRA branch offices, including Johannesburg: https://codra.net/en/codra-company/offices/
+- CODRA partner directory: https://codra.net/en/partner/find-a-panorama-partner/
+- CODRA certified integrator network: https://codra.net/en/partner/join-panorama-integrator-network/
 - CODRA company facts: https://codra.net/en/codra-company/about-us/
 - CODRA certifications and commitments: https://codra.net/en/codra-company/our-commitments/
 - Panorama Suite product: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/

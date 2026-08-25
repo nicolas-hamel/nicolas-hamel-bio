@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centre de contrôle unifié en Afrique du Sud | Guide Panorama Suite</title>
+  <meta name="description" content="Guide pratique de la plateforme de gestion des données OT/IT Panorama Suite pour les Centres de contrôle unifiés et les applications SCADA en Afrique du Sud." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <link rel="canonical" href="https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/" />
+  <link rel="alternate" hreflang="en" href="https://nicolas-hamel.africa/scada-south-africa/" />
+  <link rel="alternate" hreflang="fr" href="https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/" />
+  <link rel="alternate" hreflang="x-default" href="https://nicolas-hamel.africa/scada-south-africa/" />
+  <link rel="stylesheet" href="/assets/language.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Centre de contrôle unifié en Afrique du Sud | Guide Panorama Suite" />
+  <meta property="og:description" content="Architecture de Centre de contrôle unifié, applications SCADA, Edge-to-Service, indépendance des constructeurs et cybersécurité OT en Afrique du Sud." />
+  <meta property="og:url" content="https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/" />
+  <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nicolas Hamel, gestion des données OT/IT chez CODRA en Afrique" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_ZA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Centre de contrôle unifié en Afrique du Sud | Guide Panorama Suite" />
+  <meta name="twitter:description" content="Architecture de Centre de contrôle unifié, applications SCADA, Edge-to-Service, indépendance des constructeurs et cybersécurité OT en Afrique du Sud." />
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta name="twitter:image:alt" content="Nicolas Hamel, gestion des données OT/IT chez CODRA en Afrique" />
+
+  <style>
+    :root { --bg:#0b132b; --ink:#e0e6f6; --muted:#a8b1cf; --accent:#4cc9f0; --chip:#1c2541; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: radial-gradient(1200px 800px at 8% -10%, #1c2541 0%, #0b132b 60%); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1024px; margin: 0 auto; padding: 40px 20px 80px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 12px 0 10px; }
+    .brand .site-name { font-size: 1.2rem; margin: 0; color: var(--muted); font-weight: 600; }
+    nav { display:flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius: 999px; background: var(--chip); color: var(--ink); border:1px solid rgba(255,255,255,0.08); font-weight:600; }
+    .hero { margin: 30px 0 16px; }
+    .hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 8px; }
+    .hero p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+    .toc { margin: 28px 0 10px; background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
+    .toc h2 { font-size: 1.05rem; margin: 0 0 6px; }
+    .toc ul { margin: 0; padding-left: 18px; }
+    section { margin: 28px 0; }
+    h2 { font-size: 1.25rem; margin: 0 0 10px; }
+    p { line-height: 1.6; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 16px; }
+    .card { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
+    .checklist li { margin: 6px 0; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; }
+    .embed { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; background: rgba(255,255,255,0.06) url("https://i.ytimg.com/vi/SVPh73mXG70/hqdefault.jpg") center/cover no-repeat; border:1px solid rgba(255,255,255,0.08); }
+    .embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 44px; padding-top: 14px; border-top:1px solid rgba(255,255,255,0.1); color: var(--muted); font-size: 0.92rem; }
+    .skip-link { position:absolute; left:-999px; top:12px; background:var(--chip); color:var(--ink); padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.08); z-index:10; }
+    .skip-link:focus { left:12px; }
+    @media (max-width: 760px) {
+      header { align-items:flex-start; flex-direction:column; }
+      nav { width:100%; overflow-x:auto; flex-wrap:nowrap; padding-bottom:4px; }
+      .btn { white-space:nowrap; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://nicolas-hamel.africa/fr/"},
+      {"@type":"ListItem","position":2,"name":"Centre de contrôle unifié en Afrique du Sud","item":"https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Construire un Centre de contrôle unifié en Afrique du Sud avec CODRA Panorama Suite",
+    "description":"Guide pratique de l'architecture d'un Centre de contrôle unifié et des applications SCADA réalisées avec la plateforme de gestion des données OT/IT CODRA Panorama Suite.",
+    "author":{
+      "@type":"Person",
+      "@id":"https://nicolas-hamel.africa/#identity",
+      "name":"Nicolas Hamel"
+    },
+    "datePublished":"2026-08-25T13:30:00+02:00",
+    "dateModified":"2026-08-25T13:30:00+02:00",
+    "mainEntityOfPage":"https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/",
+    "image":"https://nicolas-hamel.africa/og-image.png",
+    "keywords":["Centre de contrôle unifié Afrique du Sud","applications SCADA","CODRA Panorama Suite","plateforme de gestion des données OT/IT","EMS","Historian","cybersécurité OT","Edge-to-Service"],
+    "inLanguage":"fr",
+    "isPartOf":{"@id":"https://nicolas-hamel.africa/fr/#website"},
+    "publisher":{"@type":"Person","@id":"https://nicolas-hamel.africa/#identity","name":"Nicolas Hamel"},
+    "video": {
+      "@type": "VideoObject",
+      "name": "SCADA en Afrique du Sud : guide de l'acheteur 2026",
+      "description": "Présentation en anglais des architectures SCADA, de la redondance, des fonctions Historian et EMS ainsi que de la cybersécurité OT dans le contexte sud-africain.",
+      "thumbnailUrl": ["https://i.ytimg.com/vi/SVPh73mXG70/hqdefault.jpg"],
+      "uploadDate": "2025-11-08T15:00:00+02:00",
+      "contentUrl": "https://www.youtube.com/watch?v=SVPh73mXG70",
+      "embedUrl": "https://www.youtube.com/embed/SVPh73mXG70",
+      "inLanguage": "en"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Quel est le coût d'une application SCADA ?", "acceptedAnswer": {"@type": "Answer", "text": "Le coût total dépend de l'échelle, du nombre de variables, de la redondance, de la télémétrie, des interfaces et du support. Le budget doit couvrir les licences logicielles, l'intégration, l'infrastructure, les communications, la formation et le support du cycle de vie. Un pilote ciblé aide à valider le dimensionnement avant le déploiement complet."}},
+      {"@type": "Question", "name": "Une application SCADA doit-elle être hébergée sur site ou dans le cloud ?", "acceptedAnswer": {"@type": "Answer", "text": "Le contrôle essentiel et la supervision opérateur doivent rester au niveau nécessaire à l'exploitation autonome. Des services centraux ou cloud peuvent ajouter le reporting et l'analyse lorsque l'évaluation des risques le permet. Une architecture hybride est courante."}},
+      {"@type": "Question", "name": "Combien de temps dure un pilote SCADA ?", "acceptedAnswer": {"@type": "Answer", "text": "Un pilote ciblé dure souvent de 6 à 12 semaines sur un petit groupe d'actifs. Il doit valider l'interopérabilité, les alarmes, les tableaux de bord, l'historique, les contrôles de cybersécurité, la formation et le plan de déploiement à plus grande échelle."}}
+    ]
+  }
+  </script>
+
+  <script>
+    (function () {
+      if (location.hostname === "nicolas-hamel.github.io") {
+        var to = "https://nicolas-hamel.africa" + location.pathname + location.search + location.hash;
+        location.replace(to);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="wrap">
+    <main id="main">
+    <header>
+      <div class="brand"><p class="site-name"><a href="https://nicolas-hamel.africa/fr/">Nicolas Hamel</a></p></div>
+      <nav aria-label="Navigation principale">
+        <a class="btn" href="#toc">Sommaire</a>
+        <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">Plateforme Panorama Suite</a>
+        <a class="btn" href="https://nicolas-hamel.africa/fr/">Accueil</a>
+        <span class="language-switcher" aria-label="Langue"><a href="/scada-south-africa/" lang="en" hreflang="en" data-language-choice="en" aria-label="English">EN</a><span aria-current="page">FR</span></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Construire un Centre de contrôle unifié en Afrique du Sud avec CODRA Panorama Suite</h1>
+      <p>Ce guide pour l'Afrique du Sud traite de l'architecture d'un Centre de contrôle unifié et des applications SCADA qu'il intègre : Edge-to-Service, redondance, fonctions EMS et Historian, cybersécurité OT, partenaires de réalisation et critères d'achat pour l'énergie, l'eau, les transports, les bâtiments et les centres de données. Pour une présentation plus large du produit, consultez <a href="https://nicolas-hamel.africa/fr/panorama-suite-afrique/">Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés</a>. Pour le bureau de Johannesburg et le parcours de partenaires régional, consultez <a href="https://nicolas-hamel.africa/fr/afrique-australe/">Centres de contrôle unifiés indépendants des constructeurs en Afrique australe</a>.</p>
+    </section>
+
+<aside id="toc" class="toc" aria-label="Sommaire">
+  <h2>Sommaire</h2>
+  <ul>
+    <li><a href="#tl-dr">Critères d'achat d'un Centre de contrôle unifié</a></li>
+    <li><a href="#video">Vidéo : construire une application SCADA avec CODRA Panorama Suite</a></li>
+    <li><a href="#narrative">Pourquoi l'approche plateforme est importante en Afrique</a></li>
+    <li><a href="#landscape">Marché et cas d'usage courants</a></li>
+    <li><a href="#architecture">Architectures de référence</a></li>
+    <li><a href="#security">Principes de cybersécurité OT</a></li>
+    <li><a href="#partners">Intégrateurs et réalisation</a></li>
+    <li><a href="#faqs">Questions fréquentes</a></li>
+    <li><a href="#cta">Besoin d'aide ?</a></li>
+  </ul>
+</aside>
+
+<section id="tl-dr">
+  <h2>Critères d'achat d'un Centre de contrôle unifié</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Architecture</h3>
+      <ul class="checklist">
+        <li>Définir les frontières de contrôle : que doit-il continuer à fonctionner sans WAN ?</li>
+        <li>Prévoir la redondance là où elle est nécessaire : serveurs, communications et alimentation.</li>
+        <li>Dimensionner l'Historian et l'EMS : nombre de variables, durée de conservation et fréquence des rapports.</li>
+        <li>Protocoles et passerelles : <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP ou SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span>, <span class="code">IEC 61850</span> et autres.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Sécurité</h3>
+      <ul class="checklist">
+        <li>Concevoir les zones et les conduits, autoriser explicitement les communications et imposer le MFA pour l'accès distant.</li>
+        <li>Durcir les automates, IHM et serveurs ; définir une stratégie de correctifs sans perturber les opérations.</li>
+        <li>Surveillance et journalisation : intégration de l'Historian et du SIEM/SOC.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Personnes et processus</h3>
+      <ul class="checklist">
+        <li>Formation des opérateurs et procédures ; gestion des modifications et sauvegardes.</li>
+        <li>Mesure et vérification des économies d'énergie et d'eau, lorsqu'elles sont incluses dans le périmètre EMS.</li>
+        <li>Engagements de support : horaires, délais de réponse, pièces de rechange et escalade.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <h2>Vidéo : construire une application SCADA avec CODRA Panorama Suite</h2>
+  <div class="embed">
+    <iframe src="https://www.youtube.com/embed/SVPh73mXG70?rel=0" title="Construire une application SCADA avec CODRA Panorama Suite : guide de l'acheteur" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <noscript><p><a href="https://www.youtube.com/watch?v=SVPh73mXG70">Regarder le guide d'achat SCADA sur YouTube</a>.</p></noscript>
+  <p class="muted">Vous préférez lire ? Consultez les <a href="#tl-dr">critères d'achat d'un Centre de contrôle unifié</a> et les <a href="#faqs">questions fréquentes</a> ci-dessous. Regardez également le <a href="https://youtu.be/RGK9SAYSXaQ?si=wu1iqihMKxeobqZo" target="_blank" rel="noopener">Sommet Africa Forward à Nairobi</a> pour compléter le contexte de marché, et lisez <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">l'entretien Bpifrance</a> pour le contexte économique en Afrique du Sud.</p>
+  <details>
+    <summary><strong>Points à retenir</strong></summary>
+    <ul>
+      <li>Maintenir le contrôle local ; utiliser Edge-to-Service pour le reporting et l'analyse.</li>
+      <li>Concevoir la redondance là où elle est nécessaire : serveurs, communications et alimentation.</li>
+      <li>Dimensionner correctement l'Historian et l'EMS et densifier le comptage pour les décisions, la mesure et la vérification.</li>
+      <li>Segmenter l'OT et l'IT, imposer le MFA pour l'accès distant et autoriser explicitement les communications.</li>
+    </ul>
+  </details>
+</section>
+
+<section id="narrative">
+  <h2>Pourquoi l'approche plateforme est importante en Afrique</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1) Une plateforme de données OT/IT répond à plusieurs priorités opérationnelles</h3>
+      <p>Panorama Suite permet de réaliser des applications SCADA, GeoSCADA, BMS, EMS, Historian, PSIM et MES, ainsi que des Centres de contrôle unifiés, des architectures Edge-to-Service et du BIM pour l'exploitation. En Afrique, cette approche est importante car les projets passent souvent d'une application à une autre à mesure que les priorités évoluent.</p>
+    </div>
+    <div class="card">
+      <h3>2) L'indépendance des constructeurs protège les choix à long terme</h3>
+      <p>De nombreux propriétaires souhaitent éviter la dépendance à un OEM ou à un seul intégrateur. Une plateforme de gestion des données OT/IT indépendante des constructeurs facilite l'unification d'actifs et d'applications hétérogènes, préserve les choix à long terme et protège les décisions d'investissement.</p>
+    </div>
+    <div class="card">
+      <h3>3) Edge-to-Service correspond aux réalités locales</h3>
+      <p>Les opérations africaines sont souvent distribuées et déployées par phases. Edge-to-Service prend en charge des architectures hybrides résilientes dans lesquelles le contrôle reste local tandis que la supervision et le reporting sont centralisés à l'échelle nécessaire.</p>
+    </div>
+    <div class="card">
+      <h3>4) Les Centres de contrôle unifiés créent de la valeur opérationnelle</h3>
+      <p>Les clients réduisent les silos : moins d'écrans, moins de fournisseurs et une vision opérationnelle commune des bâtiments, de la sécurité, de l'énergie et des opérations industrielles.</p>
+    </div>
+    <div class="card">
+      <h3>5) Les partenariats locaux renforcent la réalisation et le support</h3>
+      <p>Les intégrateurs locaux renforcent l'ingénierie régionale, le support de premier niveau, le transfert de connaissances et l'escalade pendant tout le cycle de vie du projet.</p>
+    </div>
+  </div>
+</section>
+
+<section id="landscape">
+  <h2>Marché et cas d'usage courants</h2>
+  <p>Les déploiements SCADA en Afrique du Sud couvrent l'<strong>eau et l'assainissement</strong> municipaux, l'<strong>énergie</strong> (production, distribution, comptage et EMS), les <strong>transports</strong> (ferroviaire et BMS dans les gares) ainsi que les <strong>bâtiments et centres de données</strong> (CVC, BMS, alimentation et alarmes). Les objectifs courants comprennent la visibilité opérationnelle, la gestion des alarmes, les rapports de conformité, l'efficacité énergétique et hydrique ainsi que la résilience des opérations pendant les coupures réseau.</p>
+</section>
+
+<section id="architecture">
+  <h2>Architectures de référence</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Contrôle central avec autonomie locale</h3>
+      <p>Les automates, RTU et IHM locaux maintiennent les actifs en fonctionnement ; une application SCADA centrale fournit une vision unifiée, les alarmes, les fonctions Historian et EMS ainsi que les outils d'ingénierie. Utiliser des serveurs et des communications redondants pour les procédés critiques.</p>
+    </div>
+    <div class="card">
+      <h3>Edge-to-Service</h3>
+      <p>Relier de manière sécurisée les sites locaux aux services à valeur ajoutée, comme les tableaux de bord, le reporting, l'analyse et le mobile, sans placer le contrôle dans le cloud. Publier uniquement les données nécessaires vers le niveau supérieur et maintenir le contrôle local.</p>
+    </div>
+    <div class="card">
+      <h3>Protocoles et interopérabilité</h3>
+      <p>Prévoir <span class="code">Modbus</span>, <span class="code">S7comm</span>, <span class="code">BACnet/IP ou SC</span>, <span class="code">SNMP</span>, <span class="code">MQTT</span> et <span class="code">IEC 61850</span>. Utiliser des passerelles testées lorsque cela est nécessaire et documenter l'adressage, la mise à l'échelle et la synchronisation horaire.</p>
+    </div>
+    <div class="card">
+      <h3>Historian et EMS</h3>
+      <p>Dimensionner correctement le nombre de variables, les durées d'archivage et les calendriers de rapports. Pour l'EMS, densifier le comptage aux endroits où les décisions sont prises et conserver suffisamment d'historique pour la mesure et la vérification.</p>
+    </div>
+  </div>
+</section>
+
+<section id="security">
+  <h2>Principes de cybersécurité OT</h2>
+  <p>Pour les environnements réglementés et à conséquences élevées, consultez <a href="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/">Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique</a>, qui présente un cadre priorisant la cybersécurité, aligné sur l'IEC 62443 et les recommandations de l'ANSSI.</p>
+  <ul>
+    <li>Segmenter les réseaux et définir les frontières de confiance entre l'IT et l'OT.</li>
+    <li>Durcir les automates, IHM et serveurs, imposer le MFA pour l'accès distant et autoriser explicitement les communications entre les zones.</li>
+    <li>Collecter les journaux et la télémétrie, surveiller les anomalies, sauvegarder les configurations et tester les restaurations.</li>
+    <li>Adopter un processus clair de gestion des modifications, avec approbations et plans de retour arrière.</li>
+  </ul>
+</section>
+
+<section id="partners">
+  <h2>Intégrateurs et réalisation</h2>
+  <p>Choisir des partenaires disposant de références pertinentes, d'une assurance qualité formelle, de formations certifiées et d'un support disponible 24 h/24 et 7 j/7. Garantir un transfert transparent de la documentation et intégrer les pratiques de cybersécurité depuis la conception jusqu'à la maintenance. Pour l'énergie et l'eau, inclure la mesure et la vérification dans le périmètre afin de quantifier les économies.</p>
+</section>
+
+<section id="faqs">
+  <h2>Questions fréquentes</h2>
+  <details>
+    <summary>Quel est le coût d'une application SCADA ?</summary>
+    <p>Le coût total dépend de l'échelle, du nombre de variables, de la redondance, de la télémétrie, des interfaces et du support. Le budget doit couvrir les licences logicielles, l'intégration, l'infrastructure, les communications, la formation et le support du cycle de vie. Un pilote ciblé aide à valider le dimensionnement avant le déploiement complet.</p>
+  </details>
+  <details>
+    <summary>Une application SCADA doit-elle être hébergée sur site ou dans le cloud ?</summary>
+    <p>Le contrôle essentiel et la supervision opérateur doivent rester au niveau nécessaire à l'exploitation autonome. Des services centraux ou cloud peuvent ajouter le reporting et l'analyse lorsque l'évaluation des risques le permet. Une architecture hybride est courante.</p>
+  </details>
+  <details>
+    <summary>Combien de temps dure un pilote SCADA ?</summary>
+    <p>Un pilote ciblé dure souvent de 6 à 12 semaines sur un petit groupe d'actifs. Il doit valider l'interopérabilité, les alarmes, les tableaux de bord, l'historique, les contrôles de cybersécurité, la formation et le plan de déploiement à plus grande échelle.</p>
+  </details>
+</section>
+
+<section id="cta">
+  <h2>Besoin d'aide ?</h2>
+  <p>J'accompagne les organisations en Afrique du Sud et dans toute l'Afrique dans l'utilisation de <strong>CODRA Panorama Suite comme plateforme de gestion des données OT/IT</strong> pour leurs applications SCADA, GeoSCADA, BMS, EMS, Historian, PSIM et MES, ainsi que leurs Centres de contrôle unifiés. Vous pouvez également lire <a href="https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/">Convergence IT/OT en Afrique : connecter l'entreprise sans fragiliser les opérations</a>.
+  <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contactez-moi sur LinkedIn</a>, lisez <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">l'entretien Bpifrance</a> ou consultez la <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">plateforme CODRA Panorama Suite</a>.</p>
+</section>
+
+    <footer>
+      <p>© <span id="y"></span> Nicolas Hamel • Dernière mise à jour : 25 août 2026.</p>
+    </footer>
+    </main>
+  </div>
+  <script>
+    (function(){ var y = document.getElementById('y'); if (y) y.textContent = new Date().getFullYear(); })();
+  </script>
+  <script src="/assets/language.js" defer></script>
+</body>
+</html>

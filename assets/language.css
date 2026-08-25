@@ -1,0 +1,110 @@
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .055);
+  vertical-align: middle;
+}
+
+.language-switcher a,
+.language-switcher span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 32px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: inherit;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.language-switcher span[aria-current="page"] {
+  background: rgba(89, 215, 242, .18);
+  color: #f4f7ff;
+}
+
+.language-switcher a:hover {
+  background: rgba(255, 255, 255, .09);
+  color: #f4f7ff;
+  text-decoration: none;
+}
+
+.language-suggestion {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 100;
+  width: min(440px, calc(100vw - 36px));
+  padding: 18px;
+  color: #f4f7ff;
+  background: #142541;
+  border: 1px solid rgba(89, 215, 242, .42);
+  border-radius: 16px;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, .4);
+}
+
+.language-suggestion p {
+  margin: 0;
+  color: #d6def0;
+  line-height: 1.5;
+}
+
+.language-suggestion strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #f4f7ff;
+}
+
+.language-suggestion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.language-suggestion a,
+.language-suggestion button {
+  min-height: 40px;
+  padding: 9px 13px;
+  border: 1px solid rgba(255, 255, 255, .17);
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.language-suggestion a {
+  color: #071225;
+  background: #59d7f2;
+  text-decoration: none;
+}
+
+.language-suggestion button {
+  color: #f4f7ff;
+  background: rgba(255, 255, 255, .055);
+}
+
+.language-suggestion a:hover,
+.language-suggestion button:hover {
+  filter: brightness(1.08);
+}
+
+@media (max-width: 620px) {
+  .language-suggestion {
+    right: 14px;
+    bottom: 14px;
+    width: calc(100vw - 28px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-suggestion { scroll-behavior: auto; }
+}

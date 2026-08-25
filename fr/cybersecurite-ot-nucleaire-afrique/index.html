@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique</title>
+  <meta name="description" content="Guide de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires en Afrique." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <link rel="canonical" href="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/" />
+  <link rel="alternate" hreflang="en" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
+  <link rel="alternate" hreflang="fr" href="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/" />
+  <link rel="alternate" hreflang="x-default" href="https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/" />
+  <link rel="stylesheet" href="/assets/language.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique" />
+  <meta property="og:description" content="Un guide orienté cybersécurité pour les Centres de contrôle unifiés et les applications SCADA, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI." />
+  <meta property="og:url" content="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/" />
+  <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta property="og:image:alt" content="Guide de cybersécurité nucléaire pour les Centres de contrôle unifiés en Afrique" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_ZA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique" />
+  <meta name="twitter:description" content="Un guide orienté cybersécurité pour les Centres de contrôle unifiés et les applications SCADA, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI." />
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
+  <meta name="twitter:image:alt" content="Guide de cybersécurité nucléaire pour les Centres de contrôle unifiés en Afrique" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique",
+    "description": "Guide pratique de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI.",
+    "author": {
+      "@type": "Person",
+      "@id": "https://nicolas-hamel.africa/#identity",
+      "name": "Nicolas Hamel"
+    },
+    "publisher": {"@type": "Person", "@id": "https://nicolas-hamel.africa/#identity", "name": "Nicolas Hamel"},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/"
+    },
+    "image": "https://nicolas-hamel.africa/og-image.png",
+    "datePublished": "2026-08-25T13:30:00+02:00",
+    "dateModified": "2026-08-25T13:30:00+02:00",
+    "inLanguage": "fr",
+    "isPartOf": {"@id": "https://nicolas-hamel.africa/fr/#website"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Une certification IEC 62443 est-elle nécessaire pour être conforme ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pas nécessairement. Les exigences applicables sont définies par l'autorité de sûreté compétente et les conditions de licence. L'IEC 62443 fournit des méthodes pratiques, notamment les zones, les conduits et les niveaux de sécurité, qui peuvent soutenir un programme de cybersécurité fondé sur les risques."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les mesures de sécurité peuvent-elles perturber les opérations déterministes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les mesures doivent être conçues pour l'OT. Les mises à jour par étapes, les ruptures de protocole et les listes d'autorisation réduisent les risques tout en protégeant la disponibilité et l'intégrité."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Où les accès à distance doivent-ils aboutir ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sur des serveurs de rebond situés en DMZ, avec authentification forte, moindre privilège et enregistrement des sessions, jamais directement dans les zones de contrôle."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+        --bg:#0b132b;
+        --fg:#e0e6f6;
+        --muted:#97a0bf;
+        --brand:#4cc9f0;
+        --brand-2:#5cf2c7;
+        --card:#1c2541;
+        --border:rgba(255,255,255,.08);
+        --good:#39d353;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, sans-serif; line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{border-bottom:1px solid var(--border)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px 10px}
+    .brand .site-name{font-size:1.2rem;margin:0;color:var(--muted);font-weight:600}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:var(--card);color:var(--fg);border:1px solid var(--border);font-weight:600}
+
+    .hero{position:relative;overflow:hidden}
+    .hero .wrap{padding:56px 20px 28px}
+    .title{font-size: clamp(28px, 5vw, 46px); line-height:1.15; font-weight:800; letter-spacing:.2px}
+    .subtitle{color:var(--muted);font-size: clamp(16px, 2.5vw, 19px)}
+    .grid{display:grid;gap:22px}
+    @media(min-width:960px){.grid.two{grid-template-columns:1.2fr .8fr}}
+
+    .card{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:16px;padding:20px}
+    h2{font-size: clamp(22px, 3.5vw, 30px);line-height:1.25;margin:24px 0 8px}
+    h3{font-size: clamp(19px, 2.8vw, 22px);margin:18px 0 6px}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 20px}
+    li+li{margin-top:6px}
+
+    .toc ol{margin:0;padding-left:20px}
+    .toc li{margin:6px 0}
+
+    .footer{border-top:1px solid var(--border);margin-top:40px}
+    .footer .wrap{padding:28px 20px;color:var(--muted);font-size:14px}
+    .skip-link{position:absolute;left:-999px;top:12px;background:var(--card);color:var(--fg);padding:8px 12px;border-radius:999px;border:1px solid var(--border);z-index:10}
+    .skip-link:focus{left:12px}
+
+    section{scroll-margin-top:80px}
+    #cta { margin: 40px auto; }
+    @media(max-width:760px){
+      header .wrap{align-items:flex-start;flex-direction:column}
+      nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}
+      .btn{white-space:nowrap}
+    }
+
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);font-size:12px;color:var(--muted)}
+    .check{color:var(--good);margin-right:6px}
+    .callout{border-left:3px solid var(--brand);padding-left:14px;color:var(--muted)}
+
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header>
+    <div class="wrap">
+      <div class="brand"><p class="site-name"><a href="https://nicolas-hamel.africa/fr/">Nicolas Hamel</a></p></div>
+      <nav aria-label="Navigation principale">
+        <a class="btn" href="#toc">Sommaire</a>
+        <a class="btn" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://codra.net/fr/offre-logicielle/plateforme-scada/logiciel-panorama-suite/" target="_blank" rel="noopener">Plateforme Panorama Suite</a>
+        <a class="btn" href="https://nicolas-hamel.africa/fr/">Accueil</a>
+        <span class="language-switcher" aria-label="Langue"><a href="/nuclear-scada-cybersecurity-africa/" lang="en" hreflang="en" data-language-choice="en" aria-label="English">EN</a><span aria-current="page">FR</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="wrap grid two">
+        <div>
+          <p class="badge">Guide CODRA Panorama</p>
+          <h1 id="page-title" class="title">Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique</h1>
+          <p class="subtitle">Un guide pratique pour des applications SCADA nucléaires résilientes, bâties sur la plateforme de gestion des données OT/IT CODRA Panorama Suite : gouvernance, zones et conduits <span class="mono">IEC 62443</span>, sources NNR et AIEA, pratiques ANSSI pour les systèmes industriels et architectures Edge-to-Service pour les opérations distribuées en Afrique.</p>
+        </div>
+        <aside class="card">
+          <h3>Points clés</h3>
+          <ul>
+            <li><strong>Défense en profondeur</strong> sans compromettre le déterminisme</li>
+            <li><strong>Zones et conduits</strong> alignés sur l'<span class="mono">IEC 62443</span></li>
+            <li><strong>Programme et éléments de preuve</strong> pour la supervision de la NNR et de l'AIEA</li>
+            <li><strong>Guides ANSSI pour les systèmes industriels</strong> au service d'un déploiement concret</li>
+          </ul>
+          <p class="callout">Dernière mise à jour : 25 août 2026 • Auteur : Nicolas Hamel</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="toc" class="wrap card toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">Sommaire</h2>
+      <ol>
+        <li><a href="#why">Pourquoi ce sujet est prioritaire</a></li>
+        <li><a href="#landscape">Le paysage réglementaire et normatif en Afrique et en Afrique du Sud</a></li>
+        <li><a href="#nuclear-specific">Ce qui distingue les applications SCADA nucléaires</a></li>
+        <li><a href="#threats">Les menaces OT les plus courantes</a></li>
+        <li><a href="#architecture">Une architecture de référence alignée sur l'IEC 62443</a></li>
+        <li><a href="#controls">12 mesures de cybersécurité concrètes pour les applications SCADA nucléaires</a></li>
+        <li><a href="#governance">Programme, gouvernance et éléments de preuve</a></li>
+        <li><a href="#anssi">L'apport des guides ANSSI aux programmes africains de cybersécurité nucléaire</a></li>
+        <li><a href="#roadmap">Une feuille de route opérationnelle sur 90 jours</a></li>
+        <li><a href="#faq">Questions fréquentes</a></li>
+      </ol>
+    </section>
+
+    <section id="why" class="wrap">
+      <h2>Pourquoi ce sujet est prioritaire</h2>
+      <p>Les installations nucléaires dépendent de systèmes de contrôle déterministes et à haute disponibilité. Un incident cyber qui dégrade la disponibilité, l'intégrité ou la confiance des opérateurs peut se transformer en risque pour la sûreté, en perte de production et en non-conformité réglementaire. En Afrique, les exploitants et les entreprises d'ingénierie, d'approvisionnement et de construction modernisent leurs environnements OT, prolongent la durée de vie des installations et préparent de nouvelles capacités. Les programmes étant souvent progressifs et répartis sur plusieurs sites, des architectures hybrides résilientes et des partenaires locaux de confiance sont aussi importants que les contrôles de cybersécurité.</p>
+    </section>
+
+    <section id="landscape" class="wrap">
+      <h2>Le paysage réglementaire et normatif en Afrique et en Afrique du Sud</h2>
+      <ul>
+        <li><strong>National Nuclear Regulator (NNR, Afrique du Sud) :</strong> le cadre réglementaire de la NNR répertorie le guide RG-0014, <em>Guidance on implementation of Cyber or Computer Security for Nuclear Facilities</em>.</li>
+        <li><strong>Sécurité nucléaire de l'AIEA :</strong> le document <em>Computer Security Techniques for Nuclear Facilities</em> décrit des politiques et programmes fondés sur les risques, leur intégration au système de management et la protection des actifs numériques sensibles.</li>
+        <li><strong>IEC 62443 :</strong> cette série de normes traite de la cybersécurité des systèmes d'automatisation et de contrôle industriels. Les zones, les conduits et les niveaux de sécurité offrent une structure d'ingénierie pertinente.</li>
+        <li><strong>ANSSI (France) :</strong> ses guides sur la cybersécurité des systèmes industriels proposent une méthode de déploiement concrète, l'engagement du management et des pratiques de sécurité propres à l'OT.</li>
+      </ul>
+      <p class="callout">Sources principales : <a href="https://nnr.co.za/about/acts-and-regulations/" target="_blank" rel="noopener">cadre réglementaire de la NNR et référence RG-0014</a> · <a href="https://www.iaea.org/publications/14729/computer-security-techniques-for-nuclear-facilities" target="_blank" rel="noopener">techniques de cybersécurité de l'AIEA</a> · <a href="https://www.iec.ch/cyber-security" target="_blank" rel="noopener">cybersécurité IEC et IEC 62443</a> · <a href="https://cyber.gouv.fr/publications/la-cybersecurite-des-systemes-industriels" target="_blank" rel="noopener">guides ANSSI pour les systèmes industriels</a></p>
+      <p class="callout">Ressources associées : <a href="https://youtu.be/RGK9SAYSXaQ?si=wu1iqihMKxeobqZo" target="_blank" rel="noopener">Sommet Africa Forward à Nairobi</a> · <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">entretien Bpifrance</a></p>
+    </section>
+
+    <section id="nuclear-specific" class="wrap">
+      <h2>Ce qui distingue les applications SCADA nucléaires</h2>
+      <ol>
+        <li><strong>La sûreté reste prioritaire :</strong> les mesures de sécurité ne doivent pas compromettre le fonctionnement déterministe, les seuils de déclenchement ni la fiabilité des interfaces homme-machine.</li>
+        <li><strong>Des cycles de vie longs et des environnements hétérogènes :</strong> la coexistence de plusieurs générations d'automates programmables, de DCS et de SIS, les contraintes de mise à jour et les protocoles historiques imposent des mesures compensatoires efficaces.</li>
+        <li><strong>L'assurance réglementaire :</strong> les exploitants doivent disposer d'un programme documenté et fondé sur les risques, ainsi que d'éléments de preuve adaptés à l'autorité de sûreté, aux conditions de licence et à l'importance des actifs numériques pour la sûreté.</li>
+      </ol>
+    </section>
+
+    <section id="threats" class="wrap">
+      <h2>Les menaces OT les plus courantes</h2>
+      <ul>
+        <li><strong>Propagation d'un rançongiciel</strong> de l'IT vers l'OT par des services partagés ou des accès à distance non maîtrisés.</li>
+        <li><strong>Risques liés à la chaîne d'approvisionnement et aux postes de maintenance</strong>, notamment lorsque les stations d'ingénierie ou les supports amovibles deviennent le point d'entrée.</li>
+        <li><strong>Détournement des protocoles</strong>, en particulier les protocoles de terrain historiques dépourvus d'authentification native.</li>
+        <li><strong>Exposition interne et tierce</strong>, liée aux comptes de prestataires et à des processus insuffisants d'arrivée ou de départ.</li>
+      </ul>
+    </section>
+
+    <section id="architecture" class="wrap">
+      <h2>Une architecture de référence alignée sur l'IEC 62443</h2>
+      <div class="grid two">
+        <div>
+          <h3>1) Segmentation par zones et conduits</h3>
+          <ul>
+            <li>Séparer l'<em>IT d'entreprise</em>, la <em>DMZ du site</em>, la <em>DMZ de l'installation</em>, les <em>opérations (SCADA/DCS)</em> et le <em>SIS</em> dans des zones distinctes.</li>
+            <li>Utiliser des conduits supervisés, pare-feu, diodes de données et services intermédiaires, avec des listes d'autorisation strictes et des ruptures de protocole.</li>
+          </ul>
+
+          <h3>2) DMZ de l'installation et des opérations</h3>
+          <ul>
+            <li>Faire aboutir les accès à distance, la préparation des correctifs et contenus, les mises à jour antimalware et la réplication de l'Historian dans les couches DMZ, jamais directement dans les zones de contrôle.</li>
+          </ul>
+
+          <h3>3) Isolement des SIS</h3>
+          <ul>
+            <li>Isoler physiquement et logiquement les systèmes instrumentés de sécurité. Privilégier la télémétrie unidirectionnelle et éviter les chemins d'administration partagés avec les systèmes de contrôle de procédé de base et les applications SCADA.</li>
+          </ul>
+
+          <h3>4) Communications déterministes</h3>
+          <ul>
+            <li>Appliquer des listes d'autorisation strictes aux couches L3/L4 et, lorsque cela est possible, une inspection approfondie des protocoles industriels. Limiter les sessions distantes dans le temps.</li>
+          </ul>
+
+          <h3>5) Temps et journalisation de confiance</h3>
+          <ul>
+            <li>Centraliser des journaux signés et utiliser des sources de temps sécurisées pour l'analyse forensique et les éléments de preuve de conformité.</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Priorités immédiates</h3>
+          <ul>
+            <li><span class="check">✔</span>Verrouiller les supports USB et les analyser dans une zone de préparation</li>
+            <li><span class="check">✔</span>Imposer l'authentification multifacteur et des accès distants accordés juste à temps</li>
+            <li><span class="check">✔</span>Durcir les postes d'ingénierie et les interfaces homme-machine</li>
+            <li><span class="check">✔</span>Mettre en place des sauvegardes hors ligne et testées</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="controls" class="wrap">
+      <h2>12 mesures de cybersécurité concrètes pour les applications SCADA nucléaires</h2>
+      <ol>
+        <li><strong>Inventorier les actifs et identifier les actifs numériques critiques</strong></li>
+        <li><strong>Définir des référentiels de durcissement</strong> pour les serveurs, interfaces homme-machine, automates et stations d'ingénierie</li>
+        <li><strong>Appliquer un contrôle d'accès strict fondé sur les rôles et le moindre privilège</strong>, avec authentification multifacteur pour les tâches sensibles et distantes</li>
+        <li><strong>Mettre en place des listes d'autorisation applicatives</strong> et maîtriser les supports amovibles</li>
+        <li><strong>Gérer les correctifs et les vulnérabilités</strong> avec des fenêtres de maintenance et des mesures compensatoires</li>
+        <li><strong>Segmenter le réseau</strong> selon les zones et conduits IEC 62443, avec des pare-feu capables d'inspection approfondie des paquets</li>
+        <li><strong>Sécuriser les accès à distance</strong> grâce à des serveurs de rebond et à l'enregistrement des sessions</li>
+        <li><strong>Maîtriser les changements et les configurations</strong> des logiques, synoptiques et seuils</li>
+        <li><strong>Conserver des sauvegardes et des images de référence</strong> hors ligne, testées et capables de révéler toute altération</li>
+        <li><strong>Détecter les anomalies OT</strong> et intégrer les alertes à un centre opérationnel de sécurité</li>
+        <li><strong>Préparer des procédures de réponse aux incidents</strong> coordonnées avec les procédures de sûreté selon une approche graduée</li>
+        <li><strong>Développer les compétences et organiser des exercices</strong> pour les opérateurs, mainteneurs et tiers</li>
+      </ol>
+    </section>
+
+    <section id="governance" class="wrap">
+      <h2>Programme, gouvernance et éléments de preuve</h2>
+      <ul>
+        <li><strong>Un programme de cybersécurité des systèmes informatiques</strong> porté par la direction de l'installation et couvrant tous les actifs numériques critiques, leurs interfaces et les prestataires.</li>
+        <li><strong>Une approche graduée et fondée sur les risques</strong>, reliée à l'importance des équipements pour la sûreté.</li>
+        <li><strong>Des revues et éléments de preuve périodiques</strong>, notamment audits, tests et exercices, intégrés au management de la sûreté de l'installation.</li>
+      </ul>
+    </section>
+
+    <section id="anssi" class="wrap">
+      <h2>L'apport des guides ANSSI aux programmes africains de cybersécurité nucléaire</h2>
+      <p>Les guides de l'<strong>ANSSI</strong> sur la cybersécurité des systèmes industriels constituent des références pratiques pour les exploitants et les constructeurs. Ils soulignent l'importance du soutien de la direction, d'une méthode de déploiement structurée et de mesures compensatoires propres à l'OT. Cette démarche est particulièrement pertinente pour les exploitants africains qui modernisent des installations historiques ou préparent de nouveaux projets.</p>
+      <p class="callout">Pour aller plus loin : <a href="https://cyber.gouv.fr/publications/la-cybersecurite-des-systemes-industriels" target="_blank" rel="noopener">ANSSI : La cybersécurité des systèmes industriels</a></p>
+    </section>
+
+    <section id="roadmap" class="wrap">
+      <h2>Une feuille de route opérationnelle sur 90 jours</h2>
+      <p>Pour compléter ce guide par un modèle opérationnel destiné aux équipes des services essentiels et de l'industrie, consultez <a href="https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/">Construire un Centre de contrôle unifié en Afrique du Sud avec CODRA Panorama Suite</a>, qui couvre l'architecture, le déploiement et la préparation de l'écosystème de partenaires.</p>
+      <div class="grid two">
+        <div>
+          <h3>Semaines 0 à 4 : état initial et analyse des écarts</h3>
+          <ul>
+            <li>Inventaire des actifs, cartographie des actifs numériques critiques et inspection des réseaux</li>
+            <li>Priorités immédiates : verrouillage des supports USB et durcissement des accès distants</li>
+          </ul>
+
+          <h3>Semaines 5 à 8 : architecture de référence</h3>
+          <ul>
+            <li>Conception des zones et conduits, DMZ, journalisation, synchronisation du temps et stratégie de sauvegarde</li>
+            <li>Définition de l'intégration au centre opérationnel de sécurité et du périmètre de supervision</li>
+          </ul>
+
+          <h3>Semaines 9 à 12 : durcissement et assurance</h3>
+          <ul>
+            <li>Application des référentiels et listes d'autorisation</li>
+            <li>Test de reprise après sinistre et exercice sur table de réponse à incident</li>
+            <li>Constitution d'un dossier de conformité relié aux attentes réglementaires</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="wrap">
+      <h2>Questions fréquentes</h2>
+      <details>
+        <summary>Une certification IEC 62443 est-elle nécessaire pour être conforme ?</summary>
+        <p>Pas nécessairement. Les exigences applicables sont définies par l'autorité de sûreté compétente et les conditions de licence. L'IEC 62443 fournit des méthodes pratiques, notamment les zones, les conduits et les niveaux de sécurité, qui peuvent soutenir un programme de cybersécurité fondé sur les risques.</p>
+      </details>
+      <details>
+        <summary>Les mesures de sécurité peuvent-elles perturber les opérations déterministes ?</summary>
+        <p>Les mesures doivent être conçues pour l'OT. Les mises à jour par étapes, les ruptures de protocole et les listes d'autorisation réduisent les risques tout en protégeant la disponibilité et l'intégrité.</p>
+      </details>
+      <details>
+        <summary>Où les accès à distance doivent-ils aboutir ?</summary>
+        <p>Sur des serveurs de rebond situés en DMZ, avec authentification forte, moindre privilège et enregistrement des sessions, jamais directement dans les zones de contrôle.</p>
+      </details>
+    </section>
+
+    <section id="cta" class="wrap card">
+      <h2>Besoin d'accompagnement ?</h2>
+      <p>J'accompagne les organisations en Afrique du Sud et dans toute l'Afrique dans le déploiement de <strong>CODRA Panorama Suite comme plateforme de gestion des données OT/IT</strong> pour les applications SCADA nucléaires et d'autres systèmes opérationnels fortement réglementés. Pour replacer ces sujets dans le contexte plus large de la plateforme et de la convergence, consultez <a href="https://nicolas-hamel.africa/fr/panorama-suite-afrique/">Panorama Suite en Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés</a> et <a href="https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/">Convergence OT/IT en Afrique : connecter l'entreprise sans fragiliser les opérations</a>. <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contactez-moi sur LinkedIn</a>, découvrez l'<a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">entretien Bpifrance</a> ou consultez la <a href="https://codra.net/fr/offre-logicielle/plateforme-scada/logiciel-panorama-suite/" target="_blank" rel="noopener">plateforme CODRA Panorama Suite</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, Afrique du Sud • Dernière mise à jour : 25 août 2026.</p>
+      <p class="muted">Cette page fournit des informations générales et ne constitue pas une recommandation réglementaire. Consultez toujours l'autorité de sûreté et les autorités de cybersécurité compétentes pour votre site.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/language.js" defer></script>
+</body>
+</html>

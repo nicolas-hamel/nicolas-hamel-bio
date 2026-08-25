@@ -1,12 +1,12 @@
 # Nicolas Hamel: OT/IT Data Management and Unified Control Centres in Africa
 
 Canonical site: https://nicolas-hamel.africa/
-Primary language: South African English
+Languages: English (default and x-default) and French
 Owner: Nicolas Hamel, Business Development Manager Africa at CODRA
 Location: Johannesburg, South Africa
 Last updated: 2026-08-25
 
-## Preferred pages
+## English preferred pages
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
 - Vendor-independent Unified Control Centres for West Africa: https://nicolas-hamel.africa/west-africa/
@@ -16,6 +16,23 @@ Last updated: 2026-08-25
 - IT/OT convergence in Africa: connect the business without weakening operations: https://nicolas-hamel.africa/it-ot-convergence-africa/
 - Building a Unified Control Centre in South Africa with CODRA Panorama Suite: https://nicolas-hamel.africa/scada-south-africa/
 - Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
+
+## Pages de référence en français
+- Centres de contrôle unifiés indépendants des constructeurs pour l'Afrique : https://nicolas-hamel.africa/fr/
+- Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés : https://nicolas-hamel.africa/fr/panorama-suite-afrique/
+- Centres de contrôle unifiés indépendants des constructeurs en Afrique de l'Ouest : https://nicolas-hamel.africa/fr/afrique-de-l-ouest/
+- Centres de contrôle unifiés indépendants des constructeurs en Afrique centrale : https://nicolas-hamel.africa/fr/afrique-centrale/
+- Centres de contrôle unifiés indépendants des constructeurs en Afrique de l'Est : https://nicolas-hamel.africa/fr/afrique-de-l-est/
+- Centres de contrôle unifiés indépendants des constructeurs en Afrique australe : https://nicolas-hamel.africa/fr/afrique-australe/
+- Convergence OT/IT en Afrique : connecter l'entreprise sans fragiliser les opérations : https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/
+- Construire un Centre de contrôle unifié en Afrique du Sud avec CODRA Panorama Suite : https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/
+- Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique : https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/
+
+## Language routing
+- English URLs are the default and x-default versions.
+- French URLs are under https://nicolas-hamel.africa/fr/.
+- Every indexed page declares reciprocal English and French hreflang links.
+- The site offers the matching French page to visitors whose browser prefers French, while keeping every URL directly accessible and crawlable.
 
 ## About Nicolas Hamel
 Nicolas Hamel works with critical-infrastructure operators and local integration partners across West, Central, East and Southern Africa. His focus is CODRA Panorama Suite as a vendor-independent OT/IT Data Management Platform for Unified Control Centres and SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, as well as resilient multi-site operations.

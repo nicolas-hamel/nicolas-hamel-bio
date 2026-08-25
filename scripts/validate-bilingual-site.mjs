@@ -39,6 +39,20 @@ function linkElements(html) {
   return [...html.matchAll(/<link\b[^>]*>/gi)].map((match) => attributes(match[0]));
 }
 
+function metaElements(html) {
+  return [...html.matchAll(/<meta\b[^>]*>/gi)].map((match) => attributes(match[0]));
+}
+
+function visitStructuredData(value, visitor) {
+  if (Array.isArray(value)) {
+    for (const item of value) visitStructuredData(item, visitor);
+    return;
+  }
+  if (!value || typeof value !== 'object') return;
+  visitor(value);
+  for (const nested of Object.values(value)) visitStructuredData(nested, visitor);
+}
+
 function ownPath(href) {
   if (href.startsWith('/')) return new URL(href, origin).pathname;
   if (href.startsWith(`${origin}/`) || href === origin) return new URL(href).pathname;
@@ -73,6 +87,7 @@ for (const [englishPath, frenchPath] of pagePairs) {
     const filename = fileForUrl(pagePath);
     const html = await readFile(filename, 'utf8');
     const links = linkElements(html);
+    const metas = metaElements(html);
     const canonical = links.find((link) => link.rel === 'canonical');
     const alternates = Object.fromEntries(
       links.filter((link) => link.rel === 'alternate' && link.hreflang).map((link) => [link.hreflang, link.href])
@@ -100,22 +115,72 @@ for (const [englishPath, frenchPath] of pagePairs) {
       fail(pagePath, 'shared language behaviour is missing');
     }
 
+    const title = html.match(/<title>(.*?)<\/title>/i)?.[1]?.trim();
+    const description = metas.find((meta) => meta.name === 'description')?.content;
+    const openGraph = Object.fromEntries(
+      metas.filter((meta) => meta.property?.startsWith('og:')).map((meta) => [meta.property, meta.content])
+    );
+    const twitter = Object.fromEntries(
+      metas.filter((meta) => meta.name?.startsWith('twitter:')).map((meta) => [meta.name, meta.content])
+    );
+    const expectedLocale = language === 'en' ? 'en_ZA' : 'fr_FR';
+    const expectedAlternateLocale = language === 'en' ? 'fr_FR' : 'en_ZA';
+
+    if (!title || title.length < 20 || title.length > 70) {
+      fail(pagePath, `title length should be 20-70 characters, found ${title?.length ?? 0}`);
+    }
+    if (!description || description.length < 120 || description.length > 170) {
+      fail(pagePath, `meta description length should be 120-170 characters, found ${description?.length ?? 0}`);
+    }
+    if (!openGraph['og:title'] || !openGraph['og:description'] || openGraph['og:url'] !== canonical?.href) {
+      fail(pagePath, 'Open Graph title, description or canonical URL is incomplete');
+    }
+    if (openGraph['og:locale'] !== expectedLocale || openGraph['og:locale:alternate'] !== expectedAlternateLocale) {
+      fail(pagePath, `Open Graph locales should be ${expectedLocale} and ${expectedAlternateLocale}`);
+    }
+    if (!twitter['twitter:title'] || !twitter['twitter:description'] || twitter['twitter:card'] !== 'summary_large_image') {
+      fail(pagePath, 'X/Twitter summary metadata is incomplete');
+    }
+
+    const ids = [...html.matchAll(/\sid=(["'])(.*?)\1/gi)].map((match) => match[2]);
+    const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+    if (duplicateIds.length > 0) fail(pagePath, `duplicate HTML ids: ${duplicateIds.join(', ')}`);
+    if ((html.match(/<h1\b/gi) || []).length !== 1) fail(pagePath, 'expected exactly one h1');
+
     const jsonLdBlocks = [...html.matchAll(/<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi)];
+    const structuredTypes = new Set();
     if (jsonLdBlocks.length === 0) fail(pagePath, 'no JSON-LD found');
     for (const [, rawJson] of jsonLdBlocks) {
       try {
         const data = JSON.parse(rawJson);
-        if (data.inLanguage && data.inLanguage !== language) {
-          fail(pagePath, `JSON-LD inLanguage should be ${language}`);
-        }
-        if (data.dateModified) {
-          if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$/.test(data.dateModified) || Number.isNaN(Date.parse(data.dateModified))) {
-            fail(pagePath, `invalid dateModified: ${data.dateModified}`);
+        visitStructuredData(data, (item) => {
+          const types = Array.isArray(item['@type']) ? item['@type'] : [item['@type']];
+          for (const type of types.filter(Boolean)) structuredTypes.add(type);
+          if (item.inLanguage && item['@type'] !== 'VideoObject' && item.inLanguage !== language) {
+            fail(pagePath, `JSON-LD inLanguage should be ${language}`);
           }
-        }
+          for (const property of ['datePublished', 'dateModified']) {
+            if (item[property] && (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$/.test(item[property]) || Number.isNaN(Date.parse(item[property])))) {
+              fail(pagePath, `invalid ${property}: ${item[property]}`);
+            }
+          }
+        });
       } catch (error) {
         fail(pagePath, `invalid JSON-LD: ${error.message}`);
       }
+    }
+
+    if (pagePath === '/' || pagePath === '/fr/') {
+      const terminology = language === 'en'
+        ? ['Unified Control Centre', 'Unified Control Center', 'Unified Operations Centre', 'Integrated Operations Centre', 'Hypervision', 'Manager of Managers', 'umbrella system']
+        : ['Centre de contrôle unifié', 'Centre des opérations unifié', 'Centre des opérations intégré', 'hypervision', 'Manager of Managers', 'système chapeau'];
+      for (const term of terminology) {
+        if (!html.toLocaleLowerCase(language).includes(term.toLocaleLowerCase(language))) {
+          fail(pagePath, `homepage terminology is missing: ${term}`);
+        }
+      }
+      if (!structuredTypes.has('FAQPage')) fail(pagePath, 'homepage FAQPage structured data is missing');
+      if (!structuredTypes.has('DefinedTermSet')) fail(pagePath, 'homepage DefinedTermSet structured data is missing');
     }
 
     const hrefs = [...html.matchAll(/\shref=(["'])(.*?)\1/gi)].map((match) => match[2]);
@@ -151,4 +216,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log(`Bilingual validation passed: ${pagePairs.length * 2} pages, reciprocal hreflang, valid JSON-LD and complete internal links.`);
+console.log(`Bilingual validation passed: ${pagePairs.length * 2} pages, coherent metadata, reciprocal hreflang, valid JSON-LD and complete internal links.`);

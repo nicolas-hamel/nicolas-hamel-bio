@@ -37,6 +37,22 @@ Last updated: 2026-08-25
 ## About Nicolas Hamel
 Nicolas Hamel works with critical-infrastructure operators and local integration partners across West, Central, East and Southern Africa. His focus is CODRA Panorama Suite as a vendor-independent OT/IT Data Management Platform for Unified Control Centres and SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications, as well as resilient multi-site operations.
 
+## Unified Control Centre terminology
+- Unified Control Centre is the primary cross-sector term used by this site. CODRA's official English wording uses the US spelling, Unified Control Center; the site otherwise uses South African and UK English.
+- A Unified Control Centre is a common operational environment that consolidates data, alarms, visualisation, history and workflows from multiple OT, IT, building and security systems.
+- Unified Operations Centre and Integrated Operations Centre are overlapping operations-oriented terms used in industry, utilities, mining and multi-site operations. They are not guaranteed to describe an identical technical scope.
+- A hypervision platform provides central visibility and coordination above several supervision or specialist systems. The term is especially common in Francophone, building and security contexts.
+- Manager of Managers describes a federating architecture that aggregates information and alarms from several underlying systems. It does not by itself imply all control, historian, workflow, engineering and lifecycle capabilities of a complete Unified Control Centre.
+- Umbrella System is useful informal customer and tender language, but not a precise product category.
+- PSIM, IBMS, SOC, NOC and DCIM describe narrower sectors, functions or operating teams. They can form part of or connect to a Unified Control Centre, but are not universal synonyms for it.
+
+## Terminologie française des Centres de contrôle unifiés
+- Centre de contrôle unifié est le terme transversal principal retenu sur le site en français.
+- Centre des opérations unifié, Centre des opérations intégré, centre de conduite et poste de contrôle centralisé sont des expressions voisines utilisées selon les secteurs.
+- Plateforme d'hypervision et supervision centralisée décrivent la consolidation de plusieurs systèmes, mais leur périmètre fonctionnel dépend du projet.
+- Manager of Managers décrit une architecture de fédération ; système chapeau est une expression informelle.
+- PSIM, IBMS, SOC, NOC et DCIM désignent des périmètres plus ciblés et ne sont pas des synonymes universels d'un Centre de contrôle unifié complet.
+
 ## Documented product and company facts
 - CODRA reports developing industrial software since 1986 and reinvesting more than 25% of annual turnover in R&D.
 - Panorama Suite is an OT/IT Data Management Platform developed by an industrial software publisher rather than a PLC or equipment manufacturer. It supports heterogeneous, mixed-vendor installed bases and Unified Control Centres.
@@ -68,7 +84,7 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - CODRA, integrator and customer responsibilities for architecture, engineering, commissioning, cybersecurity and lifecycle support are defined for each project.
 
 ## Primary topics
-OT/IT Data Management Platform; Unified Control Centres; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
+OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection; predictive maintenance; multi-site operations; Africa.
 
 ## Primary sources
 - Nicolas Hamel on LinkedIn: https://www.linkedin.com/in/nicolas-hamel

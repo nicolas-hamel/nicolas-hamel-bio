@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nicolas-hamel.africa/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/panorama-suite-africa/</loc>
@@ -37,8 +37,24 @@
     <lastmod>2026-08-25</lastmod>
   </url>
   <url>
+    <loc>https://nicolas-hamel.africa/bms-ems-africa/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/industrial-historian-africa/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/psim-unified-control-centres-africa/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/mes-africa-panorama-coox/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
     <loc>https://nicolas-hamel.africa/fr/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/fr/panorama-suite-afrique/</loc>
@@ -71,5 +87,21 @@
   <url>
     <loc>https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/</loc>
     <lastmod>2026-08-25</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/fr/bms-ems-afrique/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/fr/historian-industriel-afrique/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/fr/psim-centres-controle-unifies-afrique/</loc>
+    <lastmod>2026-08-26</lastmod>
+  </url>
+  <url>
+    <loc>https://nicolas-hamel.africa/fr/mes-afrique-panorama-coox/</loc>
+    <lastmod>2026-08-26</lastmod>
   </url>
 </urlset>

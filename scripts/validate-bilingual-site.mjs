@@ -15,7 +15,11 @@ const pagePairs = [
   ['/southern-africa/', '/fr/afrique-australe/'],
   ['/it-ot-convergence-africa/', '/fr/convergence-ot-it-afrique/'],
   ['/scada-south-africa/', '/fr/centre-de-controle-unifie-afrique-du-sud/'],
-  ['/nuclear-scada-cybersecurity-africa/', '/fr/cybersecurite-ot-nucleaire-afrique/']
+  ['/nuclear-scada-cybersecurity-africa/', '/fr/cybersecurite-ot-nucleaire-afrique/'],
+  ['/bms-ems-africa/', '/fr/bms-ems-afrique/'],
+  ['/industrial-historian-africa/', '/fr/historian-industriel-afrique/'],
+  ['/psim-unified-control-centres-africa/', '/fr/psim-centres-controle-unifies-afrique/'],
+  ['/mes-africa-panorama-coox/', '/fr/mes-afrique-panorama-coox/']
 ];
 
 const failures = [];

@@ -4,7 +4,7 @@ Canonical site: https://nicolas-hamel.africa/
 Languages: English (default and x-default) and French
 Owner: Nicolas Hamel, Business Development Manager Africa at CODRA
 Location: Johannesburg, South Africa
-Last updated: 2026-08-25
+Last updated: 2026-08-26
 
 ## English preferred pages
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
@@ -16,6 +16,10 @@ Last updated: 2026-08-25
 - IT/OT convergence in Africa: connect the business without weakening operations: https://nicolas-hamel.africa/it-ot-convergence-africa/
 - Building a Unified Control Centre in South Africa with CODRA Panorama Suite: https://nicolas-hamel.africa/scada-south-africa/
 - Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa: https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/
+- BMS and EMS in Africa: https://nicolas-hamel.africa/bms-ems-africa/
+- Industrial Historian in Africa: https://nicolas-hamel.africa/industrial-historian-africa/
+- PSIM and Unified Control Centres in Africa: https://nicolas-hamel.africa/psim-unified-control-centres-africa/
+- MES in Africa with Panorama COOX: https://nicolas-hamel.africa/mes-africa-panorama-coox/
 
 ## Pages de référence en français
 - Centres de contrôle unifiés indépendants des constructeurs pour l'Afrique : https://nicolas-hamel.africa/fr/
@@ -27,6 +31,10 @@ Last updated: 2026-08-25
 - Convergence OT/IT en Afrique : connecter l'entreprise sans fragiliser les opérations : https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/
 - Construire un Centre de contrôle unifié en Afrique du Sud avec CODRA Panorama Suite : https://nicolas-hamel.africa/fr/centre-de-controle-unifie-afrique-du-sud/
 - Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique : https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/
+- BMS et EMS en Afrique : https://nicolas-hamel.africa/fr/bms-ems-afrique/
+- Historian industriel en Afrique : https://nicolas-hamel.africa/fr/historian-industriel-afrique/
+- PSIM et Centres de contrôle unifiés en Afrique : https://nicolas-hamel.africa/fr/psim-centres-controle-unifies-afrique/
+- MES en Afrique avec Panorama COOX : https://nicolas-hamel.africa/fr/mes-afrique-panorama-coox/
 
 ## Language routing
 - English URLs are the default and x-default versions.
@@ -63,6 +71,12 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - CODRA describes Panorama Suite as aligned with NIS2 requirements and progressing towards IEC 62443 certification.
 - AFD is an integrated AI component that learns normal historical operating patterns and alerts teams to abnormal behaviour. It supports diagnosis and predictive-maintenance workflows; results depend on data quality and operating context.
 - In French, CODRA's official term for this capability is Détection Automatique d’Anomalies (DAA). French pages use DAA and the official French source; English pages retain Automatic Fault Detection (AFD) and the official English source.
+
+## Application-specific positioning
+- BMS and EMS are applications built on the Panorama Suite OT/IT data foundation. BMS focuses on real-time building operations; EMS focuses on utility measurement, analysis and performance improvement.
+- Panorama H2 is CODRA's industrial Historian offer for collecting, archiving and analysing operational data locally or in a hosted model.
+- A PSIM federates physical-security and related safety systems. It can form part of a broader Unified Control Centre that also covers building, utility, transport or industrial operations.
+- Panorama COOX provides MES capabilities in the Panorama family, with current positioning centred on QPI and production-performance analysis. Project scope and licensed modules must be confirmed for the current version.
 
 ## West Africa and Nigeria distribution
 - CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton's CODRA distribution territory is Nigeria, not West Africa as a whole.
@@ -103,6 +117,11 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - Panorama Edge-to-Service: https://codra.net/en/solution/software-platform/scada/edge-to-service/
 - Automatic Fault Detection: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
 - Détection Automatique d’Anomalies (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
+- CODRA BMS/FM applications: https://codra.net/en/sectors/supervisory-control/building-management-system-bms/
+- CODRA H2 Energy: https://codra.net/en/offer/energy-efficiency/
+- CODRA Panorama H2 Historian: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/
+- CODRA multi-site PSIM reference architecture: https://codra.net/en/psim-platform/
+- CODRA Panorama COOX MES: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-coox/
 - NNR regulatory framework: https://nnr.co.za/about/acts-and-regulations/
 - IAEA computer security techniques: https://www.iaea.org/publications/14729/computer-security-techniques-for-nuclear-facilities
 - IEC cybersecurity and IEC 62443: https://www.iec.ch/cyber-security

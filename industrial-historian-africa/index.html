@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Historian in Africa | CODRA Panorama H2</title>
+  <meta name="description" content="Build a reliable operational data foundation across African sites with Panorama H2, CODRA’s vendor-independent industrial Historian platform.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+  <meta name="theme-color" content="#071225">
+  <link rel="canonical" href="https://nicolas-hamel.africa/industrial-historian-africa/">
+  <link rel="alternate" hreflang="en" href="https://nicolas-hamel.africa/industrial-historian-africa/">
+  <link rel="alternate" hreflang="fr" href="https://nicolas-hamel.africa/fr/historian-industriel-afrique/">
+  <link rel="alternate" hreflang="x-default" href="https://nicolas-hamel.africa/industrial-historian-africa/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/language.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Industrial Historian in Africa | CODRA Panorama H2">
+  <meta property="og:description" content="A practical guide to industrial Historian architecture, data quality, multi-site context and analytics with CODRA Panorama H2.">
+  <meta property="og:url" content="https://nicolas-hamel.africa/industrial-historian-africa/">
+  <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png">
+  <meta property="og:image:alt" content="CODRA Panorama Suite OT/IT Data Management Platform for Africa">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Industrial Historian in Africa | CODRA Panorama H2">
+  <meta name="twitter:description" content="A practical guide to industrial Historian architecture, data quality, multi-site context and analytics with CODRA Panorama H2.">
+  <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nicolas-hamel.africa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industrial Historian in Africa",
+          "item": "https://nicolas-hamel.africa/industrial-historian-africa/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/industrial-historian-africa/#article",
+      "headline": "Industrial Historian in Africa",
+      "description": "Panorama H2 is CODRA’s Historian offer for collecting, archiving and analysing operational data locally or in a hosted model.",
+      "url": "https://nicolas-hamel.africa/industrial-historian-africa/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/industrial-historian-africa/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
+      },
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
+      },
+      "datePublished": "2026-08-26T13:52:53+02:00",
+      "dateModified": "2026-08-26T13:52:53+02:00",
+      "inLanguage": "en",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "about": [
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        },
+        {
+          "@type": "Thing",
+          "name": "Industrial Historian"
+        },
+        {
+          "@type": "Thing",
+          "name": "Time-series data"
+        },
+        {
+          "@type": "Thing",
+          "name": "Operational analytics"
+        },
+        {
+          "@type": "Thing",
+          "name": "Panorama H2"
+        },
+        {
+          "@type": "Thing",
+          "name": "Predictive maintenance"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://codra.net/#organization"
+        },
+        {
+          "@id": "https://nicolas-hamel.africa/#codra-africa-office"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/",
+        "https://codra.net/en/solution/software-platform/analyse/historisation-archiving/",
+        "https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/",
+        "https://codra.net/en/solution/software-platform/scada/edge-to-service/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nicolas-hamel.africa/industrial-historian-africa/#faq",
+      "url": "https://nicolas-hamel.africa/industrial-historian-africa/#faq",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is an industrial Historian different from a normal database?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An industrial Historian is designed around time-series acquisition, timestamps, quality, operational context and efficient retrieval of changing process data. A general database may still be used elsewhere in the architecture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Panorama H2 collect data from an existing SCADA or BMS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, subject to the available interfaces and project design. The source protocols, data semantics, timestamps and ownership should be validated before migration or federation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an industrial Historian have to be in the cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. CODRA describes Panorama H2 as available locally or in a hosted model. The correct choice depends on autonomy, cybersecurity, connectivity, governance and lifecycle requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can historical data support predictive maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Historical trends and anomaly detection can support earlier diagnosis and predictive-maintenance workflows, but outcomes depend on instrumentation, context, data quality and maintenance processes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a Historian pilot prove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It should prove reliable acquisition, timestamp and quality handling, recovery after disconnection, usable context, retrieval performance and at least one decision or report that users can validate."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="site-name" href="/">Nicolas Hamel</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="/it-ot-convergence-africa/">IT/OT convergence</a>
+        <a href="/panorama-suite-africa/">Panorama Suite</a>
+        <a href="https://www.linkedin.com/in/nicolas-hamel" rel="me noopener" target="_blank">LinkedIn</a>
+        <span class="language-switcher" aria-label="Language"><span aria-current="page">EN</span><a href="/fr/historian-industriel-afrique/" lang="fr" hreflang="fr" data-language-choice="fr" aria-label="Français">FR</a></span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="shell breadcrumbs"><a href="/">Home</a> / Industrial Historian in Africa</div>
+    <header class="shell article-hero">
+      <p class="eyebrow">Application guide · Utilities, industry, buildings, transport and distributed assets</p>
+      <h1>Industrial Historian in Africa</h1>
+      <p class="lead">Turn time-series records into reliable operational context across equipment, applications and sites, without making analytics dependent on one automation manufacturer.</p>
+      <p class="article-meta">By Nicolas Hamel · Published 26 August 2026</p>
+    </header>
+
+    <article class="article">
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ul>
+          <li><a href="#summary">Executive summary</a></li>
+          <li><a href="#foundation">A Historian is an operational evidence layer</a></li>
+          <li><a href="#quality">Data quality and governance come before dashboards</a></li>
+          <li><a href="#applications">One history serving several operational applications</a></li>
+          <li><a href="#architecture">Local, central and multi-site Historian architecture</a></li>
+          <li><a href="#analytics">From historical data to earlier anomaly detection</a></li>
+          <li><a href="#evaluate">How to evaluate an industrial Historian project</a></li>
+          <li><a href="#delivery">Delivery across Africa’s four regions</a></li>
+          <li><a href="#related">Related guides</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ul>
+      </nav>
+
+    <section id="summary">
+      <h2>Executive summary</h2>
+      <p>Panorama H2 is CODRA’s Historian offer for collecting, archiving and analysing operational data locally or in a hosted model. A useful industrial Historian does more than retain values. It preserves trustworthy timestamps and enough operating context to explain what equipment, alarms, teams and production conditions were involved.</p>
+        <div class="callout"><p><strong>The central question is not “How much data can we store?”</strong> It is “Can operators and engineers retrieve dependable evidence quickly enough to understand events, compare performance and improve decisions?”</p></div>
+        <p>See CODRA’s official <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/" target="_blank" rel="noopener">Panorama H2 – Data Historian &amp; Reporting</a> page and its guide to <a href="https://codra.net/en/solution/software-platform/analyse/historisation-archiving/" target="_blank" rel="noopener">Data Historian: Data Archiving &amp; Time-Series Analysis</a>.</p>
+    </section>
+
+    <section id="foundation">
+      <h2>A Historian is an operational evidence layer</h2>
+      <p>Operational information arrives from PLCs, DCSs, RTUs, meters, machines, building systems, instruments, third-party software and manual inputs. The Historian must preserve chronology while making relationships visible: a process value before an alarm, a change of operating phase, the equipment in service, the team on shift and the time taken to acknowledge or correct an event.</p>
+        <p>This context distinguishes an operational Historian from a generic archive. It supports post-event analysis, performance comparison, compliance evidence, maintenance investigation and the data preparation needed for more advanced analytics.</p>
+    </section>
+
+    <section id="quality">
+      <h2>Data quality and governance come before dashboards</h2>
+      <ul>
+          <li><strong>Timestamp integrity:</strong> define source timestamps, time zones, clock synchronisation and store-and-forward behaviour.</li>
+          <li><strong>Context:</strong> preserve asset, site, unit, batch, operating phase and alarm relationships.</li>
+          <li><strong>Quality flags:</strong> distinguish measured, calculated, substituted, stale and unavailable values.</li>
+          <li><strong>Retention:</strong> align raw and aggregated histories with operational, regulatory and cost requirements.</li>
+          <li><strong>Ownership:</strong> define who may create tags, alter calculations, approve reports and export data.</li>
+        </ul>
+        <p>A fast database cannot compensate for inconsistent naming, missing instrumentation or unclear responsibility. Those foundations should be included in the first pilot.</p>
+    </section>
+
+    <section id="applications">
+      <h2>One history serving several operational applications</h2>
+      <p>A shared Historian can provide context to SCADA, GeoSCADA, BMS, EMS, PSIM and MES applications without turning them into one undifferentiated system. Operators retain purpose-built interfaces while authorised teams gain consistent historical evidence.</p>
+        <div class="wide grid two">
+          <article class="card"><p class="kicker">Operations</p><h3>Event reconstruction and trend analysis</h3><p>Compare values, alarms, acknowledgements and operating phases to investigate incidents and recurring losses.</p></article>
+          <article class="card"><p class="kicker">Performance</p><h3>Cross-site and cross-period comparison</h3><p>Normalise context so utilities, buildings, production lines or remote assets can be compared on defensible definitions.</p></article>
+        </div>
+    </section>
+
+    <section id="architecture">
+      <h2>Local, central and multi-site Historian architecture</h2>
+      <p>Remote and critical sites may need to continue collecting data when the WAN is unavailable. A distributed design can retain local acquisition and buffering while transferring selected history to a central service for group analysis. The project should define recovery order, duplicate handling, bandwidth limits, time synchronisation and the authority of central commands separately from data collection.</p>
+        <p>Panorama Edge-to-Service provides a reference pattern for local autonomy, central administration and controlled data transfer. See <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/" target="_blank" rel="noopener">Panorama Edge-to-Service</a>.</p>
+    </section>
+
+    <section id="analytics">
+      <h2>From historical data to earlier anomaly detection</h2>
+      <p>Automatic Fault Detection (AFD) uses historical operating data to learn normal behaviour across different phases and flag abnormal patterns. The useful output is not an unexplained score; it is an alert that an engineer or operator can investigate with the underlying trends and context.</p>
+        <p>AFD does not repair poor sensors, missing context or inconsistent operating procedures. Its effectiveness depends on the Historian foundation and the organisation’s ability to review and act on findings. See <a href="https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/" target="_blank" rel="noopener">AFD: detect the abnormal before it becomes an incident</a>.</p>
+    </section>
+
+    <section id="evaluate">
+      <h2>How to evaluate an industrial Historian project</h2>
+      <ol>
+          <li><strong>Choose representative decisions:</strong> incident analysis, energy comparison, maintenance investigation or production performance.</li>
+          <li><strong>Inventory sources and rates:</strong> tag volumes, changes, bursts, events, alarms, manual data and existing archives.</li>
+          <li><strong>Define context and quality:</strong> timestamps, asset hierarchy, calculations, quality flags and naming.</li>
+          <li><strong>Model retention and recovery:</strong> raw versus aggregated data, backup, restoration and disconnected operation.</li>
+          <li><strong>Test retrieval:</strong> prove that users can answer real questions within an acceptable time, not only that ingestion works.</li>
+        </ol>
+    </section>
+
+    <section id="delivery">
+      <h2>Delivery across Africa’s four regions</h2>
+      <p>CODRA’s Africa business and technical office in Johannesburg is the direct route for African projects and coordinates suitable certified integrators according to the country. Felton Energy Services represents CODRA in Nigeria only; ZEK Group International represents CODRA in Tanzania only.</p>
+      <p>See the dedicated pages for <a href="/west-africa/">Vendor-independent Unified Control Centres for West Africa</a>, <a href="/central-africa/">Vendor-independent Unified Control Centres for Central Africa</a>, <a href="/east-africa/">Vendor-independent Unified Control Centres for East Africa</a> and <a href="/southern-africa/">Vendor-independent Unified Control Centres for Southern Africa</a>.</p>
+    </section>
+
+    <section id="related">
+      <h2>Related guides</h2>
+      <div class="wide grid two">
+        <a class="card link-card" href="/panorama-suite-africa/"><p class="kicker">Platform overview</p><h3>Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres</h3></a>
+        <a class="card link-card" href="/bms-ems-africa/"><p class="kicker">Application guide</p><h3>BMS and EMS in Africa</h3></a>
+          <a class="card link-card" href="/psim-unified-control-centres-africa/"><p class="kicker">Application guide</p><h3>PSIM and Unified Control Centres in Africa</h3></a>
+          <a class="card link-card" href="/mes-africa-panorama-coox/"><p class="kicker">Application guide</p><h3>MES in Africa with Panorama COOX</h3></a>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>How is an industrial Historian different from a normal database?</summary>
+        <p>An industrial Historian is designed around time-series acquisition, timestamps, quality, operational context and efficient retrieval of changing process data. A general database may still be used elsewhere in the architecture.</p>
+      </details>
+      <details>
+        <summary>Can Panorama H2 collect data from an existing SCADA or BMS?</summary>
+        <p>Yes, subject to the available interfaces and project design. The source protocols, data semantics, timestamps and ownership should be validated before migration or federation.</p>
+      </details>
+      <details>
+        <summary>Does an industrial Historian have to be in the cloud?</summary>
+        <p>No. CODRA describes Panorama H2 as available locally or in a hosted model. The correct choice depends on autonomy, cybersecurity, connectivity, governance and lifecycle requirements.</p>
+      </details>
+      <details>
+        <summary>Can historical data support predictive maintenance?</summary>
+        <p>Yes. Historical trends and anomaly detection can support earlier diagnosis and predictive-maintenance workflows, but outcomes depend on instrumentation, context, data quality and maintenance processes.</p>
+      </details>
+      <details>
+        <summary>What should a Historian pilot prove?</summary>
+        <p>It should prove reliable acquisition, timestamp and quality handling, recovery after disconnection, usable context, retrieval performance and at least one decision or report that users can validate.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">Next step</p>
+      <h2>Evaluate the application against your real installed base</h2>
+      <p>I work with operators and local integrators to define the initial scope, interfaces, cybersecurity requirements and delivery model.</p>
+      <div class="hero-actions">
+        <a class="button" href="https://www.linkedin.com/in/nicolas-hamel" rel="me noopener" target="_blank">Contact me on LinkedIn</a>
+        <a class="button secondary" href="/panorama-suite-africa/">Explore Panorama Suite for Africa</a>
+      </div>
+    </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
+      <p><a href="/">Home</a> · Updated 26 August 2026</p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="/assets/language.js" defer></script>
+</body>
+</html>

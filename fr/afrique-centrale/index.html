@@ -66,11 +66,17 @@
         "author": {"@id": "https://nicolas-hamel.africa/#identity"},
         "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
         "datePublished": "2026-08-25T13:30:00+02:00",
-        "dateModified": "2026-08-25T14:41:22+02:00",
+        "dateModified": "2026-08-31T18:00:00+02:00",
         "inLanguage": "fr",
         "image": "https://nicolas-hamel.africa/og-image.png",
         "isPartOf": {"@id": "https://nicolas-hamel.africa/fr/#website"},
-        "spatialCoverage": {"@type": "Place", "name": "Afrique centrale"},
+        "spatialCoverage": [
+          {"@type": "Place", "name": "Afrique centrale"},
+          {"@type": "Country", "name": "Cameroun"},
+          {"@type": "Country", "name": "République démocratique du Congo"},
+          {"@type": "Country", "name": "République du Congo"},
+          {"@type": "Country", "name": "Gabon"}
+        ],
         "about": [
           {"@type": "Thing", "name": "CODRA Panorama Suite"},
           {"@type": "Thing", "name": "Plateforme de gestion des données OT/IT"},
@@ -134,7 +140,7 @@
       <p class="eyebrow">Guide régional · Afrique centrale</p>
       <h1>Centres de contrôle unifiés indépendants des constructeurs en Afrique centrale</h1>
       <p class="lead">Les opérateurs d'Afrique centrale peuvent s'adresser directement au bureau commercial et technique de CODRA pour l'Afrique, à Johannesburg. CODRA peut ensuite coordonner un intégrateur certifié adapté dans le pays du client ou, lorsque cela est pertinent, dans un pays voisin.</p>
-      <p class="article-meta">Par Nicolas Hamel · Publié et mis à jour le 25 août 2026</p>
+      <p class="article-meta">Par Nicolas Hamel · Publié le 25 août 2026 · Mis à jour le 31 août 2026</p>
     </header>
 
     <article class="article">
@@ -155,6 +161,7 @@
       <section id="summary">
         <h2>Synthèse</h2>
         <p>Les projets d'Afrique centrale associent souvent des actifs dispersés, des équipements hétérogènes, des équipes multilingues et un accès variable aux compétences spécialisées. Panorama Suite fournit une plateforme de gestion des données OT/IT indépendante des constructeurs pour les Centres de contrôle unifiés, sans imposer à l'opérateur de standardiser chaque contrôleur, sous-système ou équipement de terrain sur un seul constructeur.</p>
+        <p>Le cadrage national peut commencer au Cameroun, en République démocratique du Congo, en République du Congo, au Gabon ou dans un autre marché d'Afrique centrale. Le modèle d'intégration et de support sur le cycle de vie est ensuite défini selon le pays, le secteur et le parc existant.</p>
         <div class="callout">
           <p><strong>Parcours d'engagement régional :</strong> les clients peuvent contacter directement le bureau CODRA de Johannesburg. CODRA accompagne la qualification initiale et peut aider à identifier un intégrateur certifié adapté dans le pays ou dans un marché voisin.</p>
         </div>
@@ -277,7 +284,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, Afrique du Sud</p>
-      <p><a href="/fr/">Accueil</a> · Mis à jour le 25 août 2026</p>
+      <p><a href="/fr/">Accueil</a> · Mis à jour le 31 août 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

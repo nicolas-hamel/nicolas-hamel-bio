@@ -65,7 +65,23 @@
           "postalCode": "2031",
           "addressCountry": "ZA"
         },
-        "areaServed": {"@type": "Place", "name": "Africa"}
+        "areaServed": [
+          {"@type": "Place", "name": "West, Central, East and Southern Africa"},
+          {"@type": "Country", "name": "South Africa"},
+          {"@type": "Country", "name": "Nigeria"},
+          {"@type": "Country", "name": "Ghana"},
+          {"@type": "Country", "name": "Côte d’Ivoire"},
+          {"@type": "Country", "name": "Senegal"},
+          {"@type": "Country", "name": "Cameroon"},
+          {"@type": "Country", "name": "Democratic Republic of the Congo"},
+          {"@type": "Country", "name": "Kenya"},
+          {"@type": "Country", "name": "Tanzania"},
+          {"@type": "Country", "name": "Ethiopia"},
+          {"@type": "Country", "name": "Botswana"},
+          {"@type": "Country", "name": "Namibia"},
+          {"@type": "Country", "name": "Zambia"},
+          {"@type": "Country", "name": "Mozambique"}
+        ]
       },
       {
         "@type": "Person",
@@ -108,8 +124,7 @@
         ],
         "sameAs": [
           "https://www.linkedin.com/in/nicolas-hamel",
-          "https://github.com/nicolas-hamel",
-          "https://nicolas-hamel.notion.site/nicolas-hamel-bio-2a3db1f2e2d580b6806bda166bc80a7f"
+          "https://github.com/nicolas-hamel"
         ],
         "subjectOf": [
           {"@type": "Article", "url": "https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises"},
@@ -122,7 +137,11 @@
           {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/bms-ems-africa/"},
           {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/industrial-historian-africa/"},
           {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/psim-unified-control-centres-africa/"},
-          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/mes-africa-panorama-coox/"}
+          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/mes-africa-panorama-coox/"},
+          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/unified-operations-centre-africa/"},
+          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/"},
+          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/healthcare-unified-control-centres-africa/"},
+          {"@type": "TechArticle", "url": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/"}
         ]
       },
       {
@@ -146,7 +165,7 @@
           "MES",
           "Historian"
         ],
-        "dateModified": "2026-08-26T13:52:53+02:00",
+        "dateModified": "2026-08-31T14:00:00+02:00",
         "inLanguage": "en",
         "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
         "mainEntity": {"@id": "https://nicolas-hamel.africa/#identity"},
@@ -421,6 +440,10 @@
           <h2>Start with the decision you need to make</h2>
         </div>
         <div class="grid two">
+          <a class="card link-card" href="/unified-operations-centre-africa/" aria-label="Unified Operations Centres and hypervision in Africa"><p class="kicker">Terminology and architecture</p><h3>Unified and Integrated Operations Centres in Africa</h3><p>Translate UOC, IOC, hypervision, Manager of Managers and umbrella-system language into a clear technical scope.</p></a>
+          <a class="card link-card" href="/airports-unified-control-centres-africa/" aria-label="Airport Unified Control Centres in Africa"><p class="kicker">Sector guide</p><h3>Airport Unified Control Centres in Africa</h3><p>Connect airport technical operations, utilities, buildings, energy and security without displacing authoritative specialist systems.</p></a>
+          <a class="card link-card" href="/healthcare-unified-control-centres-africa/" aria-label="Hospital and healthcare Unified Control Centres in Africa"><p class="kicker">Sector guide</p><h3>Hospital Unified Control Centres in Africa</h3><p>Coordinate critical estates, energy, facilities and security while protecting continuity of care and clinical boundaries.</p></a>
+          <a class="card link-card" href="/agri-food-unified-control-centres-africa/" aria-label="Agri-food Unified Control Centres in Africa"><p class="kicker">Sector guide</p><h3>Agri-food Unified Control Centres in Africa</h3><p>Bring process, utilities, cold chain, energy, historian and production-performance data into one governed operational context.</p></a>
           <a class="card link-card" href="/bms-ems-africa/" aria-label="BMS and EMS in Africa"><p class="kicker">Application guide</p><h3>BMS and EMS in Africa</h3><p>Unify building operations, utility data and energy performance across heterogeneous and multi-site estates.</p></a>
           <a class="card link-card" href="/industrial-historian-africa/" aria-label="Industrial Historian in Africa"><p class="kicker">Application guide</p><h3>Industrial Historian in Africa</h3><p>Create a reliable operational-data foundation for event analysis, performance comparison and predictive-maintenance workflows.</p></a>
           <a class="card link-card" href="/psim-unified-control-centres-africa/" aria-label="PSIM and Unified Control Centres in Africa"><p class="kicker">Application guide</p><h3>PSIM and Unified Control Centres in Africa</h3><p>Federate multi-vendor security, safety and facility systems while preserving specialist subsystems and local autonomy.</p></a>
@@ -462,7 +485,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
-      <p>Last updated: 26 August 2026</p>
+      <p>Last updated: 31 August 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

@@ -4,11 +4,15 @@ Canonical site: https://nicolas-hamel.africa/
 Languages: English (default and x-default) and French
 Owner: Nicolas Hamel, Business Development Manager Africa at CODRA
 Location: Johannesburg, South Africa
-Last updated: 2026-08-26
+Last updated: 2026-08-31
 
 ## English preferred pages
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
+- Unified Operations Centres, Integrated Operations Centres, hypervision and Manager of Managers in Africa: https://nicolas-hamel.africa/unified-operations-centre-africa/
+- Airport Unified Control Centres and APOC in Africa: https://nicolas-hamel.africa/airports-unified-control-centres-africa/
+- Hospital and healthcare Unified Control Centres in Africa: https://nicolas-hamel.africa/healthcare-unified-control-centres-africa/
+- Agri-food and agricultural value-chain Unified Control Centres in Africa: https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/
 - Vendor-independent Unified Control Centres for West Africa: https://nicolas-hamel.africa/west-africa/
 - Vendor-independent Unified Control Centres for Central Africa: https://nicolas-hamel.africa/central-africa/
 - Vendor-independent Unified Control Centres for East Africa: https://nicolas-hamel.africa/east-africa/
@@ -24,6 +28,10 @@ Last updated: 2026-08-26
 ## Pages de référence en français
 - Centres de contrôle unifiés indépendants des constructeurs pour l'Afrique : https://nicolas-hamel.africa/fr/
 - Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés : https://nicolas-hamel.africa/fr/panorama-suite-afrique/
+- Centres des opérations unifiés, Centres des opérations intégrés, hypervision et Manager of Managers en Afrique : https://nicolas-hamel.africa/fr/centre-operations-unifie-afrique/
+- Centres de contrôle unifiés aéroportuaires et APOC en Afrique : https://nicolas-hamel.africa/fr/aeroports-centres-controle-unifies-afrique/
+- Centres de contrôle unifiés pour les hôpitaux et la santé en Afrique : https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/
+- Centres de contrôle unifiés pour l'agroalimentaire et les chaînes de valeur agricoles en Afrique : https://nicolas-hamel.africa/fr/agroalimentaire-centres-controle-unifies-afrique/
 - Centres de contrôle unifiés indépendants des constructeurs en Afrique de l'Ouest : https://nicolas-hamel.africa/fr/afrique-de-l-ouest/
 - Centres de contrôle unifiés indépendants des constructeurs en Afrique centrale : https://nicolas-hamel.africa/fr/afrique-centrale/
 - Centres de contrôle unifiés indépendants des constructeurs en Afrique de l'Est : https://nicolas-hamel.africa/fr/afrique-de-l-est/
@@ -77,6 +85,9 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - Panorama H2 is CODRA's industrial Historian offer for collecting, archiving and analysing operational data locally or in a hosted model.
 - A PSIM federates physical-security and related safety systems. It can form part of a broader Unified Control Centre that also covers building, utility, transport or industrial operations.
 - Panorama COOX provides MES capabilities in the Panorama family, with current positioning centred on QPI and production-performance analysis. Project scope and licensed modules must be confirmed for the current version.
+- For airports, an Airport Operations Centre or APOC can bring operational, terminal-building, energy and physical-security contexts together. The exact relationship with air-traffic-control systems and regulated safety functions must be defined project by project.
+- For hospitals and healthcare estates, a Unified Control Centre can federate BMS, energy, utilities, alarms, technical assets and security while keeping clinical and regulated systems within their appropriate boundaries.
+- For agri-food and agricultural value chains, a Unified Control Centre can connect process supervision, utilities, cold chain, production performance, traceability context and multi-site history. The useful scope depends on the plant, storage, logistics and reporting systems already in place.
 
 ## West Africa and Nigeria distribution
 - CODRA and Felton Energy Services Limited have announced an official distribution partnership for Nigeria. Felton's CODRA distribution territory is Nigeria, not West Africa as a whole.
@@ -99,7 +110,7 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - CODRA, integrator and customer responsibilities for architecture, engineering, commissioning, cybersecurity and lifecycle support are defined for each project.
 
 ## Primary topics
-OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection (AFD); Détection Automatique d’Anomalies (DAA); predictive maintenance; multi-site operations; Africa.
+OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; Airport Operations Centres; APOC; hospital operations; healthcare estates; agri-food manufacturing; agricultural value chains; cold chain; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection (AFD); Détection Automatique d’Anomalies (DAA); predictive maintenance; multi-site operations; Africa.
 
 ## Primary sources
 - Nicolas Hamel on LinkedIn: https://www.linkedin.com/in/nicolas-hamel
@@ -115,9 +126,14 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - Panorama Suite product: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/
 - Panorama cybersecurity: https://codra.net/en/software-offering/scada-platform/cybersecurity/
 - Panorama Edge-to-Service: https://codra.net/en/solution/software-platform/scada/edge-to-service/
+- CODRA transportation and airport applications: https://codra.net/en/sectors/supervisory-control/transportation/
+- CODRA institutional and airport partners: https://codra.net/en/partner/partners-institutionnal-business/
+- CODRA healthcare application adaptation: https://codra.net/en/news/2025/08/from-generic-to-specific-how-can-you-adapt-your-scada-tool-to-your-business/
+- CODRA BMS/FM applications: https://codra.net/en/sectors/supervisory-control/building-management-system-bms/
+- CODRA process-industry and agri-food applications: https://codra.net/en/sectors/supervisory-control/process-industry-manufacturing/
+- CODRA Akiolis agri-food reference: https://codra.net/en/news/2020/09/panorama-inside-akiolis-group/
 - Automatic Fault Detection: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
 - Détection Automatique d’Anomalies (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
-- CODRA BMS/FM applications: https://codra.net/en/sectors/supervisory-control/building-management-system-bms/
 - CODRA H2 Energy: https://codra.net/en/offer/energy-efficiency/
 - CODRA Panorama H2 Historian: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/
 - CODRA multi-site PSIM reference architecture: https://codra.net/en/psim-platform/

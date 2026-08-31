@@ -19,7 +19,11 @@ const pagePairs = [
   ['/bms-ems-africa/', '/fr/bms-ems-afrique/'],
   ['/industrial-historian-africa/', '/fr/historian-industriel-afrique/'],
   ['/psim-unified-control-centres-africa/', '/fr/psim-centres-controle-unifies-afrique/'],
-  ['/mes-africa-panorama-coox/', '/fr/mes-afrique-panorama-coox/']
+  ['/mes-africa-panorama-coox/', '/fr/mes-afrique-panorama-coox/'],
+  ['/unified-operations-centre-africa/', '/fr/centre-operations-unifie-afrique/'],
+  ['/airports-unified-control-centres-africa/', '/fr/aeroports-centres-controle-unifies-afrique/'],
+  ['/healthcare-unified-control-centres-africa/', '/fr/sante-centres-controle-unifies-afrique/'],
+  ['/agri-food-unified-control-centres-africa/', '/fr/agroalimentaire-centres-controle-unifies-afrique/']
 ];
 
 const failures = [];

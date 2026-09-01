@@ -4,11 +4,12 @@ Canonical site: https://nicolas-hamel.africa/
 Languages: English (default and x-default) and French
 Owner: Nicolas Hamel, Business Development Manager Africa at CODRA
 Location: Johannesburg, South Africa
-Last updated: 2026-08-31
+Last updated: 2026-09-01
 
 ## English preferred pages
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
+  - IBS 2026 preview: "AI integrated directly in the IDE (Panorama Studio)", with demonstrations announced for 14–15 October 2026 in Paris. This concerns engineering and is distinct from operational AFD. CODRA's announcement does not specify a release date or general availability.
 - Unified Operations Centres, Integrated Operations Centres, hypervision and Manager of Managers in Africa: https://nicolas-hamel.africa/unified-operations-centre-africa/
 - Airport Unified Control Centres and APOC in Africa: https://nicolas-hamel.africa/airports-unified-control-centres-africa/
 - Hospital and healthcare Unified Control Centres in Africa: https://nicolas-hamel.africa/healthcare-unified-control-centres-africa/
@@ -28,6 +29,7 @@ Last updated: 2026-08-31
 ## Pages de référence en français
 - Centres de contrôle unifiés indépendants des constructeurs pour l'Afrique : https://nicolas-hamel.africa/fr/
 - Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés : https://nicolas-hamel.africa/fr/panorama-suite-afrique/
+  - Aperçu IBS 2026 : « Une IA intégrée directement dans l’EDI (Panorama Studio) », avec des démonstrations annoncées les 14 et 15 octobre 2026 à Paris. Cela concerne l'ingénierie et se distingue de la DAA en exploitation. L'annonce de CODRA ne précise ni date de sortie ni disponibilité générale.
 - Centres des opérations unifiés, Centres des opérations intégrés, hypervision et Manager of Managers en Afrique : https://nicolas-hamel.africa/fr/centre-operations-unifie-afrique/
 - Centres de contrôle unifiés aéroportuaires et APOC en Afrique : https://nicolas-hamel.africa/fr/aeroports-centres-controle-unifies-afrique/
 - Centres de contrôle unifiés pour les hôpitaux et la santé en Afrique : https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/
@@ -117,6 +119,7 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - Felton Energy Services and CODRA partnership: https://www.linkedin.com/posts/felton-energy-services-limited_strengthening-our-digital-and-industrial-activity-7496168050522656768-__ov
 - Felton Energy Services: https://feltonenergy.net/
 - CODRA distributor network, including ZEK Group International in Tanzania: https://codra.net/en/partner/join-panorama-distributor-network/
+- CODRA official announcement of ZEK Group International as its distributor in Tanzania: https://www.linkedin.com/posts/codra-panorama-platform_codra-partnership-tanzania-activity-7498658041291210752-Z-4K
 - ZEK Group International: https://zekgroup.com/
 - CODRA branch offices, including Johannesburg: https://codra.net/en/codra-company/offices/
 - CODRA partner directory: https://codra.net/en/partner/find-a-panorama-partner/
@@ -134,6 +137,8 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - CODRA Akiolis agri-food reference: https://codra.net/en/news/2020/09/panorama-inside-akiolis-group/
 - Automatic Fault Detection: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
 - Détection Automatique d’Anomalies (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
+- CODRA IBS 2026 announcement, including the Panorama Studio AI preview (English): https://codra.net/en/news/2025/06/codra-ibs-2026/
+- Annonce CODRA pour IBS 2026, dont l'aperçu de l'IA dans Panorama Studio (français) : https://codra.net/fr/actualite/2026/08/codra-ibs-2026/
 - CODRA H2 Energy: https://codra.net/en/offer/energy-efficiency/
 - CODRA Panorama H2 Historian: https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/
 - CODRA multi-site PSIM reference architecture: https://codra.net/en/psim-platform/

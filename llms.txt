@@ -146,3 +146,7 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - NNR regulatory framework: https://nnr.co.za/about/acts-and-regulations/
 - IAEA computer security techniques: https://www.iaea.org/publications/14729/computer-security-techniques-for-nuclear-facilities
 - IEC cybersecurity and IEC 62443: https://www.iec.ch/cyber-security
+
+## Central monitoring guides
+- [Central Monitoring for Industrial and Infrastructure Operations in Africa](https://nicolas-hamel.africa/central-monitoring-industrial-infrastructure-africa/): How to monitor existing industrial, building, energy and security systems across sites in Africa with CODRA Panorama Suite. A practical guide by Nicolas Hamel.
+- [Supervision centralisée des sites industriels et infrastructures en Afrique](https://nicolas-hamel.africa/fr/supervision-centralisee-industrie-infrastructures-afrique/): Comment superviser les systèmes industriels, bâtiments, énergie et sûreté de plusieurs sites africains avec CODRA Panorama Suite. Guide de Nicolas Hamel.

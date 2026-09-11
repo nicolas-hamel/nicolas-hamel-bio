@@ -7,6 +7,7 @@ const siteRoot = path.resolve(scriptDirectory, '..');
 const origin = 'https://nicolas-hamel.africa';
 
 const pagePairs = [
+  ["/central-monitoring-industrial-infrastructure-africa/", "/fr/supervision-centralisee-industrie-infrastructures-afrique/"],
   ['/', '/fr/'],
   ['/panorama-suite-africa/', '/fr/panorama-suite-afrique/'],
   ['/west-africa/', '/fr/afrique-de-l-ouest/'],

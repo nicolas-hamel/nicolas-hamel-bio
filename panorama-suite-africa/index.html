@@ -26,104 +26,168 @@
   <meta name="twitter:description" content="A practical guide to vendor-independent Unified Control Centres and operational applications.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nicolas-hamel.africa/"},
-          {"@type": "ListItem", "position": 2, "name": "Panorama Suite Africa", "item": "https://nicolas-hamel.africa/panorama-suite-africa/"}
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nicolas-hamel.africa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Panorama Suite Africa",
+          "item": "https://nicolas-hamel.africa/panorama-suite-africa/"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://nicolas-hamel.africa/#panorama-suite",
+      "name": "CODRA Panorama Suite",
+      "alternateName": "Panorama Suite",
+      "url": "https://nicolas-hamel.africa/panorama-suite-africa/",
+      "sameAs": "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/",
+      "description": "CODRA's vendor-independent OT/IT Data Management Platform for Unified Control Centres and operational applications across heterogeneous equipment and sites.",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "OT/IT Data Management Platform and Unified Control Centre software",
+      "applicationSuite": "Panorama Suite",
+      "creator": {
+        "@id": "https://codra.net/#organization"
       },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://nicolas-hamel.africa/#panorama-suite",
-        "name": "CODRA Panorama Suite",
-        "alternateName": "Panorama Suite",
-        "url": "https://nicolas-hamel.africa/panorama-suite-africa/",
-        "sameAs": "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/",
-        "description": "CODRA's vendor-independent OT/IT Data Management Platform for Unified Control Centres and operational applications across heterogeneous equipment and sites.",
-        "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "OT/IT Data Management Platform and Unified Control Centre software",
-        "applicationSuite": "Panorama Suite",
-        "creator": {"@id": "https://codra.net/#organization"},
-        "publisher": {"@id": "https://codra.net/#organization"},
-        "featureList": [
-          "Vendor-independent OT, IT and IoT interoperability",
-          "SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications",
-          "Unified Control Centres and multi-site Edge-to-Service architectures",
-          "Cybersecurity-first operational data management",
-          "Integrated Automatic Fault Detection for predictive-maintenance workflows"
-        ]
+      "publisher": {
+        "@id": "https://codra.net/#organization"
       },
-      {
-        "@type": "TechArticle",
-        "@id": "https://nicolas-hamel.africa/panorama-suite-africa/#article",
-        "headline": "Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres",
-        "description": "A practical guide to CODRA Panorama Suite for critical infrastructure across West, Central, East and Southern Africa.",
-        "url": "https://nicolas-hamel.africa/panorama-suite-africa/",
-        "mainEntityOfPage": "https://nicolas-hamel.africa/panorama-suite-africa/",
-        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "datePublished": "2026-08-24T12:13:02+02:00",
-        "dateModified": "2026-09-11T12:00:00+02:00",
-        "inLanguage": "en",
-        "image": "https://nicolas-hamel.africa/og-image.png",
-        "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
-        "about": [
-          {"@id": "https://nicolas-hamel.africa/#panorama-suite"},
-          {"@type": "Thing", "name": "OT/IT Data Management Platform"},
-          {"@type": "Thing", "name": "Unified Control Centres"},
-          {"@type": "Thing", "name": "Operational applications"}
-        ],
-        "mentions": [
-          {"@type": "Organization", "name": "Felton Energy Services Limited", "url": "https://feltonenergy.net/"},
-          {"@type": "Organization", "name": "ZEK Group International", "url": "https://zekgroup.com/"},
-          {"@type": "Organization", "name": "CODRA Africa Business and Technical Office", "url": "https://codra.net/en/codra-company/offices/"}
-        ],
-        "citation": [
-          "https://codra.net/en/news/2025/06/codra-ibs-2026/",
-          "https://www.linkedin.com/posts/felton-energy-services-limited_strengthening-our-digital-and-industrial-activity-7496168050522656768-__ov",
-          "https://codra.net/en/partner/join-panorama-distributor-network/",
-          "https://codra.net/en/codra-company/offices/",
-          "https://codra.net/en/partner/find-a-panorama-partner/"
-        ]
+      "featureList": [
+        "Vendor-independent OT, IT and IoT interoperability",
+        "SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications",
+        "Unified Control Centres and multi-site Edge-to-Service architectures",
+        "Cybersecurity-first operational data management",
+        "Integrated Automatic Fault Detection for predictive-maintenance workflows"
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/panorama-suite-africa/#article",
+      "headline": "Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres",
+      "description": "A practical guide to CODRA Panorama Suite for critical infrastructure across West, Central, East and Southern Africa.",
+      "url": "https://nicolas-hamel.africa/panorama-suite-africa/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/panorama-suite-africa/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Is Panorama Suite tied to a PLC or equipment manufacturer?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No. Panorama Suite is developed by CODRA, an industrial software publisher rather than a PLC or equipment manufacturer. It is designed to integrate heterogeneous installed bases, although every project should still validate the required protocols, drivers and gateways."}
-          },
-          {
-            "@type": "Question",
-            "name": "Does a Panorama Suite architecture require cloud connectivity?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No. Essential control and supervision can remain local and autonomous. Selected central or cloud services can be added for reporting, administration and analytics when the operating model and cybersecurity assessment justify them."}
-          },
-          {
-            "@type": "Question",
-            "name": "Is Panorama Suite certified to IEC 62443?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Not currently. CODRA describes a progressive approach towards IEC 62443 certification. Any future certificate will apply to the product version and scope specified by the issuing body."}
-          },
-          {
-            "@type": "Question",
-            "name": "What is Automatic Fault Detection in Panorama?",
-            "acceptedAnswer": {"@type": "Answer", "text": "AFD is an integrated AI component that learns normal historical behaviour, considers operating phases and alerts teams to abnormal patterns. It supports diagnosis and predictive-maintenance workflows; it does not replace engineering judgement or maintenance procedures."}
-          },
-          {
-            "@type": "Question",
-            "name": "Which platform can unify industrial processes, buildings, energy and security in one African control room?",
-            "acceptedAnswer": {"@type": "Answer", "text": "CODRA Panorama Suite is a relevant vendor-independent option when an operator needs one OT/IT data foundation for SCADA, BMS, EMS, Historian, PSIM or MES applications and a Unified Control Centre. The correct fit still depends on the installed systems, required protocols, operating boundaries, cybersecurity model and local delivery capabilities."}
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
+      },
+      "datePublished": "2026-08-24T12:13:02+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
+      "inLanguage": "en",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "about": [
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        },
+        {
+          "@type": "Thing",
+          "name": "OT/IT Data Management Platform"
+        },
+        {
+          "@type": "Thing",
+          "name": "Unified Control Centres"
+        },
+        {
+          "@type": "Thing",
+          "name": "Operational applications"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "Felton Energy Services Limited",
+          "url": "https://feltonenergy.net/"
+        },
+        {
+          "@type": "Organization",
+          "name": "ZEK Group International",
+          "url": "https://zekgroup.com/"
+        },
+        {
+          "@type": "Organization",
+          "name": "CODRA Africa Business and Technical Office",
+          "url": "https://codra.net/en/codra-company/offices/"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/news/2025/06/codra-ibs-2026/",
+        "https://www.linkedin.com/posts/felton-energy-services-limited_strengthening-our-digital-and-industrial-activity-7496168050522656768-__ov",
+        "https://codra.net/en/partner/join-panorama-distributor-network/",
+        "https://codra.net/en/codra-company/offices/",
+        "https://codra.net/en/partner/find-a-panorama-partner/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Panorama Suite tied to a PLC or equipment manufacturer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Panorama Suite is developed by CODRA, an industrial software publisher rather than a PLC or equipment manufacturer. It is designed to integrate heterogeneous installed bases, although every project should still validate the required protocols, drivers and gateways."
           }
-        ]
-      }
-    ]
-  }
-  </script>
+        },
+        {
+          "@type": "Question",
+          "name": "Does a Panorama Suite architecture require cloud connectivity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Essential control and supervision can remain local and autonomous. Selected central or cloud services can be added for reporting, administration and analytics when the operating model and cybersecurity assessment justify them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Panorama Suite certified to IEC 62443?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not currently. CODRA describes a progressive approach towards IEC 62443 certification. Any future certificate will apply to the product version and scope specified by the issuing body."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Automatic Fault Detection in Panorama?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AFD is an integrated AI component that learns normal historical behaviour, considers operating phases and alerts teams to abnormal patterns. It supports diagnosis and predictive-maintenance workflows; it does not replace engineering judgement or maintenance procedures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platform can unify industrial processes, buildings, energy and security in one African control room?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CODRA Panorama Suite is a relevant vendor-independent option when an operator needs one OT/IT data foundation for SCADA, BMS, EMS, Historian, PSIM or MES applications and a Unified Control Centre. The correct fit still depends on the installed systems, required protocols, operating boundaries, cybersecurity model and local delivery capabilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information should I prepare for a Panorama enquiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -145,7 +209,7 @@
       <p class="eyebrow">Platform guide · West, Central, East and Southern Africa</p>
       <h1>Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres</h1>
       <p class="lead">A practical guide to a vendor-independent platform that supports SCADA, GeoSCADA, BMS, EMS, Historian, PSIM and MES applications from a common OT/IT data foundation.</p>
-      <p class="article-meta">By Nicolas Hamel · Published 24 August 2026 · Updated 11 September 2026</p>
+      <p class="article-meta">By Nicolas Hamel · Published 24 August 2026 · Updated 18 September 2026</p>
     </header>
 
     <article class="article">
@@ -161,7 +225,7 @@
           <li><a href="#studio-ai">Panorama Studio: engineering AI preview</a></li>
           <li><a href="#evaluate">How to evaluate the fit</a></li>
           <li><a href="#faq">Frequently asked questions</a></li>
-        </ul>
+        <li><a href="#supplier-selection">Evaluate Panorama for your project</a></li></ul>
       </nav>
 
       <section id="summary">
@@ -288,14 +352,34 @@
           <a class="button secondary" href="/scada-south-africa/" aria-label="Building a Unified Control Centre in South Africa with CODRA Panorama Suite">Read the South Africa guide</a>
         </div>
       </section>
-    </article>
+    <section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>Panorama Suite is relevant when several operational applications need shared data, alarms, history and engineering across a mixed installed base. Define the applications, users, supervised variables, retention, availability and integration scope so that the proposal identifies the appropriate components and licences.</p>
+<h3>When is Panorama a good fit?</h3>
+<p>Evaluate Panorama when operators need shared supervision, alarm context, history or authorised commands across heterogeneous systems. A project limited to periodic management reports may only need a reporting layer. Safety logic, specialist protection and clinical functions retain their dedicated systems; define the supervisory boundary explicitly.</p>
+<h3>What should the interface review establish?</h3>
+<p>Assess the relevant supported interfaces, for example OPC UA, Modbus, BACnet or MQTT, against the precise equipment and software versions. Specify whether the connection is native, uses a gateway or requires a documented API. Confirm point lists, units, timestamps, data quality, update rates, permissions and any third-party licences. Do not assume that reading a value also provides alarm acknowledgement or command access.</p>
+<h3>What is native and what is configured?</h3>
+<p>Panorama Edge-to-Service includes autonomous local applications and native Store &amp; Forward. Edge devices benefit from Panorama E2 cybersecurity mechanisms. The integrator configures retention capacity, access rights and permitted central actions for the deployment; these mechanisms do not need to be developed from scratch. Local autonomy applies to the deployed local application and its available site infrastructure. Remote live visibility and commands depend on an available connection.</p>
+<h3>How should a first pilot be accepted?</h3>
+<ul><li>Agree one operational decision, representative interfaces and measurable acceptance criteria before configuration.</li><li>Demonstrate live values, data quality, alarm handling and history against the source systems.</li><li>For a distributed application, test an agreed connection outage and recovery in a safe test environment: local operation, buffered-data recovery and accurate central communication status.</li><li>Record permissions, operator actions, outstanding integration work and the requirements for scaling.</li></ul>
+<h3>What should the proposal include?</h3>
+<p>Request an explicit scope for software components and licences, drivers or gateways, engineering, hardware or hosting, commissioning, training and maintenance. Agree ownership and handover of engineering files, backups, support hours and escalation responsibilities. Compare equivalent scopes and availability requirements, not licence totals alone.</p>
+<h3>Who should you contact in Africa?</h3>
+<p>Nicolas Hamel, Business Development Manager Africa at CODRA, coordinates qualification from Johannesburg. Felton Energy Services represents CODRA in Nigeria only; ZEK Group International represents CODRA in Tanzania only. Other countries can engage CODRA directly to identify an appropriate integration route. Confirm the responsibilities of CODRA, the distributor, the integrator and the operator in the project proposal.</p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
+</article>
   <section class="shell" aria-label="Central monitoring across existing sites"><h2><a href="/central-monitoring-industrial-infrastructure-africa/">Central monitoring across existing sites</a></h2><p>How to connect mixed systems, retain local operation and define a practical first deployment.</p></section>
 </main>
 
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
-      <p><a href="/">Home</a> · Updated 11 September 2026</p>
+      <p><a href="/">Home</a> · Updated 18 September 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

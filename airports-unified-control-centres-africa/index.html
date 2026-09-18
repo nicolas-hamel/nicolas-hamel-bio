@@ -25,58 +25,125 @@
   <meta name="twitter:title" content="Airport Unified Control Centres in Africa | CODRA Panorama">
   <meta name="twitter:description" content="A practical architecture and buyer guide for airport technical operations centres and APOC environments in Africa.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nicolas-hamel.africa/"},
-          {"@type": "ListItem", "position": 2, "name": "Airport Unified Control Centres in Africa", "item": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/"}
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nicolas-hamel.africa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Airport Unified Control Centres in Africa",
+          "item": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/#article",
+      "headline": "Airport Unified Control Centres and APOC environments in Africa",
+      "description": "A practical guide to vendor-independent airport Unified Control Centres, Airport Operations Centres and resilient technical operations in Africa.",
+      "url": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "TechArticle",
-        "@id": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/#article",
-        "headline": "Airport Unified Control Centres and APOC environments in Africa",
-        "description": "A practical guide to vendor-independent airport Unified Control Centres, Airport Operations Centres and resilient technical operations in Africa.",
-        "url": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/",
-        "mainEntityOfPage": "https://nicolas-hamel.africa/airports-unified-control-centres-africa/",
-        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "datePublished": "2026-08-31T14:00:00+02:00",
-        "dateModified": "2026-08-31T14:00:00+02:00",
-        "inLanguage": "en",
-        "image": "https://nicolas-hamel.africa/og-image.png",
-        "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
-        "spatialCoverage": {"@type": "Place", "name": "West, Central, East and Southern Africa"},
-        "about": [
-          {"@type": "Thing", "name": "Airport Unified Control Centre"},
-          {"@type": "Thing", "name": "Airport Operations Centre"},
-          {"@type": "Thing", "name": "APOC"},
-          {"@type": "Thing", "name": "Airport SCADA"},
-          {"@id": "https://nicolas-hamel.africa/#panorama-suite"}
-        ],
-        "citation": [
-          "https://codra.net/en/sectors/supervisory-control/transportation/",
-          "https://codra.net/en/partner/partners-institutionnal-business/",
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/",
-          "https://codra.net/en/solution/software-platform/scada/edge-to-service/"
-        ]
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "What can an airport Unified Control Centre consolidate?", "acceptedAnswer": {"@type": "Answer", "text": "It can consolidate authorised data, alarms, visualisation and workflows from baggage systems, BMS, power, utilities, energy, fire, access control, video, lifts and other technical systems. The airport must define the authoritative source and command boundary for each subsystem."}},
-          {"@type": "Question", "name": "Is an airport Unified Control Centre the same as an APOC?", "acceptedAnswer": {"@type": "Answer", "text": "They can overlap. An Airport Operations Centre or APOC often coordinates wider airport operations and stakeholders. A technical Unified Control Centre can provide the operational data and control layer beneath or alongside it, without claiming every airport collaborative decision function."}},
-          {"@type": "Question", "name": "Does the platform replace air traffic control or safety systems?", "acceptedAnswer": {"@type": "Answer", "text": "No. Air traffic control, life-safety and other regulated specialist systems remain authoritative within their approved scope. Integration is limited to validated interfaces, information and commands."}},
-          {"@type": "Question", "name": "Can airport systems keep operating if the central centre loses connectivity?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, when the architecture preserves local autonomy. The design must state which functions continue locally, how events are buffered, how data is reconciled and which remote commands remain permitted."}}
-        ]
-      }
-    ]
-  }
-  </script>
+      "datePublished": "2026-08-31T14:00:00+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
+      "inLanguage": "en",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "West, Central, East and Southern Africa"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Airport Unified Control Centre"
+        },
+        {
+          "@type": "Thing",
+          "name": "Airport Operations Centre"
+        },
+        {
+          "@type": "Thing",
+          "name": "APOC"
+        },
+        {
+          "@type": "Thing",
+          "name": "Airport SCADA"
+        },
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/sectors/supervisory-control/transportation/",
+        "https://codra.net/en/partner/partners-institutionnal-business/",
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/",
+        "https://codra.net/en/solution/software-platform/scada/edge-to-service/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What can an airport Unified Control Centre consolidate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can consolidate authorised data, alarms, visualisation and workflows from baggage systems, BMS, power, utilities, energy, fire, access control, video, lifts and other technical systems. The airport must define the authoritative source and command boundary for each subsystem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is an airport Unified Control Centre the same as an APOC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They can overlap. An Airport Operations Centre or APOC often coordinates wider airport operations and stakeholders. A technical Unified Control Centre can provide the operational data and control layer beneath or alongside it, without claiming every airport collaborative decision function."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the platform replace air traffic control or safety systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Air traffic control, life-safety and other regulated specialist systems remain authoritative within their approved scope. Integration is limited to validated interfaces, information and commands."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can airport systems keep operating if the central centre loses connectivity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when the architecture preserves local autonomy. The design must state which functions continue locally, how events are buffered, how data is reconciled and which remote commands remain permitted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information should I prepare for a Panorama enquiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -109,7 +176,7 @@
         <li><a href="#delivery">Delivery across Africa</a></li>
         <li><a href="#sources">Primary sources</a></li>
         <li><a href="#faq">Frequently asked questions</a></li>
-      </ul></nav>
+      <li><a href="#supplier-selection">Evaluate Panorama for your project</a></li></ul></nav>
 
       <section id="summary">
         <h2>Executive summary</h2>
@@ -121,7 +188,16 @@
       <section id="scope">
         <h2>What the centre can consolidate</h2>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Terminal and buildings</p><h3>BMS, power and utilities</h3><p>HVAC, electrical distribution, generators, UPS, lighting, water, lifts, escalators, metering and selected fire-system information through approved interfaces.</p></article>
+          <article class="card"><p class="kicker">Terminal and buildings</p><h3>BMS, power and utilities</h3><p>HVAC, electrical distribution, generators, UPS, lighting, water, lifts, escalators, metering and selected fire-system information through approved interfaces.</p><section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For an airport, demonstrate a terminal power or cooling incident alongside the relevant technical and baggage-system status. Confirm the interfaces and responsibilities with each subsystem owner. Panorama can consolidate authorised operational information; specialist aviation, air-traffic-control and safety functions retain their own authority.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
+</article>
           <article class="card"><p class="kicker">Airside and landside</p><h3>Technical infrastructure status</h3><p>Authorised telemetry from baggage handling, bridges, apron or terminal equipment, roads, parking and other infrastructure where integration is technically and operationally approved.</p></article>
           <article class="card"><p class="kicker">Safety and security</p><h3>Correlated situational context</h3><p>Events from access control, CCTV/VMS, intrusion, intercom and technical alarms, with procedures, escalation and an audit trail rather than duplicate specialist applications.</p></article>
           <article class="card"><p class="kicker">Performance</p><h3>Historian, energy and maintenance context</h3><p>Operational history, consumption, asset status and CMMS context for event analysis, energy performance and evidence-based maintenance.</p></article>
@@ -190,7 +266,7 @@
     </article>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p><p><a href="/">Home</a> · Updated 31 August 2026</p></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p><p><a href="/">Home</a> · Updated 18 September 2026</p></div></footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="/assets/language.js" defer></script>
 </body>

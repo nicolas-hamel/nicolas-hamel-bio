@@ -26,8 +26,7 @@
   <meta name="twitter:description" content="Guide de l’architecture Historian, de la qualité des données, du contexte multisite et de l’analyse avec CODRA Panorama H2.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
 
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -61,7 +60,7 @@
         "@id": "https://nicolas-hamel.africa/#identity"
       },
       "datePublished": "2026-08-26T13:52:53+02:00",
-      "dateModified": "2026-08-26T13:52:53+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
       "inLanguage": "fr",
       "image": "https://nicolas-hamel.africa/og-image.png",
       "isPartOf": {
@@ -155,12 +154,19 @@
             "@type": "Answer",
             "text": "Il doit démontrer la fiabilité de l’acquisition, des horodatages et de la qualité, la reprise après déconnexion, le contexte utilisable, les performances de restitution et au moins une décision ou un rapport validé par les utilisateurs."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles informations préparer pour une consultation Panorama ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté."
+          }
         }
       ]
     }
   ]
-}
-  </script>
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -199,7 +205,7 @@
           <li><a href="#delivery">Réalisation dans les quatre régions d’Afrique</a></li>
           <li><a href="#related">Guides connexes</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
-        </ul>
+        <li><a href="#supplier-selection">Évaluer Panorama pour votre projet</a></li></ul>
       </nav>
 
     <section id="summary">
@@ -231,7 +237,16 @@
       <h2>Un historique commun au service de plusieurs applications</h2>
       <p>Un Historian partagé peut apporter du contexte aux applications SCADA, GeoSCADA, BMS, EMS, PSIM et MES sans les transformer en un système indifférencié. Les opérateurs conservent des interfaces adaptées à leur métier, tandis que les équipes autorisées accèdent à des preuves historiques cohérentes.</p>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Exploitation</p><h3>Reconstitution d’événements et analyse de tendances</h3><p>Comparer valeurs, alarmes, acquittements et phases d’exploitation pour analyser les incidents et les pertes récurrentes.</p></article>
+          <article class="card"><p class="kicker">Exploitation</p><h3>Reconstitution d’événements et analyse de tendances</h3><p>Comparer valeurs, alarmes, acquittements et phases d’exploitation pour analyser les incidents et les pertes récurrentes.</p><section id="supplier-selection"><h2>Évaluer Panorama pour votre projet</h2>
+<p>Pour un Historian, définissez fréquences d’acquisition, conservation, horodatages, indicateurs de qualité et charge des requêtes. Démontrez la récupération des données tamponnées et l’analyse d’un incident représentatif. Dimensionnez et validez stockage et performances sur la charge du projet plutôt que sur une simple comparaison de nombres de variables.</p>
+<p>Pour préparer la consultation, rassemblez les versions des systèmes, les interfaces et listes de points disponibles, les fonctions attendues et les contraintes d’exploitation. Convenez d’un scénario de démonstration et de critères de réception avec les équipes utilisatrices. <a href="/fr/panorama-suite-afrique/#supplier-selection">Consultez les critères communs de sélection et de réception.</a></p>
+<h3>Quelles preuves demander ?</h3>
+<p>La documentation officielle décrit les capacités du produit. Une démonstration permet de vérifier les interfaces et le scénario du projet. Pour une référence client comparable, demandez un périmètre documenté et un échange autorisé lorsque disponible. Les exemples de ce guide restent des scénarios d’évaluation, sauf référence client explicitement identifiée.</p>
+<p>Documentation produit et réseau : <a href="https://codra.net/fr/solution/plateforme-logiciel/supervision/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM (documentation en anglais)</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">Réseau de partenaires CODRA (en anglais)</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contactez Nicolas Hamel chez CODRA</a> avec le pays, les sites, les systèmes existants et la première décision opérationnelle à améliorer.</p>
+</section>
+<h3>Quelles informations préparer pour une consultation Panorama ?</h3><p>Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté.</p>
+</article>
           <article class="card"><p class="kicker">Performance</p><h3>Comparaison entre sites et périodes</h3><p>Normaliser le contexte afin de comparer les utilités, bâtiments, lignes de production ou actifs distants sur des définitions défendables.</p></article>
         </div>
     </section>
@@ -314,7 +329,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, Afrique du Sud</p>
-      <p><a href="/fr/">Accueil</a> · Mis à jour le 26 août 2026</p>
+      <p><a href="/fr/">Accueil</a> · Mis à jour le 18 septembre 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

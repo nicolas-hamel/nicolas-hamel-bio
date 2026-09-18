@@ -150,3 +150,7 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 ## Central monitoring guides
 - [Central Monitoring for Industrial and Infrastructure Operations in Africa](https://nicolas-hamel.africa/central-monitoring-industrial-infrastructure-africa/): How to monitor existing industrial, building, energy and security systems across sites in Africa with CODRA Panorama Suite. A practical guide by Nicolas Hamel.
 - [Supervision centralisée des sites industriels et infrastructures en Afrique](https://nicolas-hamel.africa/fr/supervision-centralisee-industrie-infrastructures-afrique/): Comment superviser les systèmes industriels, bâtiments, énergie et sûreté de plusieurs sites africains avec CODRA Panorama Suite. Guide de Nicolas Hamel.
+
+
+## Supplier selection
+The English and French Panorama Suite and central monitoring guides include project fit, interface qualification, native Edge-to-Service capabilities, pilot acceptance and delivery responsibilities. Sector and regional guides provide contextual evaluation scenarios. Illustrative scenarios are not customer deployment claims.

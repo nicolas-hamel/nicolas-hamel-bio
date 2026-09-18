@@ -27,62 +27,72 @@
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta name="twitter:image:alt" content="Guide de cybersécurité nucléaire pour les Centres de contrôle unifiés en Afrique" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique",
-    "description": "Guide pratique de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI.",
-    "author": {
-      "@type": "Person",
-      "@id": "https://nicolas-hamel.africa/#identity",
-      "name": "Nicolas Hamel"
-    },
-    "publisher": {"@type": "Person", "@id": "https://nicolas-hamel.africa/#identity", "name": "Nicolas Hamel"},
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/"
-    },
-    "image": "https://nicolas-hamel.africa/og-image.png",
-    "datePublished": "2026-08-25T13:30:00+02:00",
-    "dateModified": "2026-08-25T13:30:00+02:00",
-    "inLanguage": "fr",
-    "isPartOf": {"@id": "https://nicolas-hamel.africa/fr/#website"}
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique",
+  "description": "Guide pratique de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI.",
+  "author": {
+    "@type": "Person",
+    "@id": "https://nicolas-hamel.africa/#identity",
+    "name": "Nicolas Hamel"
+  },
+  "publisher": {
+    "@type": "Person",
+    "@id": "https://nicolas-hamel.africa/#identity",
+    "name": "Nicolas Hamel"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/"
+  },
+  "image": "https://nicolas-hamel.africa/og-image.png",
+  "datePublished": "2026-08-25T13:30:00+02:00",
+  "dateModified": "2026-09-18T12:00:00+02:00",
+  "inLanguage": "fr",
+  "isPartOf": {
+    "@id": "https://nicolas-hamel.africa/fr/#website"
   }
-  </script>
+}</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Une certification IEC 62443 est-elle nécessaire pour être conforme ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pas nécessairement. Les exigences applicables sont définies par l'autorité de sûreté compétente et les conditions de licence. L'IEC 62443 fournit des méthodes pratiques, notamment les zones, les conduits et les niveaux de sécurité, qui peuvent soutenir un programme de cybersécurité fondé sur les risques."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Les mesures de sécurité peuvent-elles perturber les opérations déterministes ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Les mesures doivent être conçues pour l'OT. Les mises à jour par étapes, les ruptures de protocole et les listes d'autorisation réduisent les risques tout en protégeant la disponibilité et l'intégrité."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Où les accès à distance doivent-ils aboutir ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sur des serveurs de rebond situés en DMZ, avec authentification forte, moindre privilège et enregistrement des sessions, jamais directement dans les zones de contrôle."
-        }
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Une certification IEC 62443 est-elle nécessaire pour être conforme ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas nécessairement. Les exigences applicables sont définies par l'autorité de sûreté compétente et les conditions de licence. L'IEC 62443 fournit des méthodes pratiques, notamment les zones, les conduits et les niveaux de sécurité, qui peuvent soutenir un programme de cybersécurité fondé sur les risques."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Les mesures de sécurité peuvent-elles perturber les opérations déterministes ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les mesures doivent être conçues pour l'OT. Les mises à jour par étapes, les ruptures de protocole et les listes d'autorisation réduisent les risques tout en protégeant la disponibilité et l'intégrité."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Où les accès à distance doivent-ils aboutir ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sur des serveurs de rebond situés en DMZ, avec authentification forte, moindre privilège et enregistrement des sessions, jamais directement dans les zones de contrôle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles informations préparer pour une consultation Panorama ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté."
+      }
+    }
+  ]
+}</script>
 
   <style>
     :root {
@@ -174,7 +184,7 @@
             <li><strong>Programme et éléments de preuve</strong> pour la supervision de la NNR et de l'AIEA</li>
             <li><strong>Guides ANSSI pour les systèmes industriels</strong> au service d'un déploiement concret</li>
           </ul>
-          <p class="callout">Dernière mise à jour : 25 août 2026 • Auteur : Nicolas Hamel</p>
+          <p class="callout">Dernière mise à jour : 18 septembre 2026 • Auteur : Nicolas Hamel</p>
         </aside>
       </div>
     </section>
@@ -353,11 +363,21 @@
       <h2>Besoin d'accompagnement ?</h2>
       <p>J'accompagne les organisations en Afrique du Sud et dans toute l'Afrique dans le déploiement de <strong>CODRA Panorama Suite comme plateforme de gestion des données OT/IT</strong> pour les applications SCADA nucléaires et d'autres systèmes opérationnels fortement réglementés. Pour replacer ces sujets dans le contexte plus large de la plateforme et de la convergence, consultez <a href="https://nicolas-hamel.africa/fr/panorama-suite-afrique/">Panorama Suite en Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés</a> et <a href="https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/">Convergence OT/IT en Afrique : connecter l'entreprise sans fragiliser les opérations</a>. <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contactez-moi sur LinkedIn</a>, découvrez l'<a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">entretien Bpifrance</a> ou consultez la <a href="https://codra.net/fr/offre-logicielle/plateforme-scada/logiciel-panorama-suite/" target="_blank" rel="noopener">plateforme CODRA Panorama Suite</a>.</p>
     </section>
-  </main>
+  <article class="article"><section id="supplier-selection"><h2>Évaluer Panorama pour votre projet</h2>
+<p>Pour le nucléaire, qualifiez avec l’exploitant le périmètre de supervision hors fonctions de sûreté avant de sélectionner une plateforme. Utilisez une démonstration isolée et examinez versions, preuves de sécurité et interfaces dans le processus d’assurance de l’exploitant. Les qualifications du produit ne valent pas approbation de l’installation complète ni aptitude à une fonction de sûreté.</p>
+<p>Pour préparer la consultation, rassemblez les versions des systèmes, les interfaces et listes de points disponibles, les fonctions attendues et les contraintes d’exploitation. Convenez d’un scénario de démonstration et de critères de réception avec les équipes utilisatrices. <a href="/fr/panorama-suite-afrique/#supplier-selection">Consultez les critères communs de sélection et de réception.</a></p>
+<h3>Quelles preuves demander ?</h3>
+<p>La documentation officielle décrit les capacités du produit. Une démonstration permet de vérifier les interfaces et le scénario du projet. Pour une référence client comparable, demandez un périmètre documenté et un échange autorisé lorsque disponible. Les exemples de ce guide restent des scénarios d’évaluation, sauf référence client explicitement identifiée.</p>
+<p>Documentation produit et réseau : <a href="https://codra.net/fr/solution/plateforme-logiciel/supervision/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM (documentation en anglais)</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">Réseau de partenaires CODRA (en anglais)</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contactez Nicolas Hamel chez CODRA</a> avec le pays, les sites, les systèmes existants et la première décision opérationnelle à améliorer.</p>
+</section>
+<h3>Quelles informations préparer pour une consultation Panorama ?</h3><p>Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté.</p>
+</article>
+</main>
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, Afrique du Sud • Dernière mise à jour : 25 août 2026.</p>
+      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, Afrique du Sud • Dernière mise à jour : 18 septembre 2026.</p>
       <p class="muted">Cette page fournit des informations générales et ne constitue pas une recommandation réglementaire. Consultez toujours l'autorité de sûreté et les autorités de cybersécurité compétentes pour votre site.</p>
     </div>
   </footer>

@@ -25,58 +25,125 @@
   <meta name="twitter:title" content="Centres de contrôle unifiés pour hôpitaux en Afrique | CODRA">
   <meta name="twitter:description" content="Un guide pratique pour unifier les infrastructures hospitalières, l'énergie, les utilités et la sûreté en protégeant la continuité des soins.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://nicolas-hamel.africa/fr/"},
-          {"@type": "ListItem", "position": 2, "name": "Centres de contrôle unifiés pour hôpitaux en Afrique", "item": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/"}
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://nicolas-hamel.africa/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Centres de contrôle unifiés pour hôpitaux en Afrique",
+          "item": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/#article",
+      "headline": "Centres de contrôle unifiés pour les hôpitaux et la santé en Afrique",
+      "description": "Un guide pratique sur les Centres de contrôle unifiés indépendants des constructeurs pour les infrastructures, l'énergie, les utilités et la sûreté hospitalières en Afrique.",
+      "url": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "TechArticle",
-        "@id": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/#article",
-        "headline": "Centres de contrôle unifiés pour les hôpitaux et la santé en Afrique",
-        "description": "Un guide pratique sur les Centres de contrôle unifiés indépendants des constructeurs pour les infrastructures, l'énergie, les utilités et la sûreté hospitalières en Afrique.",
-        "url": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/",
-        "mainEntityOfPage": "https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/",
-        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "datePublished": "2026-08-31T14:00:00+02:00",
-        "dateModified": "2026-09-11T12:00:00+02:00",
-        "inLanguage": "fr",
-        "image": "https://nicolas-hamel.africa/og-image.png",
-        "isPartOf": {"@id": "https://nicolas-hamel.africa/fr/#website"},
-        "spatialCoverage": {"@type": "Place", "name": "Afrique de l'Ouest, Afrique centrale, Afrique de l'Est et Afrique australe"},
-        "about": [
-          {"@type": "Thing", "name": "Centre de contrôle unifié hospitalier"},
-          {"@type": "Thing", "name": "Gestion technique hospitalière"},
-          {"@type": "Thing", "name": "BMS et EMS hospitaliers"},
-          {"@type": "Thing", "name": "Infrastructures critiques de santé"},
-          {"@id": "https://nicolas-hamel.africa/#panorama-suite"}
-        ],
-        "citation": [
-          "https://codra.net/en/news/2025/08/from-generic-to-specific-how-can-you-adapt-your-scada-tool-to-your-business/",
-          "https://codra.net/en/news/2023/03/codra-exhibits-at-hopitech-2023/",
-          "https://codra.net/en/sectors/supervisory-control/building-management-system-bms/",
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/"
-        ]
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Que peut consolider un Centre de contrôle unifié hospitalier ?", "acceptedAnswer": {"@type": "Answer", "text": "Il peut consolider les données et alarmes techniques autorisées provenant du CVC, de la distribution électrique, des groupes électrogènes, des UPS, de l'eau, des compteurs d'énergie, des ascenseurs, du BMS, du contrôle d'accès, de l'incendie et de la sûreté. Les systèmes cliniques et dispositifs médicaux restent hors périmètre, sauf interface et responsabilités approuvées séparément."}},
-          {"@type": "Question", "name": "Panorama Suite remplace-t-elle les contrôleurs BMS ou les systèmes médicaux ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. La plateforme peut intégrer des systèmes techniques hétérogènes tout en conservant les contrôleurs locaux et applications spécialisées comme systèmes de référence. Panorama Suite n'est pas présentée ici comme un dispositif médical ou un système d'information clinique."}},
-          {"@type": "Question", "name": "Comment protéger la continuité des soins avec un centre de contrôle hospitalier ?", "acceptedAnswer": {"@type": "Answer", "text": "Maintenir le contrôle essentiel en local, concevoir la redondance des services critiques, définir les modes dégradés, séparer les responsabilités techniques et cliniques, puis tester sauvegarde, reprise, accès distant et procédures d'incident avant l'exploitation."}},
-          {"@type": "Question", "name": "Une plateforme peut-elle couvrir plusieurs hôpitaux ou cliniques ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une architecture distribuée peut préserver l'exploitation locale de chaque établissement tout en centralisant certaines alarmes, données énergétiques, fonctions d'administration et de reporting. Le comportement en perte de connectivité et la responsabilité du support doivent être explicites."}}
-        ]
-      }
-    ]
-  }
-  </script>
+      "datePublished": "2026-08-31T14:00:00+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
+      "inLanguage": "fr",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/fr/#website"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Afrique de l'Ouest, Afrique centrale, Afrique de l'Est et Afrique australe"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Centre de contrôle unifié hospitalier"
+        },
+        {
+          "@type": "Thing",
+          "name": "Gestion technique hospitalière"
+        },
+        {
+          "@type": "Thing",
+          "name": "BMS et EMS hospitaliers"
+        },
+        {
+          "@type": "Thing",
+          "name": "Infrastructures critiques de santé"
+        },
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/news/2025/08/from-generic-to-specific-how-can-you-adapt-your-scada-tool-to-your-business/",
+        "https://codra.net/en/news/2023/03/codra-exhibits-at-hopitech-2023/",
+        "https://codra.net/en/sectors/supervisory-control/building-management-system-bms/",
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Que peut consolider un Centre de contrôle unifié hospitalier ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il peut consolider les données et alarmes techniques autorisées provenant du CVC, de la distribution électrique, des groupes électrogènes, des UPS, de l'eau, des compteurs d'énergie, des ascenseurs, du BMS, du contrôle d'accès, de l'incendie et de la sûreté. Les systèmes cliniques et dispositifs médicaux restent hors périmètre, sauf interface et responsabilités approuvées séparément."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Panorama Suite remplace-t-elle les contrôleurs BMS ou les systèmes médicaux ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La plateforme peut intégrer des systèmes techniques hétérogènes tout en conservant les contrôleurs locaux et applications spécialisées comme systèmes de référence. Panorama Suite n'est pas présentée ici comme un dispositif médical ou un système d'information clinique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment protéger la continuité des soins avec un centre de contrôle hospitalier ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Maintenir le contrôle essentiel en local, concevoir la redondance des services critiques, définir les modes dégradés, séparer les responsabilités techniques et cliniques, puis tester sauvegarde, reprise, accès distant et procédures d'incident avant l'exploitation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une plateforme peut-elle couvrir plusieurs hôpitaux ou cliniques ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Une architecture distribuée peut préserver l'exploitation locale de chaque établissement tout en centralisant certaines alarmes, données énergétiques, fonctions d'administration et de reporting. Le comportement en perte de connectivité et la responsabilité du support doivent être explicites."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles informations préparer pour une consultation Panorama ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -109,7 +176,7 @@
         <li><a href="#delivery">Réalisation en Afrique</a></li>
         <li><a href="#sources">Sources primaires</a></li>
         <li><a href="#faq">Questions fréquentes</a></li>
-      </ul></nav>
+      <li><a href="#supplier-selection">Évaluer Panorama pour votre projet</a></li></ul></nav>
 
       <section id="summary">
         <h2>Synthèse</h2>
@@ -121,7 +188,16 @@
       <section id="scope">
         <h2>Domaines techniques à connecter</h2>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Utilités critiques</p><h3>Énergie, eau et services environnementaux</h3><p>Distribution électrique, groupes électrogènes, UPS, CVC, eau, température, pression et informations d'état approuvées d'autres systèmes d'utilités.</p></article>
+          <article class="card"><p class="kicker">Utilités critiques</p><h3>Énergie, eau et services environnementaux</h3><p>Distribution électrique, groupes électrogènes, UPS, CVC, eau, température, pression et informations d'état approuvées d'autres systèmes d'utilités.</p><section id="supplier-selection"><h2>Évaluer Panorama pour votre projet</h2>
+<p>Pour un hôpital, utilisez une simulation de perte d’alimentation normale ou de refroidissement pour montrer le bâtiment concerné, l’état des équipements et le circuit d’escalade. Limitez le pilote aux infrastructures techniques autorisées. Les dossiers cliniques, la commande des dispositifs médicaux et les fonctions de sécurité réglementées ne font pas partie de ce périmètre de supervision proposé.</p>
+<p>Pour préparer la consultation, rassemblez les versions des systèmes, les interfaces et listes de points disponibles, les fonctions attendues et les contraintes d’exploitation. Convenez d’un scénario de démonstration et de critères de réception avec les équipes utilisatrices. <a href="/fr/panorama-suite-afrique/#supplier-selection">Consultez les critères communs de sélection et de réception.</a></p>
+<h3>Quelles preuves demander ?</h3>
+<p>La documentation officielle décrit les capacités du produit. Une démonstration permet de vérifier les interfaces et le scénario du projet. Pour une référence client comparable, demandez un périmètre documenté et un échange autorisé lorsque disponible. Les exemples de ce guide restent des scénarios d’évaluation, sauf référence client explicitement identifiée.</p>
+<p>Documentation produit et réseau : <a href="https://codra.net/fr/solution/plateforme-logiciel/supervision/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM (documentation en anglais)</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">Réseau de partenaires CODRA (en anglais)</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contactez Nicolas Hamel chez CODRA</a> avec le pays, les sites, les systèmes existants et la première décision opérationnelle à améliorer.</p>
+</section>
+<h3>Quelles informations préparer pour une consultation Panorama ?</h3><p>Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté.</p>
+</article>
           <article class="card"><p class="kicker">Services techniques</p><h3>BMS, ascenseurs et exploitation du patrimoine</h3><p>Contrôleurs du bâtiment, ascenseurs, éclairage, conditions de locaux, contexte de maintenance et certaines données BIM ou actifs lorsqu'elles améliorent la décision.</p></article>
           <article class="card"><p class="kicker">Énergie</p><h3>EMS et performance du patrimoine</h3><p>Comptage, références, périodes tarifaires, anomalies et comparaisons entre bâtiments ou établissements, reliés aux conditions d'exploitation.</p></article>
           <article class="card"><p class="kicker">Sûreté et sécurité</p><h3>PSIM et réponse coordonnée</h3><p>Informations autorisées de l'incendie, du contrôle d'accès, de la CCTV/VMS, de l'intrusion, de l'interphonie et des alarmes techniques, corrélées avec la localisation et les procédures.</p></article>
@@ -191,7 +267,7 @@
   <section class="shell" aria-label="Supervision centralisée des sites existants"><h2><a href="/fr/supervision-centralisee-industrie-infrastructures-afrique/">Supervision centralisée des sites existants</a></h2><p>Comment connecter des systèmes hétérogènes, préserver le fonctionnement local et définir un premier déploiement.</p></section>
 </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, Afrique du Sud</p><p><a href="/fr/">Accueil</a> · Mise à jour le 11 septembre 2026</p></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, Afrique du Sud</p><p><a href="/fr/">Accueil</a> · Mise à jour le 18 septembre 2026</p></div></footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="/assets/language.js" defer></script>
 </body>

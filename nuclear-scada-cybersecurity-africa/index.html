@@ -27,62 +27,72 @@
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta name="twitter:image:alt" content="Nuclear Unified Control Centre cybersecurity guide for Africa" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa",
-    "description": "Practical cybersecurity guidance for nuclear Unified Control Centres, OT/IT Data Management Platforms and SCADA applications using NNR, IAEA, IEC 62443 and ANSSI source material.",
-    "author": {
-      "@type": "Person",
-      "@id": "https://nicolas-hamel.africa/#identity",
-      "name": "Nicolas Hamel"
-    },
-    "publisher": {"@type": "Person", "@id": "https://nicolas-hamel.africa/#identity", "name": "Nicolas Hamel"},
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
-    },
-    "image": "https://nicolas-hamel.africa/og-image.png",
-    "datePublished": "2025-11-11T10:44:47+02:00",
-    "inLanguage": "en",
-    "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
-    "dateModified": "2026-08-25T13:30:00+02:00"
-  }
-  </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cybersecurity for nuclear Unified Control Centres and OT/IT Data Management Platforms in Africa",
+  "description": "Practical cybersecurity guidance for nuclear Unified Control Centres, OT/IT Data Management Platforms and SCADA applications using NNR, IAEA, IEC 62443 and ANSSI source material.",
+  "author": {
+    "@type": "Person",
+    "@id": "https://nicolas-hamel.africa/#identity",
+    "name": "Nicolas Hamel"
+  },
+  "publisher": {
+    "@type": "Person",
+    "@id": "https://nicolas-hamel.africa/#identity",
+    "name": "Nicolas Hamel"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/"
+  },
+  "image": "https://nicolas-hamel.africa/og-image.png",
+  "datePublished": "2025-11-11T10:44:47+02:00",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@id": "https://nicolas-hamel.africa/#website"
+  },
+  "dateModified": "2026-09-18T12:00:00+02:00"
+}</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do we need IEC 62443 certification to comply?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Not necessarily. Applicable requirements come from the relevant regulator and licence conditions. IEC 62443 provides practical methods, including zones, conduits and security levels, that can support a risk-based cybersecurity programme."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can security controls disrupt deterministic operations?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Controls must be engineered for OT: staged updates, protocol break-points, and allow-listing reduce risk while protecting availability and integrity."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where should remote access terminate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "At DMZ jump hosts with strong authentication, least privilege and session recording, never directly inside control zones."
-        }
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do we need IEC 62443 certification to comply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Applicable requirements come from the relevant regulator and licence conditions. IEC 62443 provides practical methods, including zones, conduits and security levels, that can support a risk-based cybersecurity programme."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Can security controls disrupt deterministic operations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Controls must be engineered for OT: staged updates, protocol break-points, and allow-listing reduce risk while protecting availability and integrity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where should remote access terminate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At DMZ jump hosts with strong authentication, least privilege and session recording, never directly inside control zones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information should I prepare for a Panorama enquiry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+      }
+    }
+  ]
+}</script>
 
   <style>
     :root { 
@@ -355,7 +365,17 @@
       <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contact me on LinkedIn</a>, read the <a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">BPI France interview</a>, or see the <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/" target="_blank" rel="noopener">CODRA Panorama Suite platform</a>.</p>
     </section>
     
-  </main>
+  <article class="article"><section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For nuclear environments, qualify the proposed non-safety supervision scope with the operator before selecting a platform. Use a segregated demonstration and review required product versions, security evidence and interfaces through the operator’s assurance process. Product credentials do not establish approval of the complete installation or its suitability for a safety function.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
+</article>
+</main>
 
   <footer class="footer">
     <div class="wrap">

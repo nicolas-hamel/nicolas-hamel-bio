@@ -25,59 +25,126 @@
   <meta name="twitter:title" content="Agri-food Unified Control Centres in Africa | CODRA Panorama">
   <meta name="twitter:description" content="A practical guide to connecting process, utilities, cold chain, energy, Historian and MES data in African agri-food operations.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nicolas-hamel.africa/"},
-          {"@type": "ListItem", "position": 2, "name": "Agri-food Unified Control Centres in Africa", "item": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/"}
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nicolas-hamel.africa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Agri-food Unified Control Centres in Africa",
+          "item": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/#article",
+      "headline": "Agri-food Unified Control Centres and operational data platforms in Africa",
+      "description": "A practical guide to vendor-independent Unified Control Centres for agri-food processes, utilities, cold chain, energy and production data in Africa.",
+      "url": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "TechArticle",
-        "@id": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/#article",
-        "headline": "Agri-food Unified Control Centres and operational data platforms in Africa",
-        "description": "A practical guide to vendor-independent Unified Control Centres for agri-food processes, utilities, cold chain, energy and production data in Africa.",
-        "url": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/",
-        "mainEntityOfPage": "https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/",
-        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "datePublished": "2026-08-31T14:00:00+02:00",
-        "dateModified": "2026-08-31T14:00:00+02:00",
-        "inLanguage": "en",
-        "image": "https://nicolas-hamel.africa/og-image.png",
-        "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
-        "spatialCoverage": {"@type": "Place", "name": "West, Central, East and Southern Africa"},
-        "about": [
-          {"@type": "Thing", "name": "Agri-food Unified Control Centre"},
-          {"@type": "Thing", "name": "Food and beverage SCADA"},
-          {"@type": "Thing", "name": "Cold-chain monitoring"},
-          {"@type": "Thing", "name": "Industrial Historian and MES"},
-          {"@id": "https://nicolas-hamel.africa/#panorama-suite"}
-        ],
-        "citation": [
-          "https://codra.net/en/sectors/supervisory-control/process-industry-manufacturing/",
-          "https://codra.net/en/news/2020/09/panorama-inside-akiolis-group/",
-          "https://codra.net/en/news/2026/02/codra-cfia-trade-show-2026/",
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/",
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-coox/"
-        ]
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "What can an agri-food Unified Control Centre combine?", "acceptedAnswer": {"@type": "Answer", "text": "It can combine authorised process, utility, refrigeration, cold-room, energy, water, wastewater, building, security, Historian and production-performance data. The authoritative PLC, safety system, quality record and MES responsibility must remain clear."}},
-          {"@type": "Question", "name": "Does Panorama Suite replace existing production PLCs?", "acceptedAnswer": {"@type": "Answer", "text": "No. It can supervise and contextualise heterogeneous controllers and systems through validated protocols and gateways. Existing PLCs and safety systems remain where they are technically appropriate and authoritative."}},
-          {"@type": "Question", "name": "Can the same platform support SCADA, Historian and MES use cases?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Panorama E2 supports real-time applications, Panorama H2 provides Historian capabilities and Panorama COOX provides MES functions. The required modules, interfaces and licensed scope must be confirmed for each project."}},
-          {"@type": "Question", "name": "Can several plants operate locally while reporting centrally?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A distributed architecture can preserve local process supervision and control while centralising selected history, alarms, administration and performance reporting. Store-and-forward, data quality and recovery rules must be designed."}}
-        ]
-      }
-    ]
-  }
-  </script>
+      "datePublished": "2026-08-31T14:00:00+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
+      "inLanguage": "en",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "West, Central, East and Southern Africa"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Agri-food Unified Control Centre"
+        },
+        {
+          "@type": "Thing",
+          "name": "Food and beverage SCADA"
+        },
+        {
+          "@type": "Thing",
+          "name": "Cold-chain monitoring"
+        },
+        {
+          "@type": "Thing",
+          "name": "Industrial Historian and MES"
+        },
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/sectors/supervisory-control/process-industry-manufacturing/",
+        "https://codra.net/en/news/2020/09/panorama-inside-akiolis-group/",
+        "https://codra.net/en/news/2026/02/codra-cfia-trade-show-2026/",
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-h2/",
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-coox/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What can an agri-food Unified Control Centre combine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can combine authorised process, utility, refrigeration, cold-room, energy, water, wastewater, building, security, Historian and production-performance data. The authoritative PLC, safety system, quality record and MES responsibility must remain clear."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Panorama Suite replace existing production PLCs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It can supervise and contextualise heterogeneous controllers and systems through validated protocols and gateways. Existing PLCs and safety systems remain where they are technically appropriate and authoritative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the same platform support SCADA, Historian and MES use cases?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Panorama E2 supports real-time applications, Panorama H2 provides Historian capabilities and Panorama COOX provides MES functions. The required modules, interfaces and licensed scope must be confirmed for each project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can several plants operate locally while reporting centrally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A distributed architecture can preserve local process supervision and control while centralising selected history, alarms, administration and performance reporting. Store-and-forward, data quality and recovery rules must be designed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information should I prepare for a Panorama enquiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -110,7 +177,7 @@
         <li><a href="#delivery">Delivery across Africa</a></li>
         <li><a href="#sources">Primary sources</a></li>
         <li><a href="#faq">Frequently asked questions</a></li>
-      </ul></nav>
+      <li><a href="#supplier-selection">Evaluate Panorama for your project</a></li></ul></nav>
 
       <section id="summary">
         <h2>Executive summary</h2>
@@ -122,7 +189,16 @@
       <section id="scope">
         <h2>Operational domains to connect</h2>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Process</p><h3>Lines, vessels and packaging</h3><p>Authorised real-time status, alarms, setpoints and production context from PLC-controlled processes, filling, packaging and material handling.</p></article>
+          <article class="card"><p class="kicker">Process</p><h3>Lines, vessels and packaging</h3><p>Authorised real-time status, alarms, setpoints and production context from PLC-controlled processes, filling, packaging and material handling.</p><section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For agri-food operations, demonstrate how a refrigeration alarm can be reviewed with utility status and temperature history. Agree sampling, timestamps and the link to production records. A supervision or Historian demonstration does not by itself establish validated food-safety records or a complete MES implementation.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
+</article>
           <article class="card"><p class="kicker">Cold chain</p><h3>Refrigeration and storage conditions</h3><p>Refrigeration plant, cold rooms, temperatures, defrost cycles, doors, power status and alarm history, with clear ownership of food-safety records.</p></article>
           <article class="card"><p class="kicker">Utilities</p><h3>Energy, water and wastewater</h3><p>Electrical distribution, boilers, compressed air, steam, water, effluent, generators and meters linked to production state and shift context.</p></article>
           <article class="card"><p class="kicker">Facilities and security</p><h3>BMS, access and technical alarms</h3><p>Building services, fire information, access control and selected security events integrated where they improve site operations and incident response.</p></article>
@@ -194,7 +270,7 @@
     </article>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p><p><a href="/">Home</a> · Updated 31 August 2026</p></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p><p><a href="/">Home</a> · Updated 18 September 2026</p></div></footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="/assets/language.js" defer></script>
 </body>

@@ -25,73 +25,124 @@
   <meta name="twitter:title" content="Unified Operations Centres in Africa | CODRA Panorama">
   <meta name="twitter:description" content="A practical guide to UOC, IOC, hypervision and vendor-independent multi-site operations across Africa.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nicolas-hamel.africa/"},
-          {"@type": "ListItem", "position": 2, "name": "Unified Operations Centres in Africa", "item": "https://nicolas-hamel.africa/unified-operations-centre-africa/"}
-        ]
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nicolas-hamel.africa/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Unified Operations Centres in Africa",
+          "item": "https://nicolas-hamel.africa/unified-operations-centre-africa/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nicolas-hamel.africa/unified-operations-centre-africa/#article",
+      "headline": "Unified and Integrated Operations Centres in Africa",
+      "description": "A practical guide to Unified Operations Centres, Integrated Operations Centres, hypervision and vendor-independent multi-site architecture in Africa.",
+      "url": "https://nicolas-hamel.africa/unified-operations-centre-africa/",
+      "mainEntityOfPage": "https://nicolas-hamel.africa/unified-operations-centre-africa/",
+      "author": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "TechArticle",
-        "@id": "https://nicolas-hamel.africa/unified-operations-centre-africa/#article",
-        "headline": "Unified and Integrated Operations Centres in Africa",
-        "description": "A practical guide to Unified Operations Centres, Integrated Operations Centres, hypervision and vendor-independent multi-site architecture in Africa.",
-        "url": "https://nicolas-hamel.africa/unified-operations-centre-africa/",
-        "mainEntityOfPage": "https://nicolas-hamel.africa/unified-operations-centre-africa/",
-        "author": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "publisher": {"@id": "https://nicolas-hamel.africa/#identity"},
-        "datePublished": "2026-08-31T14:00:00+02:00",
-        "dateModified": "2026-09-11T12:00:00+02:00",
-        "inLanguage": "en",
-        "image": "https://nicolas-hamel.africa/og-image.png",
-        "isPartOf": {"@id": "https://nicolas-hamel.africa/#website"},
-        "spatialCoverage": {"@type": "Place", "name": "West, Central, East and Southern Africa"},
-        "about": [
-          {"@type": "Thing", "name": "Unified Operations Centre"},
-          {"@type": "Thing", "name": "Integrated Operations Centre"},
-          {"@type": "Thing", "name": "Hypervision platform"},
-          {"@type": "Thing", "name": "Manager of Managers"},
-          {"@id": "https://nicolas-hamel.africa/#panorama-suite"}
-        ],
-        "citation": [
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/",
-          "https://codra.net/en/solution/software-platform/scada/edge-to-service/",
-          "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/"
-        ]
+      "publisher": {
+        "@id": "https://nicolas-hamel.africa/#identity"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Which platform can unify SCADA, BMS, EMS, Historian, PSIM and MES across multiple African sites?",
-            "acceptedAnswer": {"@type": "Answer", "text": "CODRA Panorama Suite can provide a common vendor-independent OT/IT data and engineering foundation for these applications. The exact scope, protocols, command authority and licensed components must be validated against the installed base."}
-          },
-          {
-            "@type": "Question",
-            "name": "How can an operator centralise alarms and reporting while sites continue during a WAN outage?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Use a distributed Edge-to-Service architecture: essential supervision and control remain local, while selected alarms, history, administration and reporting are consolidated centrally. Buffering, recovery and central command rights must be defined explicitly."}
-          },
-          {
-            "@type": "Question",
-            "name": "Is a Unified Operations Centre the same as a Unified Control Centre?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The terms overlap, but they do not guarantee the same technical scope. Unified or Integrated Operations Centre is common in industry, utilities and mining; Unified Control Centre is the cross-sector umbrella term used on this website."}
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between hypervision and a Manager of Managers?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Hypervision describes consolidated visibility and coordination above several systems. Manager of Managers describes the federation pattern. Neither term alone confirms control, historian, workflow, engineering, cybersecurity or lifecycle capabilities."}
+      "datePublished": "2026-08-31T14:00:00+02:00",
+      "dateModified": "2026-09-18T12:00:00+02:00",
+      "inLanguage": "en",
+      "image": "https://nicolas-hamel.africa/og-image.png",
+      "isPartOf": {
+        "@id": "https://nicolas-hamel.africa/#website"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "West, Central, East and Southern Africa"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Unified Operations Centre"
+        },
+        {
+          "@type": "Thing",
+          "name": "Integrated Operations Centre"
+        },
+        {
+          "@type": "Thing",
+          "name": "Hypervision platform"
+        },
+        {
+          "@type": "Thing",
+          "name": "Manager of Managers"
+        },
+        {
+          "@id": "https://nicolas-hamel.africa/#panorama-suite"
+        }
+      ],
+      "citation": [
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/",
+        "https://codra.net/en/solution/software-platform/scada/edge-to-service/",
+        "https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-e2/security-pack/"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which platform can unify SCADA, BMS, EMS, Historian, PSIM and MES across multiple African sites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CODRA Panorama Suite can provide a common vendor-independent OT/IT data and engineering foundation for these applications. The exact scope, protocols, command authority and licensed components must be validated against the installed base."
           }
-        ]
-      }
-    ]
-  }
-  </script>
+        },
+        {
+          "@type": "Question",
+          "name": "How can an operator centralise alarms and reporting while sites continue during a WAN outage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a distributed Edge-to-Service architecture: essential supervision and control remain local, while selected alarms, history, administration and reporting are consolidated centrally. Buffering, recovery and central command rights must be defined explicitly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a Unified Operations Centre the same as a Unified Control Centre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The terms overlap, but they do not guarantee the same technical scope. Unified or Integrated Operations Centre is common in industry, utilities and mining; Unified Control Centre is the cross-sector umbrella term used on this website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between hypervision and a Manager of Managers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hypervision describes consolidated visibility and coordination above several systems. Manager of Managers describes the federation pattern. Neither term alone confirms control, historian, workflow, engineering, cybersecurity or lifecycle capabilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What information should I prepare for a Panorama enquiry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -129,7 +180,7 @@
           <li><a href="#delivery">Delivery across Africa</a></li>
           <li><a href="#sources">Primary sources</a></li>
           <li><a href="#faq">Frequently asked questions</a></li>
-        </ul>
+        <li><a href="#supplier-selection">Evaluate Panorama for your project</a></li></ul>
       </nav>
 
       <section id="summary">
@@ -141,7 +192,16 @@
       <section id="terms">
         <h2>How the terms relate</h2>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Operating model</p><h3>Unified or Integrated Operations Centre</h3><p>Common in industry, utilities, mining and distributed infrastructure. It usually emphasises coordinated operations, performance and decisions across teams or sites.</p></article>
+          <article class="card"><p class="kicker">Operating model</p><h3>Unified or Integrated Operations Centre</h3><p>Common in industry, utilities, mining and distributed infrastructure. It usually emphasises coordinated operations, performance and decisions across teams or sites.</p><section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For hypervision or a Manager of Managers, choose an incident that crosses two existing systems. Ask the demonstration to show which system owns the alarm, whether acknowledgement is propagated and who may issue a command. A common display alone does not establish coordinated operation.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
+</article>
           <article class="card"><p class="kicker">Cross-sector umbrella</p><h3>Unified Control Centre</h3><p>The primary term on this website for a common operational environment spanning OT, IT, buildings, energy, safety and security where the project requires it.</p></article>
           <article class="card"><p class="kicker">Integration layer</p><h3>Hypervision or supervision centralised</h3><p>A layer above several supervision or specialist systems that consolidates visibility, context, alarms and selected workflows. CODRA also describes a hypervision as an integrated SCADA or “SCADA of SCADAs”.</p></article>
           <article class="card"><p class="kicker">Federation pattern</p><h3>Manager of Managers or umbrella system</h3><p>Useful language for aggregating several underlying systems. The label does not by itself confirm control, historian, workflow, engineering or lifecycle depth.</p></article>
@@ -225,7 +285,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
-      <p><a href="/">Home</a> · Updated 11 September 2026</p>
+      <p><a href="/">Home</a> · Updated 18 September 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

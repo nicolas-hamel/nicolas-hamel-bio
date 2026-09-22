@@ -154,3 +154,22 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 
 ## Supplier selection
 The English and French Panorama Suite and central monitoring guides include project fit, interface qualification, native Edge-to-Service capabilities, pilot acceptance and delivery responsibilities. Sector and regional guides provide contextual evaluation scenarios. Illustrative scenarios are not customer deployment claims.
+
+## Published customer evidence
+
+Customer-reference sections link to official CODRA flyers and published partner accounts. Figures retain their publication scope; targets and planned extensions are identified explicitly.
+- [Customer evidence: central-monitoring-industrial-infrastructure-africa](https://nicolas-hamel.africa/central-monitoring-industrial-infrastructure-africa/#customer-evidence): CFAO Green Infra · Côte d’Ivoire · 2026, SNCF · France, Eiffage Énergie Systèmes · France · 2023, Drax · United Kingdom / Royaume-Uni.
+- [Customer evidence: panorama-suite-africa](https://nicolas-hamel.africa/panorama-suite-africa/#customer-evidence): CFAO Green Infra · Côte d’Ivoire · 2026, CRAM · France · 2022, VNF · France.
+- [Customer evidence: airports-unified-control-centres-africa](https://nicolas-hamel.africa/airports-unified-control-centres-africa/#customer-evidence): Brussels South Charleroi Airport · Belgium / Belgique · 2023.
+- [Customer evidence: bms-ems-africa](https://nicolas-hamel.africa/bms-ems-africa/#customer-evidence): CFAO Green Infra · Côte d’Ivoire · 2026, Hager · France · 2025, Brussels South Charleroi Airport · Belgium / Belgique · 2023.
+- [Customer evidence: industrial-historian-africa](https://nicolas-hamel.africa/industrial-historian-africa/#customer-evidence): Hager · France · 2025, CFAO Green Infra · Côte d’Ivoire · 2026.
+- [Customer evidence: unified-operations-centre-africa](https://nicolas-hamel.africa/unified-operations-centre-africa/#customer-evidence): RTM Marseille · France · 2022, SNCF · France, TER Dakar · Senegal / Sénégal · 2025.
+- [Customer evidence: psim-unified-control-centres-africa](https://nicolas-hamel.africa/psim-unified-control-centres-africa/#customer-evidence): Lyon Parc Auto · France · 2024, TER Dakar · Senegal / Sénégal · 2025, Eurotunnel · France · 2023.
+- [Customer evidence: west-africa](https://nicolas-hamel.africa/west-africa/#customer-evidence): CFAO Green Infra · Côte d’Ivoire · 2026, TER Dakar · Senegal / Sénégal · 2025.
+- [Customer evidence: central-africa](https://nicolas-hamel.africa/central-africa/#customer-evidence): CFAO Green Infra · Côte d’Ivoire · 2026.
+- [Customer evidence: southern-africa](https://nicolas-hamel.africa/southern-africa/#customer-evidence): Neopak & Greenro · South Africa / Afrique du Sud · 2025–2026.
+- [Customer evidence: scada-south-africa](https://nicolas-hamel.africa/scada-south-africa/#customer-evidence): Neopak & Greenro · South Africa / Afrique du Sud · 2025–2026.
+- [Customer evidence: it-ot-convergence-africa](https://nicolas-hamel.africa/it-ot-convergence-africa/#customer-evidence): Drax · United Kingdom / Royaume-Uni, St Fergus Gas Terminal · United Kingdom / Royaume-Uni, VNF · France.
+- [Customer evidence: healthcare-unified-control-centres-africa](https://nicolas-hamel.africa/healthcare-unified-control-centres-africa/#customer-evidence): Reims University Hospital / CHU de Reims · France · 2023.
+- [Customer evidence: agri-food-unified-control-centres-africa](https://nicolas-hamel.africa/agri-food-unified-control-centres-africa/#customer-evidence): Akiolis · France.
+- [Customer evidence: nuclear-scada-cybersecurity-africa](https://nicolas-hamel.africa/nuclear-scada-cybersecurity-africa/#customer-evidence): Andra · France · 2022.

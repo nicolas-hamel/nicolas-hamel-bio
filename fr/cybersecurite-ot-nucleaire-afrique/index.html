@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique</title>
-  <meta name="description" content="Guide de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires en Afrique." />
+  <title>Intégration SCADA nucléaire en Afrique | CODRA Panorama Suite</title>
+  <meta name="description" content="Évaluez Panorama Suite pour la supervision nucléaire hors fonctions de sûreté : interfaces, référence Andra et cybersécurité OT pour votre projet en Afrique." />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
 
   <link rel="canonical" href="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/" />
@@ -14,24 +14,24 @@
   <link rel="stylesheet" href="/assets/language.css" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique" />
-  <meta property="og:description" content="Un guide orienté cybersécurité pour les Centres de contrôle unifiés et les applications SCADA, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI." />
+  <meta property="og:title" content="Intégration SCADA nucléaire en Afrique | CODRA Panorama Suite" />
+  <meta property="og:description" content="Évaluez Panorama Suite pour la supervision nucléaire hors fonctions de sûreté : interfaces, référence Andra et cybersécurité OT pour votre projet en Afrique." />
   <meta property="og:url" content="https://nicolas-hamel.africa/fr/cybersecurite-ot-nucleaire-afrique/" />
   <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta property="og:image:alt" content="Guide de cybersécurité nucléaire pour les Centres de contrôle unifiés en Afrique" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:locale:alternate" content="en_ZA" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cybersécurité OT nucléaire et Centre de contrôle unifié | Afrique" />
-  <meta name="twitter:description" content="Un guide orienté cybersécurité pour les Centres de contrôle unifiés et les applications SCADA, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI." />
+  <meta name="twitter:title" content="Intégration SCADA nucléaire en Afrique | CODRA Panorama Suite" />
+  <meta name="twitter:description" content="Évaluez Panorama Suite pour la supervision nucléaire hors fonctions de sûreté : interfaces, référence Andra et cybersécurité OT pour votre projet en Afrique." />
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png" />
   <meta name="twitter:image:alt" content="Guide de cybersécurité nucléaire pour les Centres de contrôle unifiés en Afrique" />
 
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique",
-  "description": "Guide pratique de cybersécurité pour les Centres de contrôle unifiés, les plateformes de gestion des données OT/IT et les applications SCADA nucléaires, fondé sur les sources NNR, AIEA, IEC 62443 et ANSSI.",
+  "headline": "Intégration SCADA nucléaire en Afrique avec CODRA Panorama Suite",
+  "description": "Évaluez Panorama Suite pour la supervision nucléaire hors fonctions de sûreté : interfaces, référence Andra et cybersécurité OT pour votre projet en Afrique.",
   "author": {
     "@type": "Person",
     "@id": "https://nicolas-hamel.africa/#identity",
@@ -48,7 +48,7 @@
   },
   "image": "https://nicolas-hamel.africa/og-image.png",
   "datePublished": "2026-08-25T13:30:00+02:00",
-  "dateModified": "2026-09-22T16:00:00+02:00",
+  "dateModified": "2026-09-25",
   "inLanguage": "fr",
   "isPartOf": {
     "@id": "https://nicolas-hamel.africa/fr/#website"
@@ -155,6 +155,7 @@
 
     .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
   </style>
+  <link rel="stylesheet" href="/assets/conversion.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -176,8 +177,8 @@
       <div class="wrap grid two">
         <div>
           <p class="badge">Guide CODRA Panorama</p>
-          <h1 id="page-title" class="title">Cybersécurité des Centres de contrôle unifiés nucléaires et des plateformes de gestion des données OT/IT en Afrique</h1>
-          <p class="subtitle">Un guide pratique pour des applications SCADA nucléaires résilientes, bâties sur la plateforme de gestion des données OT/IT CODRA Panorama Suite : gouvernance, zones et conduits <span class="mono">IEC 62443</span>, sources NNR et AIEA, pratiques ANSSI pour les systèmes industriels et architectures Edge-to-Service pour les opérations distribuées en Afrique.</p>
+          <h1 id="page-title" class="title">Intégration SCADA nucléaire en Afrique avec CODRA Panorama Suite</h1>
+          <p class="subtitle">Panorama Suite peut fédérer les données, alarmes, historiques et vues opérateur d’applications de supervision hors fonctions de sûreté. Commencez par les interfaces et responsabilités du projet, puis examinez la référence Andra et les éléments de cybersécurité ci-dessous. Les fonctions de sûreté indépendantes conservent leur rôle.</p>
         </div>
         <aside class="card">
           <h3>Points clés</h3>
@@ -187,14 +188,15 @@
             <li><strong>Programme et éléments de preuve</strong> pour la supervision de la NNR et de l'AIEA</li>
             <li><strong>Guides ANSSI pour les systèmes industriels</strong> au service d'un déploiement concret</li>
           </ul>
-          <p class="callout">Dernière mise à jour : 18 septembre 2026 • Auteur : Nicolas Hamel</p>
+          <p class="callout">Dernière mise à jour : 25 septembre 2026 • Auteur : Nicolas Hamel</p>
         </aside>
       </div>
     </section>
 
-    <section id="toc" class="wrap card toc" aria-labelledby="toc-title">
+    <div class="wrap"><section class="conversion-contact" aria-label="Évaluer Panorama pour votre projet nucléaire"><h2>Évaluer Panorama pour votre projet nucléaire</h2><p>Indiquez le pays, le périmètre de supervision envisagé et les systèmes à intégrer pour identifier la documentation et les interlocuteurs techniques pertinents.</p><div class="conversion-actions"><a class="conversion-button" data-conversion-action="email" href="mailto:sales-panorama@codra.net?subject=Projet%20de%20supervision%20nucl%C3%A9aire%20%E2%80%94%20Nicolas%20Hamel%20%E2%80%94%20FR&amp;body=%C3%80%20l%E2%80%99attention%20de%20Nicolas%20Hamel%20%2F%20CODRA%20Afrique%2C%0A%0APays%20%3A%0ASyst%C3%A8mes%20concern%C3%A9s%20%3A%0AP%C3%A9rim%C3%A8tre%20ou%20probl%C3%A8me%20%C3%A0%20r%C3%A9soudre%20%3A%0A%0APage%20consult%C3%A9e%20%3A%20https%3A%2F%2Fnicolas-hamel.africa%2Ffr%2Fcybersecurite-ot-nucleaire-afrique%2F">Écrire à CODRA Afrique</a><a class="conversion-button conversion-secondary" data-conversion-action="linkedin" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contacter Nicolas sur LinkedIn</a></div></section><section id="customer-evidence"><h2>Références clients publiées</h2><p>Ces références clients CODRA documentent des déploiements précis. Les chiffres et l’avancement correspondent à la publication citée. Les exemples internationaux illustrent un périmètre technique ; le pays indiqué situe le projet.</p><h3>Andra · France · 2022</h3><p>Au laboratoire de recherche de Bure, l’hypervision Panorama consolide les applications locales des installations de surface, des puits d’accès et des zones souterraines. La référence décrit la GTB, les accès, la vidéo, la localisation du personnel et une unité d’aide à la décision fournissant des consignes scénarisées en cas d’incendie. Elle documente une supervision opérationnelle, sans établir que Panorama remplace les fonctions de sécurité indépendantes.</p><p><a data-conversion-action="reference" href="/assets/customer-references/andra.pdf">Lire la référence client CODRA (PDF) · EN</a></p></section></div>
+<section id="toc" class="wrap card toc" aria-labelledby="toc-title">
       <h2 id="toc-title">Sommaire</h2>
-      <ol>
+      <ol><li><a href="#customer-evidence">Référence Andra</a></li>
         <li><a href="#why">Pourquoi ce sujet est prioritaire</a></li>
         <li><a href="#landscape">Le paysage réglementaire et normatif en Afrique et en Afrique du Sud</a></li>
         <li><a href="#nuclear-specific">Ce qui distingue les applications SCADA nucléaires</a></li>
@@ -366,7 +368,7 @@
       <h2>Besoin d'accompagnement ?</h2>
       <p>J'accompagne les organisations en Afrique du Sud et dans toute l'Afrique dans le déploiement de <strong>CODRA Panorama Suite comme plateforme de gestion des données OT/IT</strong> pour les applications SCADA nucléaires et d'autres systèmes opérationnels fortement réglementés. Pour replacer ces sujets dans le contexte plus large de la plateforme et de la convergence, consultez <a href="https://nicolas-hamel.africa/fr/panorama-suite-afrique/">Panorama Suite en Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés</a> et <a href="https://nicolas-hamel.africa/fr/convergence-ot-it-afrique/">Convergence OT/IT en Afrique : connecter l'entreprise sans fragiliser les opérations</a>. <a href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contactez-moi sur LinkedIn</a>, découvrez l'<a href="https://bigmedia.bpifrance.fr/nos-actualites/comment-lafrique-du-sud-devient-un-pilier-strategique-pour-lexport-des-entreprises-francaises" target="_blank" rel="noopener">entretien Bpifrance</a> ou consultez la <a href="https://codra.net/fr/offre-logicielle/plateforme-scada/logiciel-panorama-suite/" target="_blank" rel="noopener">plateforme CODRA Panorama Suite</a>.</p>
     </section>
-  <article class="article"><section id="customer-evidence"><h2>Références clients publiées</h2><p>Ces références clients CODRA documentent des déploiements précis. Les chiffres et l’avancement correspondent à la publication citée. Les exemples internationaux illustrent un périmètre technique ; le pays indiqué situe le projet.</p><h3>Andra · France · 2022</h3><p>Au laboratoire de recherche de Bure, l’hypervision Panorama consolide les applications locales des installations de surface, des puits d’accès et des zones souterraines. La référence décrit la GTB, les accès, la vidéo, la localisation du personnel et une unité d’aide à la décision fournissant des consignes scénarisées en cas d’incendie. Elle documente une supervision opérationnelle, sans établir que Panorama remplace les fonctions de sécurité indépendantes.</p><p><a href="/assets/customer-references/andra.pdf">Lire la référence client CODRA (PDF) · EN</a></p><p>Pour un projet en Afrique, échangez sur les systèmes existants, les interfaces, l’autonomie locale et les responsabilités de support avec <a href="https://www.linkedin.com/in/nicolas-hamel">Nicolas Hamel · CODRA</a>.</p></section>
+  <article class="article">
 <section id="supplier-selection"><h2>Évaluer Panorama pour votre projet</h2>
 <p>Pour le nucléaire, qualifiez avec l’exploitant le périmètre de supervision hors fonctions de sûreté avant de sélectionner une plateforme. Utilisez une démonstration isolée et examinez versions, preuves de sécurité et interfaces dans le processus d’assurance de l’exploitant. Les qualifications du produit ne valent pas approbation de l’installation complète ni aptitude à une fonction de sûreté.</p>
 <p>Pour préparer la consultation, rassemblez les versions des systèmes, les interfaces et listes de points disponibles, les fonctions attendues et les contraintes d’exploitation. Convenez d’un scénario de démonstration et de critères de réception avec les équipes utilisatrices. <a href="/fr/panorama-suite-afrique/#supplier-selection">Consultez les critères communs de sélection et de réception.</a></p>
@@ -377,11 +379,12 @@
 </section>
 <h3>Quelles informations préparer pour une consultation Panorama ?</h3><p>Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté.</p>
 </article>
+<div class="wrap"><section class="conversion-contact" aria-label="Évaluer Panorama pour votre projet nucléaire"><h2>Évaluer Panorama pour votre projet nucléaire</h2><p>Indiquez le pays, le périmètre de supervision envisagé et les systèmes à intégrer pour identifier la documentation et les interlocuteurs techniques pertinents.</p><div class="conversion-actions"><a class="conversion-button" data-conversion-action="email" href="mailto:sales-panorama@codra.net?subject=Projet%20de%20supervision%20nucl%C3%A9aire%20%E2%80%94%20Nicolas%20Hamel%20%E2%80%94%20FR&amp;body=%C3%80%20l%E2%80%99attention%20de%20Nicolas%20Hamel%20%2F%20CODRA%20Afrique%2C%0A%0APays%20%3A%0ASyst%C3%A8mes%20concern%C3%A9s%20%3A%0AP%C3%A9rim%C3%A8tre%20ou%20probl%C3%A8me%20%C3%A0%20r%C3%A9soudre%20%3A%0A%0APage%20consult%C3%A9e%20%3A%20https%3A%2F%2Fnicolas-hamel.africa%2Ffr%2Fcybersecurite-ot-nucleaire-afrique%2F">Écrire à CODRA Afrique</a><a class="conversion-button conversion-secondary" data-conversion-action="linkedin" href="https://www.linkedin.com/in/nicolas-hamel" target="_blank" rel="noopener">Contacter Nicolas sur LinkedIn</a></div></section></div>
 </main>
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, Afrique du Sud • Dernière mise à jour : 18 septembre 2026.</p>
+      <p>© <span id="year"></span> Nicolas Hamel, Johannesburg, Afrique du Sud • Dernière mise à jour : 25 septembre 2026.</p>
       <p class="muted">Cette page fournit des informations générales et ne constitue pas une recommandation réglementaire. Consultez toujours l'autorité de sûreté et les autorités de cybersécurité compétentes pour votre site.</p>
     </div>
   </footer>

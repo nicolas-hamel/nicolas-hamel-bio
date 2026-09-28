@@ -60,7 +60,7 @@
         "@id": "https://nicolas-hamel.africa/#identity"
       },
       "datePublished": "2026-08-26T13:52:53+02:00",
-      "dateModified": "2026-09-22T16:00:00+02:00",
+      "dateModified": "2026-09-28T13:41:43+02:00",
       "inLanguage": "en",
       "image": "https://nicolas-hamel.africa/og-image.png",
       "isPartOf": {
@@ -159,7 +159,7 @@
           "name": "What information should I prepare for a Panorama enquiry?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+            "text": "Share the country, number and type of buildings, meters and BMS versions, available interfaces, operating schedules and the energy deviation you want to investigate."
           }
         }
       ]
@@ -195,6 +195,7 @@
       <nav class="toc" aria-label="Contents">
         <strong>Contents</strong>
         <ul>
+<li><a href="#energy-waste">Compare energy performance across sites without replacing existing systems</a></li>
           <li><a href="#summary">Executive summary</a></li>
           <li><a href="#challenge">Why building and energy operations become fragmented</a></li>
           <li><a href="#platform">One platform for BMS and EMS applications</a></li>
@@ -214,7 +215,17 @@
         <p>CODRA describes Panorama as able to collect and analyse information from lighting, water, energy, LV/HV networks, lifts and access control. Its H2 Energy offer adds utility-focused collection, historisation and analysis. See CODRA’s <a href="https://codra.net/en/sectors/supervisory-control/building-management-system-bms/" target="_blank" rel="noopener">SCADA System in Building sector – BMS/FM</a> and <a href="https://codra.net/en/offer/energy-efficiency/" target="_blank" rel="noopener">Boost your drive to energy efficiency with H2 Energy</a>.</p>
     </section>
 
-    <section id="challenge">
+    <section id="energy-waste">
+<h2>Compare energy performance across sites without replacing existing systems</h2>
+<p><strong>Which sites consume unnecessarily outside operating hours, and what should we investigate first?</strong> Panorama can bring meter readings, building-system status and operating schedules into a shared view. Validate the interfaces and metering boundaries first, then use the data to prioritise investigation.</p>
+<p><strong>Illustrative scenario:</strong> an estates manager oversees branches with different meters and BMS installations. One branch has a high overnight baseload. The team needs to establish whether cooling, lighting or another load remains active before deciding on an intervention.</p>
+<h3>Make site comparisons meaningful</h3><ul><li>Check units, scaling, timestamps, collection intervals, missing readings and meter resets.</li><li>Compare equivalent periods and account for opening hours, floor area, occupancy or production activity, and weather where relevant.</li><li>Distinguish electricity consumption, peak demand and cost; apply the relevant tariffs only when reliable tariff data is available.</li><li>Relate a deviation to equipment status and assign investigation to the responsible site team.</li></ul>
+<h3>What a first energy pilot should prove</h3><p>Select representative sites, meters and an HVAC installation. Reconcile the collected values with source readings, identify out-of-hours consumption, review its operating context and route an agreed exception to a named team. Record the baseline and subsequent action before claiming savings.</p>
+<h3>A documented African reference</h3><p>The <a href="/assets/customer-references/cfao.pdf">CFAO Green Infra reference in Côte d’Ivoire (PDF, French)</a> documents energy monitoring coordinated from Abidjan, with 11 sites installed out of 30 at publication. It describes local supervision, central administration and Store &amp; Forward. The 30% consumption reduction is a target, not a measured result. <a href="#customer-evidence">See the published scope and additional references.</a></p>
+<div class="callout"><p><strong>Prepare your project enquiry</strong></p><p>Share the country, number and type of buildings, meters and BMS versions, available interfaces, operating schedules and the energy deviation you want to investigate.</p><p><a href="https://www.linkedin.com/in/nicolas-hamel">Discuss this scope with Nicolas Hamel at CODRA</a></p></div>
+</section>
+
+<section id="challenge">
       <h2>Why building and energy operations become fragmented</h2>
       <p>Large buildings and estates rarely begin with one coherent architecture. They accumulate HVAC controllers, electrical meters, generators, UPS systems, access control, fire panels, lifts, water systems and specialist applications from different generations and manufacturers. Each subsystem may work, while the operating team still has no common view of alarms, consumption or site performance.</p>
         <p>The cost of fragmentation appears in daily operations: repeated alarms, manual consolidation, inconsistent naming, slow diagnosis and upgrades that force a decision about one supplier’s wider ecosystem. A vendor-independent platform creates an integration layer above that diversity. It does not require every field system to be replaced.</p>
@@ -223,17 +234,7 @@
     <section id="platform">
       <h2>One platform for BMS and EMS applications</h2>
       <div class="wide grid two">
-          <article class="card"><p class="kicker">BMS application</p><h3>Operate the building in real time</h3><p>Consolidate status, alarms, commands and visualisation for HVAC, electrical services, water, lighting, lifts and other technical systems according to each operator’s role.</p><section id="customer-evidence"><h2>Published customer evidence</h2><p>These CODRA customer references document specific deployments. Figures and project status refer to the cited publication. International examples illustrate technical scope; the country shown identifies where the project took place.</p><h3>CFAO Green Infra · Côte d’Ivoire · 2026</h3><p>CFAO Green Infra uses Panorama Edge-to-Service and H2.Cloud for energy monitoring coordinated from Abidjan. The published account records 11 sites installed out of 30, local supervision, central administration and Store &amp; Forward to preserve data during network outages. Site managers receive reports and alerts on energy and environmental conditions. The 30% consumption reduction is a target; extension to Côte d’Ivoire, Senegal and Cameroon is described as a progressive programme, not evidence of completed deployment in all three countries.</p><p><a href="/assets/customer-references/cfao.pdf">Read the CODRA customer reference (PDF) · FR</a></p><h3>Hager · France · 2025</h3><p>At Obernai, Panorama Data Historian supports energy monitoring across ten buildings, with 600 power meters identified in the 2025 account. Teams create and share reports without writing SQL. Hager reports 14 working hours saved each week and energy-report preparation reduced from two days to one hour. These are customer-specific reported outcomes, not a guaranteed saving for another project.</p><p><a href="/assets/customer-references/hager.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>Brussels South Charleroi Airport · Belgium / Belgique · 2023</h3><p>With Equans, Charleroi Airport uses Panorama for airport facilities and building services, baggage-handling supervision and interfaces to other business systems. The 2023 publication records 72,000 m² supervised, 27,000 external variables and 14,000 alarms, and describes the addition of Panorama H2 for energy reporting. This documents technical airport integration, not a complete APOC or air-traffic-control system. The reported parking electricity saving accompanied LED lighting upgrades supported by supervision.</p><p><a href="/assets/customer-references/charleroi.pdf">Read the CODRA customer reference (PDF) · EN</a></p><p>For a project in Africa, discuss the existing systems, interfaces, site autonomy and support responsibilities with <a href="https://www.linkedin.com/in/nicolas-hamel">Nicolas Hamel · CODRA</a>.</p></section>
-<section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
-<p>For BMS and EMS, select a meter and an HVAC installation representative of the estate. Check units, scaling, collection intervals and meter resets before comparing consumption. Ask the pilot to connect an energy deviation to equipment operation; establish a baseline before making any savings claim.</p>
-<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
-<h3>What evidence should you request?</h3>
-<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
-<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
-<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
-</section>
-<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
-</article>
+          <article class="card"><p class="kicker">BMS application</p><h3>Operate the building in real time</h3><p>Consolidate status, alarms, commands and visualisation for HVAC, electrical services, water, lighting, lifts and other technical systems according to each operator’s role.</p></article>
           <article class="card"><p class="kicker">EMS application</p><h3>Understand and improve utility performance</h3><p>Historise electricity, water, gas, steam or compressed-air data; compare periods and sites; and give energy teams evidence for investigation and improvement.</p></article>
         </div>
         <p>Panorama Suite supports standard and specialist communications, but every project must validate the exact protocols, device profiles, drivers and gateways required by the installed base. Data quality, metering boundaries and naming conventions matter as much as connectivity.</p>
@@ -283,7 +284,18 @@
       </div>
     </section>
 
-    <section id="faq">
+    <section id="customer-evidence"><h2>Published customer evidence</h2><p>These CODRA customer references document specific deployments. Figures and project status refer to the cited publication. International examples illustrate technical scope; the country shown identifies where the project took place.</p><h3>CFAO Green Infra · Côte d’Ivoire · 2026</h3><p>CFAO Green Infra uses Panorama Edge-to-Service and H2.Cloud for energy monitoring coordinated from Abidjan. The published account records 11 sites installed out of 30, local supervision, central administration and Store &amp; Forward to preserve data during network outages. Site managers receive reports and alerts on energy and environmental conditions. The 30% consumption reduction is a target; extension to Côte d’Ivoire, Senegal and Cameroon is described as a progressive programme, not evidence of completed deployment in all three countries.</p><p><a href="/assets/customer-references/cfao.pdf">Read the CODRA customer reference (PDF) · FR</a></p><h3>Hager · France · 2025</h3><p>At Obernai, Panorama Data Historian supports energy monitoring across ten buildings, with 600 power meters identified in the 2025 account. Teams create and share reports without writing SQL. Hager reports 14 working hours saved each week and energy-report preparation reduced from two days to one hour. These are customer-specific reported outcomes, not a guaranteed saving for another project.</p><p><a href="/assets/customer-references/hager.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>Brussels South Charleroi Airport · Belgium / Belgique · 2023</h3><p>With Equans, Charleroi Airport uses Panorama for airport facilities and building services, baggage-handling supervision and interfaces to other business systems. The 2023 publication records 72,000 m² supervised, 27,000 external variables and 14,000 alarms, and describes the addition of Panorama H2 for energy reporting. This documents technical airport integration, not a complete APOC or air-traffic-control system. The reported parking electricity saving accompanied LED lighting upgrades supported by supervision.</p><p><a href="/assets/customer-references/charleroi.pdf">Read the CODRA customer reference (PDF) · EN</a></p><p>For a project in Africa, discuss the existing systems, interfaces, site autonomy and support responsibilities with <a href="https://www.linkedin.com/in/nicolas-hamel">Nicolas Hamel · CODRA</a>.</p></section>
+<section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For BMS and EMS, select a meter and an HVAC installation representative of the estate. Check units, scaling, collection intervals and meter resets before comparing consumption. Ask the pilot to connect an energy deviation to equipment operation; establish a baseline before making any savings claim.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Share the country, number and type of buildings, meters and BMS versions, available interfaces, operating schedules and the energy deviation you want to investigate.</p>
+
+<section id="faq">
       <h2>Frequently asked questions</h2>
       <details>
         <summary>What is the difference between a BMS and an EMS?</summary>
@@ -323,7 +335,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
-      <p><a href="/">Home</a> · Updated 22 September 2026</p>
+      <p><a href="/">Home</a> · Updated 28 September 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

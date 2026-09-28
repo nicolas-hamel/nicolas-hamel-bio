@@ -59,7 +59,7 @@
         "@id": "https://nicolas-hamel.africa/#identity"
       },
       "datePublished": "2026-08-31T14:00:00+02:00",
-      "dateModified": "2026-09-22T16:00:00+02:00",
+      "dateModified": "2026-09-28T13:41:43+02:00",
       "inLanguage": "en",
       "image": "https://nicolas-hamel.africa/og-image.png",
       "isPartOf": {
@@ -136,7 +136,7 @@
           "name": "What information should I prepare for a Panorama enquiry?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route."
+            "text": "Share the country, sites, SCADA/BMS/security products and versions, available APIs or protocols, and one incident your operators need to handle across systems."
           }
         }
       ]
@@ -172,6 +172,7 @@
       <nav class="toc" aria-label="Contents">
         <strong>Contents</strong>
         <ul>
+<li><a href="#mixed-system-control-room">Connect existing systems into one control room</a></li>
           <li><a href="#summary">Direct answer</a></li>
           <li><a href="#terms">How the terms relate</a></li>
           <li><a href="#buyer-language">How buyers describe the outcome</a></li>
@@ -190,20 +191,21 @@
         <div class="callout"><p><strong>The qualification that matters:</strong> one platform does not mean one central point of failure or one undifferentiated application. Local control, specialist system authority, data ownership, command rights and degraded modes must remain explicit.</p></div>
       </section>
 
-      <section id="terms">
+      <section id="mixed-system-control-room">
+<h2>Connect existing systems into one control room</h2>
+<p><strong>How can we bring SCADA, BMS and security systems into one operational view?</strong> Panorama can provide a common supervisory layer where supported interfaces expose the required values, alarms and actions. Agree the shared asset model and responsibilities before defining the screens.</p>
+<p><strong>Illustrative scenario:</strong> a cooling failure triggers building alarms and affects equipment availability. Operators currently switch between separate screens with different asset names and timestamps. A common view should help locate the affected area, review related equipment conditions and coordinate an intervention. The precise alarm relationships and workflow must be configured for the project.</p>
+<h3>What the common view needs to provide</h3><ul><li>Consistent site and asset identifiers, timestamps and data-quality indicators.</li><li>Related alarms, live values and history, with an agreed priority model.</li><li>A responsible team and escalation route for the incident.</li><li>Access to specialist applications where their detailed functions are required.</li><li>Explicit permissions and interface support for acknowledgements or commands; reading a value does not establish command capability.</li></ul>
+<h3>What stays in the existing systems?</h3><p>Local PLC control and interlocks, dedicated protection and safety functions, and specialist security functions retain their defined authority. The project specifies which information and actions are shared with Panorama, which application owns each alarm and how operators work when an interface is unavailable.</p>
+<h3>What a first mixed-system pilot should prove</h3><p>Connect two or three representative systems and demonstrate one agreed incident. Check asset mapping, event timing, alarm ownership, operator permissions and the handover to the responsible team. Include an unavailable interface so operators can recognise incomplete information. Record remaining gateway, API or third-party licensing requirements before scaling.</p>
+<h3>Documented integration experience</h3><p>The <a href="/assets/customer-references/sncf.pdf">SNCF customer reference (PDF, English)</a> describes local Panorama applications bringing together production equipment, building services and utility consumption, with national hypervision. It supports a common view across industrial and building systems; it does not establish every security interface in the illustrative scenario. <a href="#customer-evidence">Review the RTM and TER Dakar references for their specific transport scopes.</a></p>
+<div class="callout"><p><strong>Prepare your project enquiry</strong></p><p>Share the country, sites, SCADA/BMS/security products and versions, available APIs or protocols, and one incident your operators need to handle across systems.</p><p><a href="https://www.linkedin.com/in/nicolas-hamel">Discuss this scope with Nicolas Hamel at CODRA</a></p></div>
+</section>
+
+<section id="terms">
         <h2>How the terms relate</h2>
         <div class="wide grid two">
-          <article class="card"><p class="kicker">Operating model</p><h3>Unified or Integrated Operations Centre</h3><p>Common in industry, utilities, mining and distributed infrastructure. It usually emphasises coordinated operations, performance and decisions across teams or sites.</p><section id="customer-evidence"><h2>Published customer evidence</h2><p>These CODRA customer references document specific deployments. Figures and project status refer to the cited publication. International examples illustrate technical scope; the country shown identifies where the project took place.</p><h3>RTM Marseille · France · 2022</h3><p>The Marseille metro reference describes a common supervision environment for two lines, integrating 12 heterogeneous subsystems and 20 consistent operator consoles. Panorama brings technical management and operational information into a central control environment, supporting incident response and coordination. The figures describe the published project scope.</p><p><a href="/assets/customer-references/rtm.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>SNCF · France</h3><p>The published Factory of the Future reference covers ten industrial technical centres. Local Panorama applications bring together production equipment, building services and electricity, gas and water consumption. A national hypervision consolidates their data. This is a concrete example of one operational view across industrial and building systems, with reusable engineering objects supporting consistency between sites.</p><p><a href="/assets/customer-references/sncf.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>TER Dakar · Senegal / Sénégal · 2025</h3><p>Equans INEO UTS deployed Panorama for central and station-level supervision of Dakar’s rail network. The customer reference describes station BMS, security, communications and traction-power functions, with role-specific operational views. It records 30,000 SCADA points and two redundant servers. This is an African transport reference for bringing several operational domains into a common control-centre environment.</p><p><a href="/assets/customer-references/dakar.pdf">Read the CODRA customer reference (PDF) · EN</a></p><p>For a project in Africa, discuss the existing systems, interfaces, site autonomy and support responsibilities with <a href="https://www.linkedin.com/in/nicolas-hamel">Nicolas Hamel · CODRA</a>.</p></section>
-<section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
-<p>For hypervision or a Manager of Managers, choose an incident that crosses two existing systems. Ask the demonstration to show which system owns the alarm, whether acknowledgement is propagated and who may issue a command. A common display alone does not establish coordinated operation.</p>
-<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
-<h3>What evidence should you request?</h3>
-<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
-<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
-<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
-</section>
-<h3>What information should I prepare for a Panorama enquiry?</h3><p>Prepare the countries and sites, system versions, available interfaces and points, required functions and operating constraints. Nicolas Hamel coordinates qualification with CODRA and the appropriate integration route.</p>
-</article>
+          <article class="card"><p class="kicker">Operating model</p><h3>Unified or Integrated Operations Centre</h3><p>Common in industry, utilities, mining and distributed infrastructure. It usually emphasises coordinated operations, performance and decisions across teams or sites.</p></article>
           <article class="card"><p class="kicker">Cross-sector umbrella</p><h3>Unified Control Centre</h3><p>The primary term on this website for a common operational environment spanning OT, IT, buildings, energy, safety and security where the project requires it.</p></article>
           <article class="card"><p class="kicker">Integration layer</p><h3>Hypervision or supervision centralised</h3><p>A layer above several supervision or specialist systems that consolidates visibility, context, alarms and selected workflows. CODRA also describes a hypervision as an integrated SCADA or “SCADA of SCADAs”.</p></article>
           <article class="card"><p class="kicker">Federation pattern</p><h3>Manager of Managers or umbrella system</h3><p>Useful language for aggregating several underlying systems. The label does not by itself confirm control, historian, workflow, engineering or lifecycle depth.</p></article>
@@ -263,7 +265,18 @@
         </ul>
       </section>
 
-      <section id="faq">
+      <section id="customer-evidence"><h2>Published customer evidence</h2><p>These CODRA customer references document specific deployments. Figures and project status refer to the cited publication. International examples illustrate technical scope; the country shown identifies where the project took place.</p><h3>RTM Marseille · France · 2022</h3><p>The Marseille metro reference describes a common supervision environment for two lines, integrating 12 heterogeneous subsystems and 20 consistent operator consoles. Panorama brings technical management and operational information into a central control environment, supporting incident response and coordination. The figures describe the published project scope.</p><p><a href="/assets/customer-references/rtm.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>SNCF · France</h3><p>The published Factory of the Future reference covers ten industrial technical centres. Local Panorama applications bring together production equipment, building services and electricity, gas and water consumption. A national hypervision consolidates their data. This is a concrete example of one operational view across industrial and building systems, with reusable engineering objects supporting consistency between sites.</p><p><a href="/assets/customer-references/sncf.pdf">Read the CODRA customer reference (PDF) · EN</a></p><h3>TER Dakar · Senegal / Sénégal · 2025</h3><p>Equans INEO UTS deployed Panorama for central and station-level supervision of Dakar’s rail network. The customer reference describes station BMS, security, communications and traction-power functions, with role-specific operational views. It records 30,000 SCADA points and two redundant servers. This is an African transport reference for bringing several operational domains into a common control-centre environment.</p><p><a href="/assets/customer-references/dakar.pdf">Read the CODRA customer reference (PDF) · EN</a></p><p>For a project in Africa, discuss the existing systems, interfaces, site autonomy and support responsibilities with <a href="https://www.linkedin.com/in/nicolas-hamel">Nicolas Hamel · CODRA</a>.</p></section>
+<section id="supplier-selection"><h2>Evaluate Panorama for your project</h2>
+<p>For hypervision or a Manager of Managers, choose an incident that crosses two existing systems. Ask the demonstration to show which system owns the alarm, whether acknowledgement is propagated and who may issue a command. A common display alone does not establish coordinated operation.</p>
+<p>To prepare the enquiry, collect system versions, available interfaces and point lists, required functions and operating constraints. Agree a demonstration scenario and acceptance criteria with the users. <a href="/panorama-suite-africa/#supplier-selection">See the common selection and acceptance criteria.</a></p>
+<h3>What evidence should you request?</h3>
+<p>Official documentation describes product capabilities. A demonstration verifies the project interfaces and operating scenario. For comparable customer evidence, request a documented scope and an authorised reference discussion where available. Examples in this guide are evaluation scenarios unless explicitly identified as customer references.</p>
+<p>Product and partner sources: <a href="https://codra.net/en/solution/software-platform/scada/edge-to-service/">Panorama Edge-to-Service</a> · <a href="https://codra.net/en/software-offering/scada-platform/panorama-suite-software/panorama-com/">Panorama COM</a> · <a href="https://codra.net/en/partner/find-a-panorama-partner/">CODRA partner network</a>.</p>
+<p><a href="https://www.linkedin.com/in/nicolas-hamel">Contact Nicolas Hamel at CODRA</a> with the country, sites, existing systems and the first operating decision you want to improve.</p>
+</section>
+<h3>What information should I prepare for a Panorama enquiry?</h3><p>Share the country, sites, SCADA/BMS/security products and versions, available APIs or protocols, and one incident your operators need to handle across systems.</p>
+
+<section id="faq">
         <h2>Frequently asked questions</h2>
         <details><summary>Which platform can unify SCADA, BMS, EMS, Historian, PSIM and MES across multiple African sites?</summary><p>CODRA Panorama Suite can provide a common vendor-independent OT/IT data and engineering foundation for these applications. The exact scope, protocols, command authority and licensed components must be validated against the installed base.</p></details>
         <details><summary>How can an operator centralise alarms and reporting while sites continue during a WAN outage?</summary><p>Use a distributed Edge-to-Service architecture: essential supervision and control remain local, while selected alarms, history, administration and reporting are consolidated centrally. Buffering, recovery and central command rights must be defined explicitly.</p></details>
@@ -288,7 +301,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, South Africa</p>
-      <p><a href="/">Home</a> · Updated 22 September 2026</p>
+      <p><a href="/">Home</a> · Updated 28 September 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

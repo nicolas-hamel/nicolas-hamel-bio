@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nicolas-hamel.africa/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/panorama-suite-africa/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/unified-operations-centre-africa/</loc>
@@ -70,11 +70,11 @@
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/fr/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/fr/panorama-suite-afrique/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://nicolas-hamel.africa/fr/centre-operations-unifie-afrique/</loc>
@@ -136,6 +136,7 @@
     <loc>https://nicolas-hamel.africa/fr/mes-afrique-panorama-coox/</loc>
     <lastmod>2026-09-18</lastmod>
   </url>
-  <url><loc>https://nicolas-hamel.africa/central-monitoring-industrial-infrastructure-africa/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://nicolas-hamel.africa/fr/supervision-centralisee-industrie-infrastructures-afrique/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://nicolas-hamel.africa/central-monitoring-industrial-infrastructure-africa/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://nicolas-hamel.africa/fr/supervision-centralisee-industrie-infrastructures-afrique/</loc><lastmod>2026-10-06</lastmod></url>
 </urlset>
+

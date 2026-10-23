@@ -4,12 +4,12 @@ Canonical site: https://nicolas-hamel.africa/
 Languages: English (default and x-default) and French
 Owner: Nicolas Hamel, Business Development Manager Africa at CODRA
 Location: Johannesburg, South Africa
-Last updated: 2026-09-01
+Last updated: 2026-10-23
 
 ## English preferred pages
 - Vendor-independent Unified Control Centres for Africa: https://nicolas-hamel.africa/
 - Panorama Suite for Africa: an OT/IT Data Management Platform for Unified Control Centres: https://nicolas-hamel.africa/panorama-suite-africa/
-  - IBS 2026 preview: "AI integrated directly in the IDE (Panorama Studio)", with demonstrations announced for 14–15 October 2026 in Paris. This concerns engineering and is distinct from operational AFD. CODRA's announcement does not specify a release date or general availability.
+  - AI for data: autonomous Adaptive Anomaly Detection (AAD), ready to use. AI for teams: Panorama application generation from natural-language prompts and specifications for system integrators, presented as a preview.
 - Unified Operations Centres, Integrated Operations Centres, hypervision and Manager of Managers in Africa: https://nicolas-hamel.africa/unified-operations-centre-africa/
 - Airport Unified Control Centres and APOC in Africa: https://nicolas-hamel.africa/airports-unified-control-centres-africa/
 - Hospital and healthcare Unified Control Centres in Africa: https://nicolas-hamel.africa/healthcare-unified-control-centres-africa/
@@ -29,7 +29,7 @@ Last updated: 2026-09-01
 ## Pages de référence en français
 - Centres de contrôle unifiés indépendants des constructeurs pour l'Afrique : https://nicolas-hamel.africa/fr/
 - Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés : https://nicolas-hamel.africa/fr/panorama-suite-afrique/
-  - Aperçu IBS 2026 : « Une IA intégrée directement dans l’EDI (Panorama Studio) », avec des démonstrations annoncées les 14 et 15 octobre 2026 à Paris. Cela concerne l'ingénierie et se distingue de la DAA en exploitation. L'annonce de CODRA ne précise ni date de sortie ni disponibilité générale.
+  - IA pour les données : Détection Adaptative d’Anomalie (DAA), autonome et prête à l’emploi. IA pour les équipes : génération d’applications Panorama par prompts en langage naturel et spécifications pour les intégrateurs, présentée en aperçu.
 - Centres des opérations unifiés, Centres des opérations intégrés, hypervision et Manager of Managers en Afrique : https://nicolas-hamel.africa/fr/centre-operations-unifie-afrique/
 - Centres de contrôle unifiés aéroportuaires et APOC en Afrique : https://nicolas-hamel.africa/fr/aeroports-centres-controle-unifies-afrique/
 - Centres de contrôle unifiés pour les hôpitaux et la santé en Afrique : https://nicolas-hamel.africa/fr/sante-centres-controle-unifies-afrique/
@@ -79,8 +79,10 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - Edge-to-Service combines autonomous local SCADA with central hypervision, administration and controlled services for geographically distributed sites.
 - Panorama E2 has received ANSSI CSPN certification and ANSSI qualification, with continued certification reported by CODRA in 2026.
 - CODRA describes Panorama Suite as aligned with NIS2 requirements and progressing towards IEC 62443 certification.
-- AFD is an integrated AI component that learns normal historical operating patterns and alerts teams to abnormal behaviour. It supports diagnosis and predictive-maintenance workflows; results depend on data quality and operating context.
-- In French, CODRA's official term for this capability is Détection Automatique d’Anomalies (DAA). French pages use DAA and the official French source; English pages retain Automatic Fault Detection (AFD) and the official English source.
+- AI for data: Adaptive Anomaly Detection (AAD) dynamically identifies normal operating phases from real-time data and detects deviations as conditions evolve. The detection model operates autonomously: neither the system integrator nor the operator has normal phases, model settings or fixed thresholds to configure. It is not an expert system and does not use equipment benchmarks from a single manufacturer or a group of manufacturers. No specialist AI, data-science or equipment expertise is required to use it. This CODRA technology is ready to use and is currently undergoing a patent application process.
+- IA pour les données : La Détection Adaptative d’Anomalie (DAA) identifie dynamiquement les phases de fonctionnement normales à partir des données temps réel et détecte les écarts lorsque les conditions évoluent. Le modèle de détection fonctionne de manière autonome : ni l’intégrateur ni l’opérateur n’ont de phases normales, de paramètres de modèle ou de seuils fixes à configurer. Il ne s’agit pas d’un système expert et il ne s’appuie pas sur des références d’équipements issues d’un ou de plusieurs constructeurs. Aucune expertise particulière en IA, en science des données ou sur les équipements n’est nécessaire pour l’utiliser. Cette technologie CODRA est prête à l’emploi et fait actuellement l’objet d’une démarche de dépôt de brevet.
+- AI for teams: AI for teams is aimed at system integrators building Panorama applications in Panorama Studio. Natural-language prompts and project specifications drive the automatic generation of application configuration and graphical screens, reducing manual configuration and drawing. This “vibe-coding” approach lets the integrator describe the intended application, inspect the generated result and refine it through further prompts. This application-generation capability is presented as a preview. Confirm availability for the target Panorama version with CODRA.
+- IA pour les équipes : L’IA pour les équipes s’adresse aux intégrateurs qui développent des applications Panorama dans Panorama Studio. Les prompts en langage naturel et les spécifications du projet permettent de générer automatiquement la configuration de l’application et ses écrans graphiques, en réduisant le paramétrage et le dessin manuels. Cette approche de « vibe-coding » permet à l’intégrateur de décrire l’application attendue, d’examiner le résultat généré et de l’affiner par de nouveaux prompts. Cette fonction de génération d’applications est présentée en aperçu. Sa disponibilité pour la version Panorama visée est à confirmer avec CODRA.
 
 ## Application-specific positioning
 - BMS and EMS are applications built on the Panorama Suite OT/IT data foundation. BMS focuses on real-time building operations; EMS focuses on utility measurement, analysis and performance improvement.
@@ -112,7 +114,7 @@ Nicolas Hamel works with critical-infrastructure operators and local integration
 - CODRA, integrator and customer responsibilities for architecture, engineering, commissioning, cybersecurity and lifecycle support are defined for each project.
 
 ## Primary topics
-OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; Airport Operations Centres; APOC; hospital operations; healthcare estates; agri-food manufacturing; agricultural value chains; cold chain; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; Automatic Fault Detection (AFD); Détection Automatique d’Anomalies (DAA); predictive maintenance; multi-site operations; Africa.
+OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers; Unified Operations Centres; Integrated Operations Centres; hypervision platforms; Manager of Managers; Umbrella Systems; Centres de contrôle unifiés; Centres des opérations intégrés; plateformes d'hypervision; Airport Operations Centres; APOC; hospital operations; healthcare estates; agri-food manufacturing; agricultural value chains; cold chain; SCADA applications; GeoSCADA; Building Management Systems; Energy Management Systems; Physical Security Information Management; Manufacturing Execution Systems; Historian; IT/OT convergence; CODRA Panorama Suite; OT cybersecurity; IEC 62443; NIS2; ANSSI; Edge-to-Service; AI for data; AI for teams; natural-language application generation; Panorama Studio; vibe-coding; Adaptive Anomaly Detection (AAD); Détection Adaptative d’Anomalie (DAA); predictive maintenance; multi-site operations; Africa.
 
 ## Primary sources
 - Nicolas Hamel on LinkedIn: https://www.linkedin.com/in/nicolas-hamel
@@ -135,8 +137,8 @@ OT/IT Data Management Platform; Unified Control Centres; Unified Control Centers
 - CODRA BMS/FM applications: https://codra.net/en/sectors/supervisory-control/building-management-system-bms/
 - CODRA process-industry and agri-food applications: https://codra.net/en/sectors/supervisory-control/process-industry-manufacturing/
 - CODRA Akiolis agri-food reference: https://codra.net/en/news/2020/09/panorama-inside-akiolis-group/
-- Automatic Fault Detection: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
-- Détection Automatique d’Anomalies (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
+- CODRA original anomaly-detection announcement: https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/
+- Détection Adaptative d’Anomalie (DAA) : https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/
 - CODRA IBS 2026 announcement, including the Panorama Studio AI preview (English): https://codra.net/en/news/2025/06/codra-ibs-2026/
 - Annonce CODRA pour IBS 2026, dont l'aperçu de l'IA dans Panorama Studio (français) : https://codra.net/fr/actualite/2026/08/codra-ibs-2026/
 - CODRA H2 Energy: https://codra.net/en/offer/energy-efficiency/

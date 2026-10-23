@@ -38,7 +38,7 @@ const frenchDaaPages = new Set([
   '/fr/afrique-australe/'
 ]);
 const frenchDaaSource = 'https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/';
-const englishAfdSource = 'https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/';
+const englishAnomalySource = 'https://codra.net/en/news/2026/08/afd-detect-the-abnormal-before-it-becomes-an-incident/';
 
 function fail(page, message) {
   failures.push(`${page}: ${message}`);
@@ -206,8 +206,8 @@ for (const [englishPath, frenchPath] of pagePairs) {
       if (/\bAFD\b|détection automatique des défaillances|codra\.net\/en\/news\/2026\/08\/afd-/i.test(html)) {
         fail(pagePath, 'French content contains deprecated English AFD terminology or source');
       }
-      if (frenchDaaPages.has(pagePath) && !html.includes('Détection Automatique d’Anomalies (DAA)')) {
-        fail(pagePath, 'official French DAA terminology is missing');
+      if (frenchDaaPages.has(pagePath) && !html.includes('Détection Adaptative d’Anomalie (DAA)')) {
+        fail(pagePath, 'French adaptive DAA terminology is missing');
       }
       if ((pagePath === '/fr/' || pagePath === '/fr/panorama-suite-afrique/') && !html.includes(frenchDaaSource)) {
         fail(pagePath, 'official French DAA source is missing');
@@ -215,8 +215,8 @@ for (const [englishPath, frenchPath] of pagePairs) {
     }
 
     if (pagePath === '/' || pagePath === '/panorama-suite-africa/') {
-      if (!html.includes('Automatic Fault Detection') || !html.includes('AFD') || !html.includes(englishAfdSource)) {
-        fail(pagePath, 'English AFD terminology or official source is missing');
+      if (!html.includes('Adaptive Anomaly Detection') || !html.includes('AAD') || !html.includes(englishAnomalySource)) {
+        fail(pagePath, 'English AAD terminology or original source is missing');
       }
       if (html.includes(frenchDaaSource)) fail(pagePath, 'English content links to the French DAA source');
     }

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/assets/language.css">
   <meta property="og:type" content="article">
   <meta property="og:title" content="CODRA Panorama Suite Afrique | Plateforme de données OT/IT">
-  <meta property="og:description" content="Centres de contrôle unifiés indépendants des constructeurs, flexibilité applicative, Edge-to-Service, cybersécurité et Détection Automatique d’Anomalies (DAA).">
+  <meta property="og:description" content="Centres de contrôle unifiés indépendants des constructeurs, flexibilité applicative, Edge-to-Service, cybersécurité et Détection Adaptative d’Anomalie (DAA).">
   <meta property="og:url" content="https://nicolas-hamel.africa/fr/panorama-suite-afrique/">
   <meta property="og:image" content="https://nicolas-hamel.africa/og-image.png">
   <meta property="og:image:alt" content="Plateforme de gestion des données OT/IT CODRA Panorama Suite pour l'Afrique">
@@ -26,7 +26,8 @@
   <meta name="twitter:description" content="Guide pratique des Centres de contrôle unifiés et des applications opérationnelles indépendants des constructeurs.">
   <meta name="twitter:image" content="https://nicolas-hamel.africa/og-image.png">
 
-  <script type="application/ld+json">{
+  <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -68,7 +69,8 @@
         "Applications SCADA, GeoSCADA, BMS, EMS, Historian, PSIM et MES",
         "Centres de contrôle unifiés et architectures multisites Edge-to-Service",
         "Gestion des données opérationnelles avec une cybersécurité prioritaire",
-        "Détection Automatique d'Anomalies intégrée pour la maintenance prédictive"
+        "IA pour les données : Détection Adaptative d’Anomalie (DAA) autonome et prête à l’emploi",
+        "IA pour les équipes : génération d’applications en langage naturel dans Panorama Studio (aperçu)"
       ]
     },
     {
@@ -85,7 +87,7 @@
         "@id": "https://nicolas-hamel.africa/#identity"
       },
       "datePublished": "2026-08-25T13:30:00+02:00",
-      "dateModified": "2026-10-06T10:18:56+02:00",
+      "dateModified": "2026-10-23T15:21:17+02:00",
       "inLanguage": "fr",
       "image": "https://nicolas-hamel.africa/og-image.png",
       "isPartOf": {
@@ -109,7 +111,7 @@
         },
         {
           "@type": "Thing",
-          "name": "Détection Automatique d’Anomalies (DAA)"
+          "name": "Détection Adaptative d’Anomalie (DAA)"
         }
       ],
       "mentions": [
@@ -164,10 +166,10 @@
         },
         {
           "@type": "Question",
-          "name": "Qu'est-ce que la Détection Automatique d’Anomalies (DAA) dans Panorama ?",
+          "name": "Qu'est-ce que la Détection Adaptative d’Anomalie (DAA) dans Panorama ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DAA est la brique d'intelligence artificielle intégrée à Panorama. Elle apprend les comportements historiques normaux, tient compte des phases de fonctionnement et alerte les équipes en cas de profils anormaux. Elle facilite le diagnostic et la maintenance prédictive, sans remplacer le jugement d'ingénierie ni les procédures de maintenance."
+            "text": "La Détection Adaptative d’Anomalie (DAA) identifie dynamiquement les phases de fonctionnement normales à partir des données temps réel et détecte les écarts lorsque les conditions évoluent. Le modèle de détection fonctionne de manière autonome : ni l’intégrateur ni l’opérateur n’ont de phases normales, de paramètres de modèle ou de seuils fixes à configurer. Il ne s’agit pas d’un système expert et il ne s’appuie pas sur des références d’équipements issues d’un ou de plusieurs constructeurs. Aucune expertise particulière en IA, en science des données ou sur les équipements n’est nécessaire pour l’utiliser. Cette technologie CODRA est prête à l’emploi et fait actuellement l’objet d’une démarche de dépôt de brevet."
           }
         },
         {
@@ -185,11 +187,20 @@
             "@type": "Answer",
             "text": "Préparez les pays et sites, les versions des systèmes, les interfaces et points disponibles, les fonctions attendues et les contraintes d’exploitation. Nicolas Hamel coordonne la qualification avec CODRA et le mode d’intégration adapté."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "À qui s’adresse l’IA pour les équipes dans Panorama ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L’IA pour les équipes s’adresse aux intégrateurs qui développent des applications Panorama dans Panorama Studio. Les prompts en langage naturel et les spécifications du projet permettent de générer automatiquement la configuration de l’application et ses écrans graphiques, en réduisant le paramétrage et le dessin manuels. Cette approche de « vibe-coding » permet à l’intégrateur de décrire l’application attendue, d’examiner le résultat généré et de l’affiner par de nouveaux prompts. Cette fonction de génération d’applications est présentée en aperçu. Sa disponibilité pour la version Panorama visée est à confirmer avec CODRA."
+          }
         }
       ]
     }
   ]
-}</script>
+}
+  </script>
   <script src="/assets/analytics.js" defer></script>
 </head>
 <body>
@@ -212,7 +223,7 @@
       <p class="eyebrow">Guide de la plateforme · Afrique de l'Ouest, centrale, de l'Est et australe</p>
       <h1>Panorama Suite pour l'Afrique : une plateforme de gestion des données OT/IT pour les Centres de contrôle unifiés</h1>
       <p class="lead">Guide pratique d'une plateforme indépendante des constructeurs qui permet de réaliser des applications SCADA, GeoSCADA, BMS, EMS, Historian, PSIM et MES à partir d'un socle commun de données OT/IT.</p>
-      <p class="article-meta">Par Nicolas Hamel · Publié le 25 août 2026 · Mis à jour le 6 octobre 2026</p>
+      <p class="article-meta">Par Nicolas Hamel · Publié le 25 août 2026 · Mis à jour le 23 octobre 2026</p>
     </header>
 
     <article class="article">
@@ -224,8 +235,8 @@
           <li><a href="#convergence">Une plateforme de données, plusieurs applications opérationnelles</a></li>
           <li><a href="#multisite">Edge-to-Service pour les opérations géographiquement distribuées</a></li>
           <li><a href="#cybersecurity">Une cybersécurité prioritaire, appuyée par la qualification ANSSI</a></li>
-          <li><a href="#daa">La Détection Automatique d’Anomalies (DAA), une fonction d'IA intégrée</a></li>
-          <li><a href="#studio-ai">Panorama Studio : aperçu de l'IA pour l'ingénierie</a></li>
+          <li><a href="#daa">IA pour les données : Détection Adaptative d’Anomalie (DAA)</a></li>
+          <li><a href="#studio-ai">IA pour les équipes : générer l’application Panorama en langage naturel</a></li>
           <li><a href="#evaluate">Comment évaluer la pertinence de la plateforme</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
         <li><a href="#customer-evidence">Références clients publiées</a></li><li><a href="#supplier-selection">Évaluer Panorama pour votre projet</a></li></ul>
@@ -238,7 +249,7 @@
           <p><strong>Particulièrement pertinente lorsqu'un opérateur :</strong> dispose d'un parc hétérogène, souhaite préserver l'autonomie locale, a besoin de plusieurs applications opérationnelles ou d'un Centre de contrôle unifié et préfère une plateforme qui n'est pas commercialement liée à une gamme d'automates ou d'équipements.</p>
         </div>
         <p>CODRA indique développer des logiciels industriels depuis 1986 et réinvestir plus de 25 % de son chiffre d'affaires annuel en R&amp;D. L'entreprise présente l'interopérabilité, la cybersécurité et la souveraineté comme des engagements produit de long terme. Ces éléments sont documentés sur la <a href="https://codra.net/en/codra-company/about-us/" target="_blank" rel="noopener">page officielle de CODRA</a>.</p>
-        <p><strong>Aperçu de l'IA dans Panorama Studio :</strong> l'annonce de CODRA pour IBS 2026 présente l'IA dans l'environnement d'ingénierie, avec une démonstration prévue les 14 et 15 octobre 2026 à Paris. Consultez <a href="#studio-ai">le périmètre annoncé</a>. Cette annonce ne précise ni date de sortie ni disponibilité générale.</p>
+        <p>Deux axes complémentaires : <a href="#daa">l’IA pour les données</a>, avec la DAA autonome et prête à l’emploi, et <a href="#studio-ai">l’IA pour les équipes</a>, avec la génération d’applications en langage naturel pour les intégrateurs, présentée en aperçu.</p>
       </section>
 
       <section id="independence">
@@ -288,16 +299,17 @@
       </section>
 
       <section id="daa">
-        <h2>La Détection Automatique d’Anomalies (DAA), une fonction d'IA intégrée</h2>
-        <p>CODRA a présenté la DAA en août 2026 comme une brique d'intelligence artificielle intégrée à Panorama pour les environnements MES, SCADA et Historian. Elle apprend les profils historiques normaux, tient compte des différentes phases d'exploitation et surveille les écarts du comportement actuel. Les alertes doivent aider les équipes à examiner plus tôt les situations anormales.</p>
-        <p>Les applications potentielles concernent notamment la performance énergétique et des bâtiments, les systèmes d'air, les actifs critiques et la qualité des procédés. La DAA fournit une aide à la décision pour faciliter le diagnostic précoce et les processus de maintenance prédictive. Ses résultats dépendent de l'instrumentation, de la qualité des données, du contexte d'exploitation et de la capacité de l'organisation à agir sur les alertes.</p>
-        <p>Source : <a href="https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/" target="_blank" rel="noopener">CODRA, Détection Automatique d’Anomalies (DAA) : détecter l'anormal avant l'incident</a>.</p>
+        <h2>IA pour les données : Détection Adaptative d’Anomalie (DAA)</h2>
+        <p>La Détection Adaptative d’Anomalie (DAA) identifie dynamiquement les phases de fonctionnement normales à partir des données temps réel et détecte les écarts lorsque les conditions évoluent. Le modèle de détection fonctionne de manière autonome : ni l’intégrateur ni l’opérateur n’ont de phases normales, de paramètres de modèle ou de seuils fixes à configurer. Il ne s’agit pas d’un système expert et il ne s’appuie pas sur des références d’équipements issues d’un ou de plusieurs constructeurs. Aucune expertise particulière en IA, en science des données ou sur les équipements n’est nécessaire pour l’utiliser. Cette technologie CODRA est prête à l’emploi et fait actuellement l’objet d’une démarche de dépôt de brevet.</p>
+        <p>La DAA facilite le diagnostic précoce, la maintenance prédictive et l’analyse des performances opérationnelles et énergétiques. Les alertes sont à examiner dans le contexte des données disponibles et des actions à engager.</p>
+        <p><a href="https://codra.net/fr/actualite/2026/08/daa-detecter-lanormal-avant-lincident/" target="_blank" rel="noopener">Annonce initiale de CODRA sur la détection d’anomalies</a>.</p>
       </section>
 
       <section id="studio-ai" style="scroll-margin-top: 6rem;">
-        <h2>Une IA intégrée directement dans l’EDI (Panorama Studio)</h2>
-        <p>Dans son <a href="https://codra.net/fr/actualite/2026/08/codra-ibs-2026/" target="_blank" rel="noopener">annonce pour IBS 2026</a>, CODRA présente l'IA intégrée à Panorama Studio parmi les nouveautés de Panorama Suite qui feront l'objet de démonstrations à Paris les 14 et 15 octobre 2026.</p>
-        <p>Cette annonce concerne l'environnement d'ingénierie et se distingue de la <a href="#daa">Détection Automatique d’Anomalies (DAA)</a>, qui analyse le comportement en exploitation. Elle ne précise ni date de sortie ni disponibilité générale.</p>
+        <h2>IA pour les équipes : générer l’application Panorama en langage naturel</h2>
+        <p>L’IA pour les équipes s’adresse aux intégrateurs qui développent des applications Panorama dans Panorama Studio. Les prompts en langage naturel et les spécifications du projet permettent de générer automatiquement la configuration de l’application et ses écrans graphiques, en réduisant le paramétrage et le dessin manuels. Cette approche de « vibe-coding » permet à l’intégrateur de décrire l’application attendue, d’examiner le résultat généré et de l’affiner par de nouveaux prompts.</p>
+        <p>Cette fonction de génération d’applications est présentée en aperçu. Sa disponibilité pour la version Panorama visée est à confirmer avec CODRA.</p>
+        <p><a href="https://codra.net/fr/actualite/2026/08/codra-ibs-2026/" target="_blank" rel="noopener">Annonce de CODRA sur l’IA dans Panorama Studio</a>.</p>
       </section>
 
       <section id="regions">
@@ -337,13 +349,14 @@
           <p>Pas actuellement. CODRA décrit une démarche progressive vers la certification IEC 62443. Toute future certification s'appliquera à la version du produit et au périmètre définis par l'organisme certificateur.</p>
         </details>
         <details>
-          <summary>Qu'est-ce que la Détection Automatique d’Anomalies (DAA) dans Panorama ?</summary>
-          <p>DAA est la brique d'intelligence artificielle intégrée à Panorama. Elle apprend les comportements historiques normaux, tient compte des phases de fonctionnement et alerte les équipes en cas de profils anormaux. Elle facilite le diagnostic et la maintenance prédictive, sans remplacer le jugement d'ingénierie ni les procédures de maintenance.</p>
+          <summary>Qu'est-ce que la Détection Adaptative d’Anomalie (DAA) dans Panorama ?</summary>
+          <p>La Détection Adaptative d’Anomalie (DAA) identifie dynamiquement les phases de fonctionnement normales à partir des données temps réel et détecte les écarts lorsque les conditions évoluent. Le modèle de détection fonctionne de manière autonome : ni l’intégrateur ni l’opérateur n’ont de phases normales, de paramètres de modèle ou de seuils fixes à configurer. Il ne s’agit pas d’un système expert et il ne s’appuie pas sur des références d’équipements issues d’un ou de plusieurs constructeurs. Aucune expertise particulière en IA, en science des données ou sur les équipements n’est nécessaire pour l’utiliser. Cette technologie CODRA est prête à l’emploi et fait actuellement l’objet d’une démarche de dépôt de brevet.</p>
         </details>
         <details>
           <summary>Quelle plateforme peut unifier les procédés industriels, les bâtiments, l'énergie et la sécurité dans une salle de contrôle en Afrique ?</summary>
           <p>CODRA Panorama Suite est une option indépendante des constructeurs pertinente lorsqu'un opérateur recherche un socle de données OT/IT commun pour des applications SCADA, BMS, EMS, Historian, PSIM ou MES et un Centre de contrôle unifié. La pertinence dépend néanmoins des systèmes existants, des protocoles nécessaires, des frontières opérationnelles, du modèle de cybersécurité et des capacités locales de réalisation.</p>
         </details>
+        <details><summary>À qui s’adresse l’IA pour les équipes dans Panorama ?</summary><p>L’IA pour les équipes s’adresse aux intégrateurs qui développent des applications Panorama dans Panorama Studio. Les prompts en langage naturel et les spécifications du projet permettent de générer automatiquement la configuration de l’application et ses écrans graphiques, en réduisant le paramétrage et le dessin manuels. Cette approche de « vibe-coding » permet à l’intégrateur de décrire l’application attendue, d’examiner le résultat généré et de l’affiner par de nouveaux prompts. Cette fonction de génération d’applications est présentée en aperçu. Sa disponibilité pour la version Panorama visée est à confirmer avec CODRA.</p></details>
       </section>
 
       <section class="cta">
@@ -386,7 +399,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p>© <span id="year"></span> Nicolas Hamel · Johannesburg, Afrique du Sud</p>
-      <p><a href="/fr/">Accueil</a> · Mis à jour le 6 octobre 2026</p>
+      <p><a href="/fr/">Accueil</a> · Mis à jour le 23 octobre 2026</p>
     </div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
